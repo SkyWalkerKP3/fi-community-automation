@@ -1,0 +1,270 @@
+{
+  "report_date": "2026-04-28",
+  "week_label": "Week of April 21 – April 28, 2026",
+  "sections": {
+    "portfolio": {
+      "title": "Investment Club Portfolio",
+      "subtitle": "Stock Picks, Holdings Review & Recommendations",
+      "market_summary": {
+        "sp500": { "week_change_pct": -1.8, "current": 5142.30, "direction": "down" },
+        "nasdaq": { "week_change_pct": -2.4, "current": 16082.50, "direction": "down" },
+        "dow": { "week_change_pct": -1.2, "current": 38320.00, "direction": "down" }
+      },
+      "week_narrative": "Markets pulled back this week as tariff uncertainty and mixed earnings reports weighed on sentiment. Tech led declines, while dividend stocks showed relative resilience.",
+      "holdings": [
+        {
+          "ticker": "AAPL",
+          "name": "Apple Inc.",
+          "current_price": 168.45,
+          "week_change_pct": -3.1,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Near 52-week support; Q2 earnings next week could catalyze a move either direction. Hold and reassess post-earnings."
+        },
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corp.",
+          "current_price": 391.20,
+          "week_change_pct": -1.4,
+          "direction": "down",
+          "recommendation": "BUY",
+          "rationale": "Azure growth beat estimates. AI integration across product suite is accelerating. Strong dip-buying opportunity at current levels."
+        },
+        {
+          "ticker": "VTI",
+          "name": "Vanguard Total Stock Market ETF",
+          "current_price": 224.80,
+          "week_change_pct": -1.9,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Core long-term holding. Broad market volatility is expected; continue dollar-cost averaging. No action needed."
+        },
+        {
+          "ticker": "SCHD",
+          "name": "Schwab US Dividend Equity ETF",
+          "current_price": 81.60,
+          "week_change_pct": -0.7,
+          "direction": "down",
+          "recommendation": "BUY",
+          "rationale": "Dividend ETF outperforming in this volatile environment. Strong cash flow companies in holdings provide downside protection. Add on dips."
+        },
+        {
+          "ticker": "O",
+          "name": "Realty Income Corp.",
+          "current_price": 52.30,
+          "week_change_pct": 0.4,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Monthly dividend payer showing strength as investors rotate to defensive income plays. Maintain position."
+        }
+      ],
+      "watchlist": [
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corp.",
+          "current_price": 832.50,
+          "week_change_pct": -4.2,
+          "direction": "down",
+          "rationale": "AI infrastructure demand remains structural. Pullback creating potential entry; watch for stabilization above $800 before adding."
+        },
+        {
+          "ticker": "JPM",
+          "name": "JPMorgan Chase & Co.",
+          "current_price": 196.80,
+          "week_change_pct": -0.9,
+          "direction": "down",
+          "rationale": "Financials resilient amid rate uncertainty. Strong balance sheet and dividend growth. Monitor for entry below $190."
+        }
+      ],
+      "key_insights": [
+        "Dividend ETFs (SCHD, O) outperforming growth stocks — defensive rotation underway",
+        "MSFT Azure beat is a strong fundamental signal despite price weakness",
+        "Cash positions above 10% give us flexibility to buy into continued pullbacks"
+      ]
+    },
+    "benchmarking": {
+      "title": "Club Benchmarking",
+      "subtitle": "What Winning Investment Clubs Do Differently",
+      "clubs_researched": [
+        {
+          "name": "BetterInvesting National Network",
+          "strategy": "Stock Study methodology — standardized 5-year EPS growth analysis before any purchase vote",
+          "tool": "BetterInvesting Stock Study tool + member portfolio tracker",
+          "takeaway": "Formal written thesis required before any buy vote eliminates emotional decisions"
+        },
+        {
+          "name": "Spelman College Investment Club",
+          "strategy": "Sector rotation with quarterly rebalancing; dedicated research leads per sector",
+          "tool": "Google Sheets portfolio tracker + Yahoo Finance screener",
+          "takeaway": "Assigning sector ownership creates accountability and deeper expertise per member"
+        },
+        {
+          "name": "Howard University Investment Club",
+          "strategy": "ESG-screened portfolio with dual focus on returns and community impact metrics",
+          "tool": "Morningstar ESG ratings + Bloomberg terminal access via alumni network",
+          "takeaway": "Aligning investment thesis with community values drives member engagement and retention"
+        }
+      ],
+      "strategies_to_adopt": [
+        {
+          "strategy": "Written investment thesis requirement",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Create a 1-page thesis template (ticker, thesis, risks, price target, time horizon)",
+            "Require submission 48 hours before any buy/sell vote",
+            "Archive all theses in shared Google Drive for review"
+          ]
+        },
+        {
+          "strategy": "Sector ownership assignments",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Assign each member 1–2 sectors to monitor monthly",
+            "Sector lead presents a 5-minute update at each meeting",
+            "Rotate assignments every 6 months for cross-training"
+          ]
+        },
+        {
+          "strategy": "Quarterly portfolio review meetings",
+          "difficulty": "Medium",
+          "impact": "High",
+          "steps": [
+            "Schedule dedicated quarterly sessions (separate from regular meetings)",
+            "Review each holding against original thesis",
+            "Vote on rebalancing with full group quorum required"
+          ]
+        }
+      ],
+      "key_insights": [
+        "Top clubs win on process, not stock picks — build the decision framework first",
+        "ESG alignment with Black community values could be a powerful recruitment tool for FI Community",
+        "Written thesis requirement is the single highest-ROI process change available"
+      ]
+    },
+    "side_income": {
+      "title": "Side Income & Business Moves",
+      "subtitle": "Specific Opportunities This Week",
+      "opportunities": [
+        {
+          "name": "High-Yield Savings Account (HYSA)",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "4.5–5.0% APY",
+          "how_to_start": "Open a Marcus by Goldman Sachs or Ally Bank account online in 10 minutes. Transfer club operating cash and emergency reserves.",
+          "time_sensitive": false
+        },
+        {
+          "name": "Treasury Bills via TreasuryDirect",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "5.2% annualized (4-week T-bill)",
+          "how_to_start": "Create a free TreasuryDirect.gov account. Purchase 4-week or 13-week T-bills at auction. Minimum purchase: $100.",
+          "time_sensitive": true
+        },
+        {
+          "name": "Covered Call Writing on AAPL",
+          "type": "Options Income",
+          "effort": "Medium",
+          "potential_return": "1–2% monthly premium on existing shares",
+          "how_to_start": "If club holds 100+ shares of AAPL, sell 1 covered call contract per 100 shares. Strike: 5–10% out of money. Expiry: 30 days. Collect premium regardless of outcome.",
+          "time_sensitive": false
+        },
+        {
+          "name": "Dividend Reinvestment (DRIP) Optimization",
+          "type": "Compounding",
+          "effort": "Low",
+          "potential_return": "Accelerates compounding on SCHD and O positions",
+          "how_to_start": "Enable automatic DRIP on SCHD and O in your brokerage. All dividends auto-purchase fractional shares. No action needed month to month.",
+          "time_sensitive": false
+        }
+      ],
+      "news_hooks": [
+        {
+          "event": "Fed holds rates steady for 3rd consecutive meeting",
+          "opportunity": "Lock in HYSA rates before cuts begin — current 4.5%+ rates may not last",
+          "action": "Move idle cash from checking to HYSA this week"
+        },
+        {
+          "event": "Market volatility spike (VIX elevated)",
+          "opportunity": "Higher volatility = higher options premiums = better covered call income",
+          "action": "Evaluate covered call strategy on any holding with 100+ shares"
+        }
+      ],
+      "key_insights": [
+        "Idle cash earning 0% in checking is a silent drag — HYSA is a 15-minute fix",
+        "T-bills currently outperform most bond funds with zero credit risk",
+        "DRIP compounding on SCHD turns a 3.5% yield into 4%+ effective return over 5 years"
+      ]
+    },
+    "content_strategy": {
+      "title": "Content & Brand Strategy",
+      "subtitle": "Angles, Growth Moves & Monetization This Week",
+      "content_angles": [
+        {
+          "headline": "The Market Dropped 2% This Week. Here’s What We Did.",
+          "platform": "Instagram Reel + TikTok",
+          "hook": "Everyone’s panicking. Here’s what a real investment club actually does when the market drops...",
+          "format": "60-second talking head with on-screen text overlay",
+          "cta": "Follow FI Community for our weekly market breakdown"
+        },
+        {
+          "headline": "5 Things Your Money Should Be Doing Right Now (It’s Not)",
+          "platform": "Instagram Carousel",
+          "hook": "The Fed froze rates again. Most people have no idea what to do. Here’s the 5-step checklist.",
+          "format": "7-slide carousel: hook slide + 5 action slides + follow CTA",
+          "cta": "Save this for your next money check-in"
+        },
+        {
+          "headline": "We Started an Investment Club at $150/Month. Here’s Month 6.",
+          "platform": "YouTube + LinkedIn",
+          "hook": "Six months ago we pooled $150 each. Here’s exactly what we own, what’s up, what’s down, and what we’d do differently.",
+          "format": "8-10 minute YouTube video + LinkedIn text post version",
+          "cta": "Join the FI Community waitlist — link in bio"
+        }
+      ],
+      "audience_growth_moves": [
+        {
+          "tactic": "Collab with 3 HBCU finance club accounts this week",
+          "platform": "Instagram",
+          "effort": "Medium",
+          "expected_reach": "1,000–4,000 new followers per collab"
+        },
+        {
+          "tactic": "Post market recap every Monday by 9 AM — be first in feed",
+          "platform": "Instagram + TikTok",
+          "effort": "Low",
+          "expected_reach": "Builds algorithm consistency; 20–40% follower growth in 90 days"
+        },
+        {
+          "tactic": "Engage 20 comments per day on financial literacy creator posts",
+          "platform": "Instagram",
+          "effort": "Low",
+          "expected_reach": "Community recognition; drives profile visits and follows"
+        }
+      ],
+      "monetization_ideas": [
+        {
+          "idea": "Investment Club Starter Kit (digital download)",
+          "tied_to_event": "High search interest in 'how to start an investment club' during volatile markets",
+          "revenue_model": "One-time purchase $27–47",
+          "platform": "Gumroad or Stan Store",
+          "steps": "Create a PDF kit: bylaws template, contribution tracker, stock thesis template, meeting agenda. List on Gumroad."
+        },
+        {
+          "idea": "Monthly Market Recap Newsletter (paid tier)",
+          "tied_to_event": "Consistent weekly content builds audience trust for paid upgrade",
+          "revenue_model": "$5–10/month subscriber",
+          "platform": "Substack or Beehiiv",
+          "steps": "Launch free tier first (3 months). Gate premium content (full picks, club insights) behind $7/month paywall."
+        }
+      ],
+      "key_insights": [
+        "Market volatility = peak content opportunity — post your take before the news cycle moves on",
+        "The Investment Club Starter Kit is a zero-cost-to-create product you can launch this week",
+        "Monday 9 AM recap posts consistently outperform other posting times for finance content"
+      ]
+    }
+  }
+}

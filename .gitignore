@@ -1,0 +1,20 @@
+# Generated outputs (too large/transient for repo)
+output/
+
+# API keys — never commit these
+resources/api_keys.json
+
+# Large files not needed by the remote agent
+FullyInvested Interest Meeting.pptx
+social_media_content.json
+social_media_content_files/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

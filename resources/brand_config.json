@@ -1,0 +1,21 @@
+{
+  "logo_path": "FI Community.png",
+  "logo_path_light": "White FI Label.png",
+  "brand_name": "FI Community",
+  "tagline": "FULLY INVESTED",
+  "colors": {
+    "bg_dark":       "#1B1B1E",
+    "bg_surface":    "#27272B",
+    "bg_deep":       "#46464A",
+    "accent":        "#FFE14D",
+    "accent_dim":    "#D4B800",
+    "text_primary":  "#FFFFFF",
+    "text_body":     "#D7D4CC",
+    "text_muted":    "#A5A5A5",
+    "text_on_light": "#000000",
+    "bg_light":      "#FFFFFF",
+    "buy_green":     "#27AE60",
+    "sell_red":      "#E53935"
+  },
+  "pdf_engine": "weasyprint"
+}

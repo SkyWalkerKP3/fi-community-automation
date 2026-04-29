@@ -1,0 +1,7 @@
+{
+  "club_holdings": ["AAPL", "MSFT", "VTI", "SCHD", "O"],
+  "watchlist": ["NVDA", "META", "BRK-B", "JPM"],
+  "benchmark": "^GSPC",
+  "starting_contribution": 150,
+  "currency": "USD"
+}
