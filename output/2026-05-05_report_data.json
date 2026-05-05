@@ -1,0 +1,282 @@
+{
+  "report_date": "2026-05-05",
+  "week_label": "Week of April 28 – May 5, 2026",
+  "sections": {
+    "portfolio": {
+      "title": "Investment Club Portfolio",
+      "subtitle": "Stock Picks, Holdings Review & Recommendations",
+      "market_summary": {
+        "sp500":  { "week_change_pct": 1.73, "current": 7259.22, "direction": "up" },
+        "nasdaq": { "week_change_pct": 2.65, "current": 25326.12, "direction": "up" },
+        "dow":    { "week_change_pct": 0.89, "current": 49298.25, "direction": "up" }
+      },
+      "week_narrative": "Markets recovered strongly this week with the S&P 500 up 1.73% and Nasdaq surging 2.65%, capping an April that saw the S&P gain over 10% — its best monthly performance since November 2020. The week was not without turbulence: mid-week oil price spikes tied to U.S.-Iran tensions briefly sent the Dow down 550 points before a pullback in oil prices sparked a sharp recovery. The Fed held rates steady at 3.5–3.75% in what became a historically contentious 8-4 vote — the most dissent since 1992 — signaling growing internal disagreement about the path forward. Earnings were a mixed bag: AMD and Caterpillar beat estimates decisively, while Netflix missed Q2 guidance and Meta shed nearly 10% on AI investment headwinds and a 10% workforce cut.",
+      "holdings": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 186.90,
+          "week_change_pct": 18.15,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Massive 18% week driven by Bitcoin momentum. Well below 52-week high of $457 — long-term thesis intact. Take no action; let the Bitcoin cycle play out but do not chase at this level."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 87.89,
+          "week_change_pct": -4.59,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Q2 guidance miss and Reed Hastings’ board exit spooked the market. However, Netflix approved a $25B buyback — signaling deep confidence from the board. Price is approaching 52-week low support at $75. Hold and monitor."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 196.50,
+          "week_change_pct": -6.09,
+          "direction": "down",
+          "recommendation": "BUY",
+          "rationale": "Down 6% on OpenAI revenue miss concerns, but Micron’s HBM chips are sold out through 2026 — confirming AI infrastructure demand is real. NVDA earnings are May 27. 37 analysts rate Strong Buy with a $270 target. This dip is an opportunity."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 665.30,
+          "week_change_pct": 1.69,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Near its 52-week high of $666.55 after April’s historic monthly rally. Core long-term position. Continue dollar-cost averaging. No action needed."
+        }
+      ],
+      "watchlist": [
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "current_price": 411.38,
+          "week_change_pct": -3.08,
+          "direction": "down",
+          "rationale": "Down 3% alongside broader tech weakness. Azure cloud growth remains the core thesis. Sitting 26% below its 52-week high of $555. Watch for stabilization near $400 as a potential entry point."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "current_price": 604.96,
+          "week_change_pct": -9.59,
+          "direction": "down",
+          "rationale": "Nearly -10% this week — the week’s biggest loser. 10% global workforce cut announced to offset AI investment costs. Short-term pain, but leaner operations could drive margin expansion. Watch for a base near $580–590 before considering entry."
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust",
+          "current_price": 681.61,
+          "week_change_pct": 3.03,
+          "direction": "up",
+          "rationale": "Near its all-time high. Broad tech ETF strength confirms the Nasdaq rally has legs beyond individual names. A good benchmark for gauging tech sector health."
+        },
+        {
+          "ticker": "DIA",
+          "name": "SPDR Dow Jones ETF",
+          "current_price": 492.96,
+          "week_change_pct": 0.88,
+          "direction": "up",
+          "rationale": "Steady near 52-week highs. Caterpillar’s +10% earnings pop drove industrial component strength. Defensive but growing — watch for any break above $505 all-time high."
+        }
+      ],
+      "key_insights": [
+        "MSTR +18% and NVDA -6% in the same week shows crypto/AI divergence is real right now",
+        "Fed’s 8-4 rate hold vote is the most contested since 1992 — policy uncertainty is elevated",
+        "April’s S&P +10% month is historic — stay invested but tighten stop-losses heading into summer"
+      ]
+    },
+    "benchmarking": {
+      "title": "Club Benchmarking",
+      "subtitle": "What Winning Investment Clubs Do Differently",
+      "clubs_researched": [
+        {
+          "name": "HBS Black Investment Club",
+          "strategy": "Corporate partnership pipeline with top-tier PE and VC firms: Apollo, Warburg Pincus, L Catterton, 26North, Partners Group",
+          "tool": "Formal deal flow access through institutional partnerships + Bloomberg terminal",
+          "takeaway": "The differentiator isn’t stock picks — it’s who you have in the room. Building institutional relationships early creates a flywheel of opportunity."
+        },
+        {
+          "name": "The Black Wall Streeter Investment Club Network",
+          "strategy": "Packaged club formation: LLC registration, operating agreements, meeting agendas, coaching, and financial advisor referrals bundled as a product",
+          "tool": "Structured onboarding kit + certified advisor referral network",
+          "takeaway": "FI Community could monetize its own club-building expertise as a product — the infrastructure you’ve built has market value."
+        },
+        {
+          "name": "BetterInvesting / NAIC Network",
+          "strategy": "Stock Study methodology — standardized 5-year EPS growth analysis required before any purchase vote",
+          "tool": "BetterInvesting Stock Study software + member portfolio dashboard",
+          "takeaway": "A formal thesis process eliminates emotional decisions and builds institutional memory across member turnover."
+        }
+      ],
+      "strategies_to_adopt": [
+        {
+          "strategy": "Build one corporate or institutional partnership",
+          "difficulty": "Medium",
+          "impact": "High",
+          "steps": [
+            "Identify 3 financial firms (RIA, fintech, local credit union) aligned with FI Community’s mission",
+            "Pitch a co-branded event or member benefit (preferred rates, guest speaker, deal flow access)",
+            "Formalize with a simple MOU or sponsorship agreement"
+          ]
+        },
+        {
+          "strategy": "Implement written investment thesis requirement",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Create a 1-page thesis template: ticker, bull case, risks, price target, time horizon",
+            "Require submission 48 hours before any buy/sell vote",
+            "Archive all theses in shared Google Drive — review quarterly to track accuracy"
+          ]
+        },
+        {
+          "strategy": "Productize FI Community’s club-building process",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Package bylaws template, contribution tracker, stock thesis template, and meeting agenda into a Starter Kit",
+            "Sell on Gumroad at $37–47",
+            "Promote to HBCU finance clubs and young professional networks as your distribution channel"
+          ]
+        }
+      ],
+      "key_insights": [
+        "Top Black investment clubs win on institutional partnerships, not stock picks",
+        "FI Community’s club-building process is already a sellable product — the market exists",
+        "A written thesis requirement is the single highest-ROI process upgrade available right now"
+      ]
+    },
+    "side_income": {
+      "title": "Side Income & Business Moves",
+      "subtitle": "Specific Opportunities This Week",
+      "opportunities": [
+        {
+          "name": "High-Yield Savings Account (HYSA)",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "~4.0% APY",
+          "how_to_start": "Open Marcus by Goldman Sachs or Ally Bank online in 10 minutes. Move idle checking cash immediately. Fed holding rates means these rates stay elevated through at least year-end.",
+          "time_sensitive": false
+        },
+        {
+          "name": "U.S. Treasury Bills (4-Week or 13-Week)",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "~4.8–5.0% annualized",
+          "how_to_start": "Open a free TreasuryDirect.gov account. Purchase at the next weekly auction. Minimum $100. Given the Fed’s hold and elevated inflation, locking in T-bill rates now is smart.",
+          "time_sensitive": true
+        },
+        {
+          "name": "META Dip Play — Covered Opportunity",
+          "type": "Equities",
+          "effort": "Medium",
+          "potential_return": "15–25% upside if thesis plays out in 6–12 months",
+          "how_to_start": "META is down nearly 10% this week and 24% off its 52-week high. The 10% workforce cut will compress costs and expand margins. Watch for stabilization near $580–590 and evaluate a small position if the club thesis supports it.",
+          "time_sensitive": true
+        },
+        {
+          "name": "NVDA Pre-Earnings Positioning",
+          "type": "Equities",
+          "effort": "Medium",
+          "potential_return": "Analyst consensus target: $270 (+37% from current)",
+          "how_to_start": "NVDA reports earnings May 27. Micron’s HBM sold-out status confirms AI chip demand is real. Consider a small position now or a defined-risk options play before the earnings catalyst. Do not over-allocate before earnings.",
+          "time_sensitive": true
+        }
+      ],
+      "news_hooks": [
+        {
+          "event": "Fed holds rates at 3.5–3.75% in historically split 8-4 vote",
+          "opportunity": "Rates staying elevated longer than expected — HYSA and T-bills still paying meaningfully above inflation",
+          "action": "Move any cash sitting in a standard checking account into a HYSA or T-bill this week"
+        },
+        {
+          "event": "Spirit Airlines ceases operations",
+          "opportunity": "Airline consolidation means fewer budget options — legacy carriers (DAL, UAL) and their investors benefit",
+          "action": "Add DAL or UAL to the watchlist as a potential beneficiary of reduced low-cost competition"
+        },
+        {
+          "event": "Meta announces 10% global workforce cut",
+          "opportunity": "Layoffs signal cost discipline — margin expansion likely in Q3/Q4 2026 earnings",
+          "action": "Put META on the watchlist at $580 support and revisit after Q2 earnings"
+        }
+      ],
+      "key_insights": [
+        "T-bills at ~5% with the Fed on hold — idle cash is losing value if not deployed here",
+        "NVDA’s -6% dip ahead of May 27 earnings is a historically favorable setup",
+        "META’s workforce cut is short-term pain hiding long-term margin expansion"
+      ]
+    },
+    "content_strategy": {
+      "title": "Content & Brand Strategy",
+      "subtitle": "Angles, Growth Moves & Monetization This Week",
+      "content_angles": [
+        {
+          "headline": "The Fed Just Had Its Most Controversial Vote Since 1992 — Here’s What That Means for You",
+          "platform": "Instagram Carousel + LinkedIn",
+          "hook": "8 voted to hold. 4 voted to cut. The last time the Fed was this divided, it was 1992. Here’s why that matters for your money right now…",
+          "format": "7-slide carousel: the split explained in plain English, what each side wants, what it means for your savings/investments",
+          "cta": "Follow FI Community for weekly breakdowns that actually make sense"
+        },
+        {
+          "headline": "MSTR Up 18%. NVDA Down 6%. Same Week. What’s Actually Going On.",
+          "platform": "TikTok + Instagram Reel",
+          "hook": "One of our holdings gained 18% this week. Another lost 6%. Both are in tech. Here’s what that tells you about where the smart money is moving…",
+          "format": "60-second talking head with text overlays showing the numbers",
+          "cta": "See our full portfolio breakdown in the FI Community newsletter — link in bio"
+        },
+        {
+          "headline": "Spirit Airlines Is Gone. Here’s the $$ Lesson Nobody Is Talking About.",
+          "platform": "TikTok + Twitter/X thread",
+          "hook": "Spirit Airlines just shut down. No more flights. But for investors who saw this coming, there’s actually a play here…",
+          "format": "45-second TikTok + 5-tweet thread explaining airline consolidation and the investment angle",
+          "cta": "This is the kind of thing we break down every week — join the FI Community newsletter"
+        }
+      ],
+      "audience_growth_moves": [
+        {
+          "tactic": "Post the Fed vote breakdown carousel this week while the news is still fresh",
+          "platform": "Instagram + LinkedIn",
+          "effort": "Low",
+          "expected_reach": "High shareability — finance content tied to breaking news performs 3–4x better than evergreen posts"
+        },
+        {
+          "tactic": "DM 3 HBCU finance club accounts for collab or share",
+          "platform": "Instagram",
+          "effort": "Low",
+          "expected_reach": "500–2,000 new followers per successful collab"
+        },
+        {
+          "tactic": "Launch beehiiv newsletter with first issue this week using this report as content",
+          "platform": "Email + Instagram bio link",
+          "effort": "Medium",
+          "expected_reach": "Owned audience that compounds — finance subscribers worth $30–100/year each"
+        }
+      ],
+      "monetization_ideas": [
+        {
+          "idea": "FI Community Investment Club Starter Kit",
+          "tied_to_event": "Growing interest in Black wealth-building and investment clubs following market volatility — people want structure",
+          "revenue_model": "One-time digital download $37–47",
+          "platform": "Gumroad or Stan Store",
+          "steps": "Package your existing bylaws template, contribution tracker, stock thesis template, and meeting agenda into one PDF bundle. List on Gumroad with a simple landing page. Promote via the Spirit Airlines / Fed content this week."
+        },
+        {
+          "idea": "FI Community Weekly Newsletter (beehiiv)",
+          "tied_to_event": "This week’s market volatility and Fed drama are perfect first-issue hooks — high-urgency content drives signups",
+          "revenue_model": "Free tier + $7–10/month paid tier",
+          "platform": "beehiiv.com",
+          "steps": "Create free account at beehiiv.com. Import this week’s report as your first issue. Add a paid tier gating the full portfolio analysis. Share signup link in bio and all content this week."
+        }
+      ],
+      "key_insights": [
+        "The Fed’s 8-4 split is the week’s most shareable angle — post it before the news cycle moves on",
+        "MSTR vs NVDA divergence is a perfect “here’s what our club actually saw” content moment",
+        "This week’s volatility creates urgency — ideal timing to launch the newsletter with a strong first issue"
+      ]
+    }
+  }
+}

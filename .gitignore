@@ -1,5 +1,7 @@
-# Generated outputs (too large/transient for repo)
+# Generated outputs — ignore debug/temp files but keep weekly reports and data
 output/
+!output/*_weekly-report.pdf
+!output/*_report_data.json
 
 # API keys — never commit these
 resources/api_keys.json
