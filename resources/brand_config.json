@@ -17,5 +17,5 @@
     "buy_green":     "#27AE60",
     "sell_red":      "#E53935"
   },
-  "pdf_engine": "weasyprint"
+  "pdf_engine": "xhtml2pdf"
 }
