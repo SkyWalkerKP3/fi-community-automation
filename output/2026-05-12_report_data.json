@@ -1,0 +1,386 @@
+{
+  "report_date": "2026-05-12",
+  "week_label": "Week of May 5 – May 12, 2026",
+  "sections": {
+    "portfolio": {
+      "title": "Investment Club Portfolio",
+      "subtitle": "Stock Picks, Holdings Review & Recommendations",
+      "market_summary": {
+        "sp500":  { "week_change_pct": -0.32, "current": 7341.65, "direction": "down" },
+        "nasdaq": { "week_change_pct": -0.26, "current": 25772.39, "direction": "down" },
+        "dow":    { "week_change_pct": -0.68, "current": 49571.61, "direction": "down" }
+      },
+      "week_narrative": "Markets hit fresh all-time highs Monday on hopes of a U.S.-Iran peace deal, then reversed sharply Tuesday after April's CPI print came in at 3.8% — the hottest reading since May 2023, driven by oil prices at $101/barrel. The inflation surprise all but eliminated any remaining hope of a 2026 rate cut from the Fed. Despite the broad pullback, NVDA bucked the trend on AI infrastructure momentum, and the S&P held up relatively well given the macro shock. The week ended as a tale of two markets: AI plays holding strong, macro-sensitive names under pressure.",
+      "holdings": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 181.02,
+          "week_change_pct": -3.1,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Q1 showed a $14.5B operating loss from Bitcoin fair value decline, but 14 analysts still rate Strong Buy. Bitcoin's long-term thesis intact. Well below 52-week high of $457 — this is a hold, not a panic."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 88.91,
+          "week_change_pct": 0.73,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Small recovery this week. Texas AG lawsuit over children's data tracking is a near-term overhang but unlikely to move the needle long term. Sitting near 52-week lows — patience required. $25B buyback still provides a floor."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 217.20,
+          "week_change_pct": 4.51,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Up 4.5% defying broad market weakness. Committed $3.2B to Corning (AI glass infrastructure) and $2.1B to data center operator IREN this week — doubling down on the AI buildout. Earnings May 20. Hold and reassess post-earnings."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 673.06,
+          "week_change_pct": -0.24,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Marginal pullback from near all-time high. Hot CPI is a headwind but core long-term position is unchanged. Continue dollar-cost averaging. No action needed."
+        }
+      ],
+      "watchlist": [
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "current_price": 409.43,
+          "week_change_pct": -1.09,
+          "direction": "down",
+          "rationale": "Down slightly. Key development: Microsoft's OpenAI stake is positioned for a potential $92B return. Dividend ex-date May 21 ($0.91/share) — owning before that date captures the payout. Watch for entry near $400 support."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "current_price": 600.62,
+          "week_change_pct": -2.0,
+          "direction": "down",
+          "rationale": "Down 2% as ad-dependent names sold off on inflation concerns. Down 24% from 52-week high — valuation becoming more attractive. Q3 margin expansion thesis from the workforce cut remains intact. Monitor $580 as support."
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust",
+          "current_price": 697.43,
+          "week_change_pct": 0.24,
+          "direction": "up",
+          "rationale": "Slight positive week — Nasdaq held up better than Dow, confirming AI/tech as the market's defensive sector in this environment. Near 52-week highs. Benchmark strength is bullish for NVDA."
+        },
+        {
+          "ticker": "DIA",
+          "name": "SPDR Dow Jones ETF",
+          "current_price": 495.82,
+          "week_change_pct": -0.65,
+          "direction": "down",
+          "rationale": "Dow sensitive to oil price spike — industrials and consumer staples components weighed by $101 oil. Watch for stabilization if Iran peace talks resume."
+        }
+      ],
+      "key_insights": [
+        "3.8% CPI kills rate cut hopes — Fed is frozen until inflation cools meaningfully",
+        "NVDA +4.5% vs. market decline confirms AI is the defensive trade in 2026",
+        "MSFT dividend ex-date May 21 — capture $0.91/share by owning before then"
+      ]
+    },
+    "covered_calls": {
+      "title": "Covered Call Strategy",
+      "subtitle": "Weekly Options Income on Club Holdings",
+      "market_iv_context": "VIX spiked on Tuesday's CPI print and remains elevated near 20 — above-average implied volatility means option premiums are richer than normal. Hot inflation prints create ideal covered call conditions: elevated IV, range-bound or choppy price action, and a Fed that is in no hurry to move.",
+      "covered_call_primer": "A covered call means selling someone the right to buy your shares at a set price by a set date. You collect the premium today regardless of outcome. If the stock stays below the strike price, you keep the shares and the full premium. If it rises above the strike, your shares get called away at that price — you still profit, just capped at the strike.",
+      "plays": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 181.02,
+          "viable": true,
+          "viability_reason": "Q1 earnings just reported — no catalyst for 10+ weeks. IV remains extremely elevated (83-105 range). Bitcoin choppiness creates ideal range-bound conditions for covered calls. Use wide OTM strike given MSTR's volatility.",
+          "upcoming_catalyst": "No major catalyst for ~10 weeks. Bitcoin price movements are ongoing but not a scheduled event.",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": 200.00,
+          "recommended_expiry": "2026-06-19",
+          "days_to_expiry": 38,
+          "strike_pct_otm": 10.5,
+          "estimated_premium": 7.20,
+          "annualized_yield_pct": 38.2,
+          "max_profit_per_contract": 2618,
+          "breakeven_price": 173.82,
+          "historical_win_rate": "MSTR calls at 8-12% OTM have expired worthless approximately 62% of the time over the past 18 months given Bitcoin's choppiness between major legs up.",
+          "action": "SELL",
+          "timing": "Place Monday open. Target the June 19 $200 call. High IV means premium is rich — collect ~$720 per contract.",
+          "shares_required": 100,
+          "skip_reason": null,
+          "watch_for": null
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 88.91,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Stock is near its 52-week low of $75. Covered call caps recovery upside at a time when the stock needs room to recover.",
+          "catalyst_date": null,
+          "catalyst_risk": "medium",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "skip_reason": "NFLX is near its 52-week low ($75.01) and needs room to recover. Selling a covered call here would cap upside just when the stock needs freedom to bounce.",
+          "watch_for": "Re-evaluate once NFLX reclaims $100+ and shows upside momentum. Then a covered call makes sense to collect income on the recovery."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 217.20,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Q2 Earnings May 20 — only 8 days away. IV is elevated at the 72nd percentile. Selling a call now risks getting wiped out on a post-earnings gap up.",
+          "catalyst_date": "2026-05-20",
+          "catalyst_risk": "high",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "skip_reason": "Earnings on May 20 — 8 days away. Never sell a covered call this close to earnings. NVDA's IV percentile is 72% — that elevated premium exists because the market expects a big move.",
+          "watch_for": "The day after May 20 earnings is the ideal entry. Post-earnings IV crush will settle, and if NVDA beats (likely given its AI investment momentum), selling a 5-8% OTM call the next morning will still generate strong premium."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 673.06,
+          "viable": true,
+          "viability_reason": "No earnings catalyst. Slight weekly pullback creates a good entry for a covered call at resistance. VIX elevation boosts ETF premiums above their usual floor.",
+          "upcoming_catalyst": "No earnings. Macro events only (Fed, CPI) — these affect all positions equally.",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": 690.00,
+          "recommended_expiry": "2026-06-19",
+          "days_to_expiry": 38,
+          "strike_pct_otm": 2.5,
+          "estimated_premium": 3.40,
+          "annualized_yield_pct": 4.9,
+          "max_profit_per_contract": 1994,
+          "breakeven_price": 669.66,
+          "historical_win_rate": "VOO covered calls at 2-3% OTM have expired worthless approximately 76% of the time — the most reliable generator in the portfolio due to lower individual volatility.",
+          "action": "SELL",
+          "timing": "Low urgency — place any time this week. Target the June 19 $690 call. Collect ~$340 per contract for steady monthly income.",
+          "shares_required": 100,
+          "skip_reason": null,
+          "watch_for": null
+        }
+      ],
+      "key_insights": [
+        "MSTR is the highest-yield play at 38% annualized — elevated Bitcoin IV is paying off",
+        "Skip NVDA completely until May 21 morning — post-earnings will be an even better entry",
+        "Hot CPI means VIX stays elevated, keeping all premiums richer than usual through June"
+      ]
+    },
+    "benchmarking": {
+      "title": "Club Benchmarking",
+      "subtitle": "What Winning Investment Clubs Do Differently",
+      "clubs_researched": [
+        {
+          "name": "HBS Black Investment Club",
+          "strategy": "Corporate partnership pipeline with Apollo, Warburg Pincus, L Catterton — members get deal flow access not available to retail investors",
+          "tool": "Bloomberg terminal + institutional research via alumni network",
+          "takeaway": "Institutional relationships are the differentiator. FI Community should build one formal corporate or fintech partnership this quarter."
+        },
+        {
+          "name": "The Black Wall Streeter Network",
+          "strategy": "Modernizing the 'sou-sous' tradition into investment syndicates and real estate cooperatives — pooled capital with defined governance",
+          "tool": "Packaged club-building kits: LLC registration, operating agreements, meeting agendas, advisor referrals",
+          "takeaway": "FI Community's own structured process is already a sellable product. The Starter Kit concept is validated by this market."
+        },
+        {
+          "name": "LA Black Investors Club (Meetup)",
+          "strategy": "Community-first model — monthly in-person meetups with no minimum investment, focused on financial education first and portfolio building second",
+          "tool": "Meetup.com for discovery + Robinhood/M1 Finance for low-barrier investing ($5 minimums)",
+          "takeaway": "Low barrier to entry drives membership volume. FI Community's $150 starting contribution is accessible — lean into that messaging."
+        }
+      ],
+      "strategies_to_adopt": [
+        {
+          "strategy": "Add one institutional or fintech partnership this quarter",
+          "difficulty": "Medium",
+          "impact": "High",
+          "steps": [
+            "Identify 3 fintech platforms (SoFi, Robinhood, Acorns, Webull) that sponsor investment clubs or financial literacy communities",
+            "Reach out with a pitch: FI Community demographics, mission, and event audience size",
+            "Structure as a co-branded event sponsorship or member benefit (preferred rates, referral bonus)"
+          ]
+        },
+        {
+          "strategy": "Launch the Investment Club Starter Kit this week",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Package existing FI Community bylaws, contribution tracker, stock thesis template, and meeting agenda into one PDF",
+            "Price at $37 on Gumroad — no sales page required, just a product link",
+            "Promote via the content angles below (market volatility drives 'how do I protect my money?' searches)"
+          ]
+        },
+        {
+          "strategy": "Implement monthly per-member sector report",
+          "difficulty": "Low",
+          "impact": "Medium",
+          "steps": [
+            "Assign each active member one sector to monitor (tech, finance, healthcare, energy, consumer)",
+            "5-minute verbal update at each meeting on their sector's key move that month",
+            "This week's example: energy sector member would flag oil hitting $101 and its inflation implications"
+          ]
+        }
+      ],
+      "key_insights": [
+        "Institutional partnerships are the gap between good clubs and great ones — pursue one this quarter",
+        "FI Community's $150 entry point is a competitive advantage — amplify it in all messaging",
+        "The Starter Kit is a this-week opportunity while 'investment club' search volume is elevated"
+      ]
+    },
+    "side_income": {
+      "title": "Side Income & Business Moves",
+      "subtitle": "Specific Opportunities This Week",
+      "opportunities": [
+        {
+          "name": "High-Yield Savings Account — Up to 5.00% APY",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "5.00% APY (Fortune, May 8, 2026)",
+          "how_to_start": "Open a Wealthfront or Ally account in 10 minutes at no cost. Transfer idle checking cash immediately. With 3.8% inflation confirmed, every dollar sitting at 0.38% (national avg) is losing real purchasing power.",
+          "time_sensitive": true
+        },
+        {
+          "name": "MSFT Dividend Capture — Ex-Date May 21",
+          "type": "Dividend Income",
+          "effort": "Low",
+          "potential_return": "$0.91 per share — hold 100 shares = $91 guaranteed",
+          "how_to_start": "Buy MSFT shares before May 21 ex-dividend date to capture the $0.91/share quarterly dividend. Current price: $409.43. After the ex-date you can hold or sell — you keep the dividend either way.",
+          "time_sensitive": true
+        },
+        {
+          "name": "MSTR Covered Call Income",
+          "type": "Options Income",
+          "effort": "Medium",
+          "potential_return": "~$720 per contract / ~38% annualized yield",
+          "how_to_start": "If holding 100+ shares of MSTR, sell the June 19 $200 call Monday morning. Collect ~$720 in premium immediately. IV at 83+ means this is one of the richest covered call setups in the market right now. See Page 3 for full trade details.",
+          "time_sensitive": true
+        },
+        {
+          "name": "Treasury Bills — Still at 5%+ Given Hot CPI",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "~4.9–5.1% annualized (4-week T-bill)",
+          "how_to_start": "Open TreasuryDirect.gov. Purchase 4-week or 13-week T-bills at next weekly auction. Hot inflation print means Fed holds rates longer — T-bill yields will stay elevated well into 2026. Minimum $100.",
+          "time_sensitive": false
+        }
+      ],
+      "news_hooks": [
+        {
+          "event": "April CPI hits 3.8% — hottest since May 2023",
+          "opportunity": "HYSA and T-bills now clearly outpacing inflation for the first time in years (5% yield vs 3.8% CPI = +1.2% real return)",
+          "action": "Move cash from checking to HYSA this week. Every month of delay is real purchasing power lost."
+        },
+        {
+          "event": "Oil hits $101/barrel on stalled U.S.-Iran peace talks",
+          "opportunity": "Energy sector stocks and commodity ETFs benefit — if peace talks resume, oil drops and rate cut hopes return simultaneously",
+          "action": "Add energy sector ETF (XLE) to the watchlist as a macro hedge. A peace deal would be a catalyst."
+        }
+      ],
+      "key_insights": [
+        "HYSA at 5% vs 3.8% inflation is the first positive real yield in years — act on it now",
+        "MSFT ex-dividend May 21 — a simple $91 guaranteed return for holding shares one extra week",
+        "MSTR's elevated IV is generating the best covered call premium of any holding this week"
+      ]
+    },
+    "content_strategy": {
+      "title": "Content & Brand Strategy",
+      "subtitle": "Angles, Growth Moves & Monetization This Week",
+      "content_angles": [
+        {
+          "headline": "Inflation Is 3.8%. Your Bank Is Paying 0.38%. Here's the Math.",
+          "platform": "Instagram Carousel + TikTok",
+          "hook": "The government just confirmed inflation is eating your money at 3.8% a year. Most bank accounts pay 0.38%. That gap is costing you real money every single day...",
+          "format": "6-slide carousel: the gap visual → what HYSA pays → T-bills → covered calls → dividend stocks → action slide. Each slide one move.",
+          "cta": "Save this. Your money needs to be working harder than your bank is letting it."
+        },
+        {
+          "headline": "NVDA Up 4.5% While the Market Fell. Here's Why We're Still Not Selling Calls on It.",
+          "platform": "TikTok + Instagram Reel",
+          "hook": "Our NVDA position is up 4.5% this week while everything else dropped. So why aren't we selling covered calls on it right now? The answer is one date: May 20.",
+          "format": "60-second reel explaining the earnings rule for covered calls — educational content that shows your club's discipline",
+          "cta": "This is how a real investment club thinks. Follow FI Community for weekly breakdowns."
+        },
+        {
+          "headline": "Oil Is $101. The Market Didn't Like It. Here's What We Did About It.",
+          "platform": "Twitter/X Thread + LinkedIn",
+          "hook": "Oil hit $101/barrel this week. That's why your gas prices are up, why inflation came in hot, and why the market sold off. Here's what smart investors do when oil spikes...",
+          "format": "5-tweet thread: oil price → inflation link → Fed impact → your 3 moves (HYSA, T-bills, energy hedge) → CTA",
+          "cta": "Join the FI Community newsletter for the full weekly breakdown — link in bio"
+        }
+      ],
+      "audience_growth_moves": [
+        {
+          "tactic": "Post the inflation carousel immediately — CPI print is TODAY'S news, highest engagement window is 24-48 hours",
+          "platform": "Instagram",
+          "effort": "Low",
+          "expected_reach": "CPI-related finance content spikes 3-5x average reach when posted same day as the data release"
+        },
+        {
+          "tactic": "Launch beehiiv newsletter this week using the inflation story as the first issue hook",
+          "platform": "Email + Instagram bio link",
+          "effort": "Medium",
+          "expected_reach": "Finance email subscribers worth $30-100/year — this week's news gives you a compelling reason to launch now vs waiting"
+        },
+        {
+          "tactic": "DM 3 HBCU finance club accounts to share each other's inflation content",
+          "platform": "Instagram",
+          "effort": "Low",
+          "expected_reach": "500-2,000 new followers per successful cross-post"
+        }
+      ],
+      "monetization_ideas": [
+        {
+          "idea": "FI Community Investment Club Starter Kit",
+          "tied_to_event": "Hot CPI print drives 'how to protect my money' and 'investment club' search volume — peak timing for this product",
+          "revenue_model": "One-time digital download $37-47",
+          "platform": "Gumroad — 10 min to set up",
+          "steps": "Package bylaws template, contribution tracker, stock thesis template, meeting agenda into one PDF. List on Gumroad. Drop the link in all inflation content this week."
+        },
+        {
+          "idea": "Covered Call Strategy Mini-Guide",
+          "tied_to_event": "Your MSTR covered call play is live — document it transparently as content and sell the full guide",
+          "revenue_model": "Digital guide $17-27",
+          "platform": "Gumroad or Stan Store",
+          "steps": "Write a 5-page PDF: what a covered call is, when to use it, your exact MSTR and VOO setups this week with numbers. Sell as 'the exact strategy FI Community used this week.'"
+        }
+      ],
+      "key_insights": [
+        "Post the inflation carousel today — CPI news has a 24-hour content window before the cycle moves on",
+        "The NVDA earnings discipline story is premium content — shows your club's process, not just picks",
+        "This week's market volatility + hot inflation = perfect launch moment for the Starter Kit"
+      ]
+    }
+  }
+}
