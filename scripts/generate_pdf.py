@@ -566,6 +566,158 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     font-style: italic;
   }
 
+  /* ── Covered Call section ── */
+  .cc-play {
+    background: var(--bg-surface);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .cc-play.cc-skip {
+    border-left-color: {{ c.sell_red }};
+    opacity: 0.75;
+  }
+  .cc-play-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .cc-ticker {
+    font-size: 16pt;
+    font-weight: bold;
+    color: var(--text-primary);
+    min-width: 60px;
+  }
+  .cc-badge-sell {
+    background: {{ c.buy_green }};
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 7.5pt;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cc-badge-skip {
+    background: {{ c.sell_red }};
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 7.5pt;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cc-viability {
+    flex: 1;
+    font-size: 8.5pt;
+    color: var(--text-body);
+    line-height: 1.5;
+  }
+  .cc-stats {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .cc-stats table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px 0;
+  }
+  .cc-stats td {
+    background: var(--bg-deep);
+    border-radius: 6px;
+    padding: 8px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 16%;
+  }
+  .cc-stat {
+    background: var(--bg-deep);
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    margin-right: 1%;
+    vertical-align: top;
+  }
+  .cc-stat-val {
+    font-size: 13pt;
+    font-weight: bold;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .cc-stat-lbl {
+    font-size: 7pt;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-top: 2px;
+  }
+  .cc-detail {
+    font-size: 8.5pt;
+    color: var(--text-body);
+    line-height: 1.55;
+    padding-top: 8px;
+    border-top: 1px solid var(--bg-deep);
+  }
+  .cc-skip-body {
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+  .cc-skip-watch {
+    font-size: 8.5pt;
+    color: var(--accent);
+    margin-top: 6px;
+    font-style: italic;
+  }
+  .cc-catalyst-warning {
+    background: #3a1a1a;
+    border: 1px solid {{ c.sell_red }};
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 8pt;
+    color: {{ c.sell_red }};
+    font-weight: bold;
+    margin-top: 6px;
+  }
+  .cc-primer {
+    background: var(--bg-deep);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 9pt;
+    color: var(--text-body);
+    line-height: 1.6;
+    border-left: 3px solid var(--accent-dim);
+  }
+  .cc-primer-label {
+    font-size: 7.5pt;
+    font-weight: bold;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .cover-cards-5 {
+    margin-top: 32px;
+    width: 100%;
+  }
+  .cover-cards-5 .cover-card {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 14px;
+    vertical-align: top;
+  }
+  .cover-cards-5 .cover-card-full {
+    display: block;
+    width: 99%;
+  }
+
 </style>
 </head>
 <body>
@@ -584,7 +736,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="cover-date">{{ data.week_label }}</div>
   </div>
 
-  <div class="cover-cards">
+  <div class="cover-cards-5">
     <!-- Card 1: Portfolio -->
     <div class="cover-card">
       <div class="cover-card-title">📈 Investment Club Portfolio</div>
@@ -613,6 +765,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="cover-card-bullet">{{ insight }}</div>
       {% endfor %}
     </div>
+    <!-- Card 5: Covered Calls — full width -->
+    {% if data.sections.covered_calls is defined %}
+    <div class="cover-card cover-card-full">
+      <div class="cover-card-title">📊 Covered Call Strategy</div>
+      {% for insight in data.sections.covered_calls.key_insights[:2] %}
+      <div class="cover-card-bullet">{{ insight }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>
 
@@ -626,7 +787,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ port.title }}</div>
-    <div class="page-header-num">Page 2 of 5</div>
+    <div class="page-header-num">Page 2 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -737,7 +898,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ bench.title }}</div>
-    <div class="page-header-num">Page 3 of 5</div>
+    <div class="page-header-num">Page 3 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -805,7 +966,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ income.title }}</div>
-    <div class="page-header-num">Page 4 of 5</div>
+    <div class="page-header-num">Page 4 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -867,7 +1028,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ content.title }}</div>
-    <div class="page-header-num">Page 5 of 5</div>
+    <div class="page-header-num">Page 5 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -943,6 +1104,109 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
 </div>
 
+<!-- ════════════════════════════════════════════════
+     PAGE 6 — COVERED CALL STRATEGY
+════════════════════════════════════════════════ -->
+{% if data.sections.covered_calls is defined %}
+{% set cc = data.sections.covered_calls %}
+<div class="section-page">
+  <div class="page-header">
+    {% if logo_light_uri %}
+    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
+    {% endif %}
+    <div class="page-header-title">{{ cc.title }}</div>
+    <div class="page-header-num">Page 6 of 6</div>
+  </div>
+
+  <div class="section-hero">
+    <div class="section-hero-title">{{ cc.title }}</div>
+    <div class="section-hero-sub">{{ cc.subtitle }}</div>
+  </div>
+
+  <div class="section-content">
+
+    <!-- IV Context + Primer -->
+    <div class="cc-primer">
+      <div class="cc-primer-label">What Is a Covered Call?</div>
+      {{ cc.covered_call_primer }}
+    </div>
+
+    {% if cc.market_iv_context %}
+    <div class="narrative" style="margin-bottom: 18px;">
+      <strong style="color: var(--accent);">This Week's IV Environment:</strong> {{ cc.market_iv_context }}
+    </div>
+    {% endif %}
+
+    <div class="section-label">Plays This Week</div>
+
+    {% for play in cc.plays %}
+    <div class="cc-play {% if not play.viable %}cc-skip{% endif %}">
+      <div class="cc-play-header">
+        <div class="cc-ticker">{{ play.ticker }}</div>
+        {% if play.viable %}
+        <span class="cc-badge-sell">SELL CALL</span>
+        {% else %}
+        <span class="cc-badge-skip">SKIP</span>
+        {% endif %}
+        <div class="cc-viability">
+          <strong style="color: var(--text-primary);">{{ play.name }}</strong>
+          &nbsp;·&nbsp; ${{ play.current_price }}
+          {% if play.viable and play.viability_reason %}
+          <br/>{{ play.viability_reason }}
+          {% endif %}
+        </div>
+      </div>
+
+      {% if play.viable %}
+      <!-- Stats row -->
+      <div class="cc-stats">
+        <table><tr>
+          <td><div class="cc-stat-val">${{ play.recommended_strike }}</div><div class="cc-stat-lbl">Strike</div></td>
+          <td><div class="cc-stat-val">{{ play.strike_pct_otm }}%</div><div class="cc-stat-lbl">OTM</div></td>
+          <td><div class="cc-stat-val">${{ play.estimated_premium }}</div><div class="cc-stat-lbl">Premium/sh</div></td>
+          <td><div class="cc-stat-val">{{ play.annualized_yield_pct }}%</div><div class="cc-stat-lbl">Ann. Yield</div></td>
+          <td><div class="cc-stat-val">${{ play.max_profit_per_contract }}</div><div class="cc-stat-lbl">Max Profit</div></td>
+          <td><div class="cc-stat-val">${{ play.breakeven_price }}</div><div class="cc-stat-lbl">Breakeven</div></td>
+        </tr></table>
+      </div>
+      <div class="cc-detail">
+        <strong style="color: var(--accent);">Expiry:</strong> {{ play.recommended_expiry }}
+        &nbsp;·&nbsp; {{ play.days_to_expiry }} days
+        &nbsp;·&nbsp; <strong style="color: var(--accent);">Timing:</strong> {{ play.timing }}
+        {% if play.historical_win_rate %}
+        <br/><strong style="color: var(--accent);">Historical:</strong> {{ play.historical_win_rate }}
+        {% endif %}
+        {% if play.upcoming_catalyst %}
+        <div class="cc-catalyst-warning" style="margin-top: 8px;">
+          ⚠ Catalyst: {{ play.upcoming_catalyst }}
+        </div>
+        {% endif %}
+      </div>
+
+      {% else %}
+      <!-- Skip card -->
+      <div class="cc-skip-body">{{ play.skip_reason }}</div>
+      {% if play.watch_for %}
+      <div class="cc-skip-watch">👁 Watch for: {{ play.watch_for }}</div>
+      {% endif %}
+      {% if play.upcoming_catalyst %}
+      <div class="cc-catalyst-warning">⚠ {{ play.upcoming_catalyst }}</div>
+      {% endif %}
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="insights-box">
+      <div class="insights-title">Key Insights This Week</div>
+      {% for insight in cc.key_insights %}
+      <div class="insight-item">{{ insight }}</div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
+
 <!-- Running footer element (WeasyPrint) -->
 <div id="page-footer">
   <span>{{ brand.tagline }} &nbsp;·&nbsp; {{ brand.brand_name }} &nbsp;·&nbsp; Confidential — For Members Only</span>
@@ -964,12 +1228,51 @@ def render_weasyprint(html: str, output_path: Path):
     HTML(string=html, base_url=str(ROOT)).write_pdf(str(output_path))
 
 
+def resolve_css_vars(html: str) -> str:
+    """
+    Pre-process HTML for xhtml2pdf compatibility:
+    1. Inline all CSS custom properties (var() not supported)
+    2. Strip WeasyPrint-only @page sub-rules (@bottom-center, @top-center, etc.)
+    3. Strip position: running() declarations
+    """
+    import re
+
+    # 1. Resolve CSS variables from :root block
+    root_match = re.search(r':root\s*\{([^}]+)\}', html, re.DOTALL)
+    if root_match:
+        css_vars = {}
+        for line in root_match.group(1).split(';'):
+            m = re.match(r'\s*--([a-zA-Z0-9-]+)\s*:\s*(.+)', line.strip())
+            if m:
+                css_vars[m.group(1)] = m.group(2).strip()
+
+        def replacer(match):
+            return css_vars.get(match.group(1), match.group(0))
+
+        html = re.sub(r'var\(--([a-zA-Z0-9-]+)\)', replacer, html)
+
+    # 2. Strip nested @-rules inside @page (WeasyPrint-only: @top-*, @bottom-*)
+    html = re.sub(r'@page\s*\{[^{}]*\{[^}]*\}[^}]*\}',
+                  lambda m: re.sub(r'\{[^{}]*\{[^}]*\}[^}]*\}',
+                                   lambda inner: '{' + re.sub(r'@[a-z-]+\s*\{[^}]*\}', '', inner.group(0)[1:-1]) + '}',
+                                   m.group(0)),
+                  html, flags=re.DOTALL)
+    # Simpler fallback: strip @bottom-center and @top-center blocks entirely
+    html = re.sub(r'@(?:bottom|top)-[a-z]+\s*\{[^}]*\}', '', html)
+
+    # 3. Strip position: running(...) — xhtml2pdf ignores it but let's be safe
+    html = re.sub(r'position\s*:\s*running\([^)]*\)\s*;?', '', html)
+
+    return html
+
+
 def render_xhtml2pdf(html: str, output_path: Path):
     try:
         from xhtml2pdf import pisa
     except ImportError:
         print("ERROR: xhtml2pdf not installed. Run: pip install xhtml2pdf")
         sys.exit(1)
+    html = resolve_css_vars(html)
     with open(output_path, "wb") as f:
         result = pisa.CreatePDF(html, dest=f)
     if result.err:

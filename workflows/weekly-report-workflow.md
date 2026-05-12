@@ -17,14 +17,14 @@
 
 Run the market data script:
 ```
-python scripts/fetch_market_data.py --output output/DATE_market_data.json
+python3 scripts/fetch_market_data.py --output output/DATE_market_data.json
 ```
 
-Wait for confirmation that the file was created. If it fails, check that `yfinance` is installed (`pip install yfinance`) and try again. Do not proceed until this file exists.
+Wait for confirmation that the file was created. If it fails, check that `yfinance` is installed (`pip3 install yfinance`) and try again. Do not proceed until this file exists.
 
 ---
 
-## Step 2 — Research (8 Web Searches)
+## Step 2 — Research (9 Web Searches)
 
 Run these searches in order. For each, extract the 3 most relevant findings and note the source.
 
@@ -52,11 +52,21 @@ Run these searches in order. For each, extract the 3 most relevant findings and 
 
 8. **Per-ticker analysis** — For each ticker in `resources/portfolio_config.json` (club_holdings + watchlist):
    - Search: `[TICKER] stock analysis this week [MONTH YEAR]`
-   - Capture: key news, analyst sentiment, price levels to watch
+   - Capture: key news, analyst sentiment, price levels to watch, upcoming earnings dates
+
+9. **Covered call options research** — For each ticker in `club_holdings` only:
+   - Search: `[TICKER] options implied volatility covered call strategy [MONTH YEAR]`
+   - Capture:
+     - Current implied volatility (IV) level and whether it is elevated, normal, or low
+     - Any upcoming earnings dates, dividends, or major catalysts in the next 60 days
+     - Recent analyst price targets and consensus rating
+     - Whether the stock has been trending, range-bound, or declining (ideal covered call conditions)
+     - Historical behavior: has this stock tended to stay below OTM strikes over 30–45 day periods?
+   - **Key rule:** NEVER recommend selling covered calls in the week before or after an earnings date — IV crush and gap risk make the risk/reward unfavorable
 
 ---
 
-## Step 3 — Synthesize Into 4 Sections
+## Step 3 — Synthesize Into 5 Sections
 
 Using the market data from Step 1 and research from Step 2, construct the full report data. Follow this schema exactly.
 
@@ -88,11 +98,44 @@ Using the market data from Step 1 and research from Step 2, construct the full r
 - Include 2–3 audience growth moves with effort level and expected reach
 - Include 2 monetization ideas tied to current market conditions
 
+### Section 5 — Covered Call Strategy (`sections.covered_calls`)
+
+For each ticker in `club_holdings`, produce one entry in the `plays` array:
+
+**Viability assessment** (`viable`: true/false):
+- `true` — IV is normal or elevated, no earnings/catalyst within 3 weeks, stock is range-bound or mildly trending
+- `false` — earnings within 3 weeks, stock declining sharply, or IV is too low to generate meaningful premium
+
+**If viable = true, provide:**
+- `recommended_strike`: price level 3–8% above current price (out-of-the-money)
+  - Use 3–5% OTM for range-bound stocks or low-IV environments
+  - Use 5–8% OTM for trending stocks or high-IV environments
+- `recommended_expiry`: target 25–45 days to expiration (standard monthly expiry or nearest weekly)
+- `strike_pct_otm`: percentage the strike is above current price (e.g., 5.1)
+- `estimated_premium`: research the approximate market premium for this strike/expiry (use web search findings or calculate based on IV). Express as price per share (multiply by 100 for per-contract value).
+- `annualized_yield_pct`: `(estimated_premium / current_price) * (365 / days_to_expiry) * 100`
+- `max_profit_per_contract`: `((recommended_strike - current_price) + estimated_premium) * 100`
+- `breakeven_price`: `current_price - estimated_premium`
+- `historical_win_rate`: based on research, what % of the time have similar OTM calls on this stock expired worthless over the past 1–2 years? Express as a sentence.
+- `timing`: specific instruction on when to place the trade (e.g., "Place Monday open" or "Wait for post-earnings IV expansion")
+
+**If viable = false, provide:**
+- `skip_reason`: clear 1-sentence explanation of why not this week
+- `watch_for`: what condition would make it viable (e.g., "Re-evaluate after May 27 earnings")
+
+**Covered call primer** (include once in the section, not per-play):
+A plain-English explanation: "A covered call means selling someone the right to buy your shares at [strike] by [expiry]. You collect the premium today. If the stock stays below the strike, you keep both the shares and the premium. If it rises above the strike, your shares get called away at the strike price — you still profit, just capped."
+
+**Key insights** (3 bullets, ≤15 words each):
+- Which play is the strongest this week and why
+- The current IV environment (high/normal/low) and what it means for premiums
+- One risk to watch across all plays this week
+
 ---
 
 ## Step 4 — Write report_data.json
 
-Construct the complete JSON object following the schema in `scripts/test_report_data.json` as reference. Merge market data from Step 1 with synthesized content from Step 3.
+Construct the complete JSON object following the schema in `scripts/test_report_data.json` as reference. Merge market data from Step 1 with synthesized content from Step 3. The JSON must include all 5 sections: `portfolio`, `benchmarking`, `side_income`, `content_strategy`, and `covered_calls`.
 
 Save to: `output/DATE_report_data.json`
 
@@ -102,13 +145,14 @@ Save to: `output/DATE_report_data.json`
 
 Run:
 ```
-python scripts/generate_pdf.py \
+python3 scripts/generate_pdf.py \
   --data output/DATE_report_data.json \
   --brand resources/brand_config.json \
   --output output/DATE_weekly-report.pdf
 ```
 
-If it fails with a WeasyPrint error, add `--debug` flag to get the HTML output, inspect it, and retry. If GTK is not installed, set `"pdf_engine": "xhtml2pdf"` in `resources/brand_config.json` and rerun.
+NOTE: `brand_config.json` uses `pdf_engine = xhtml2pdf` (pure Python, no system libraries required).
+If it fails, add `--debug` flag to get HTML output, inspect the error, fix any data issues, and retry.
 
 ---
 
@@ -116,7 +160,7 @@ If it fails with a WeasyPrint error, add `--debug` flag to get the HTML output, 
 
 1. Confirm `output/DATE_weekly-report.pdf` exists
 2. Check file size is > 50 KB
-3. Report to user: "Weekly report generated: `output/DATE_weekly-report.pdf` (X KB)"
+3. Report: "Weekly report generated: `output/DATE_weekly-report.pdf` (X KB)"
 
 If the file is missing or too small, run with `--debug` and check the HTML output.
 
