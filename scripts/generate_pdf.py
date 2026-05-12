@@ -889,7 +889,107 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 <!-- ════════════════════════════════════════════════
-     PAGE 3 — CLUB BENCHMARKING
+     PAGE 3 — COVERED CALL STRATEGY
+════════════════════════════════════════════════ -->
+{% if data.sections.covered_calls is defined %}
+{% set cc = data.sections.covered_calls %}
+<div class="page section-page">
+  <div class="page-header">
+    {% if logo_light_uri %}
+    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
+    {% endif %}
+    <div class="page-header-title">{{ cc.title }}</div>
+    <div class="page-header-num">Page 3 of 6</div>
+  </div>
+
+  <div class="section-hero">
+    <div class="section-hero-title">{{ cc.title }}</div>
+    <div class="section-hero-sub">{{ cc.subtitle }}</div>
+  </div>
+
+  <div class="section-content">
+
+    <div class="cc-primer">
+      <div class="cc-primer-label">What Is a Covered Call?</div>
+      {{ cc.covered_call_primer }}
+    </div>
+
+    {% if cc.market_iv_context %}
+    <div class="narrative" style="margin-bottom: 18px;">
+      <strong style="color: var(--accent);">This Week's IV Environment:</strong> {{ cc.market_iv_context }}
+    </div>
+    {% endif %}
+
+    <div class="section-label">Plays This Week</div>
+
+    {% for play in cc.plays %}
+    <div class="cc-play {% if not play.viable %}cc-skip{% endif %}">
+      <div class="cc-play-header">
+        <div class="cc-ticker">{{ play.ticker }}</div>
+        {% if play.viable %}
+        <span class="cc-badge-sell">SELL CALL</span>
+        {% else %}
+        <span class="cc-badge-skip">SKIP</span>
+        {% endif %}
+        <div class="cc-viability">
+          <strong style="color: var(--text-primary);">{{ play.name }}</strong>
+          &nbsp;·&nbsp; ${{ play.current_price }}
+          {% if play.viable and play.viability_reason %}
+          <br/>{{ play.viability_reason }}
+          {% endif %}
+        </div>
+      </div>
+
+      {% if play.viable %}
+      <div class="cc-stats">
+        <table><tr>
+          <td><div class="cc-stat-val">${{ play.recommended_strike }}</div><div class="cc-stat-lbl">Strike</div></td>
+          <td><div class="cc-stat-val">{{ play.strike_pct_otm }}%</div><div class="cc-stat-lbl">OTM</div></td>
+          <td><div class="cc-stat-val">${{ play.estimated_premium }}</div><div class="cc-stat-lbl">Premium/sh</div></td>
+          <td><div class="cc-stat-val">{{ play.annualized_yield_pct }}%</div><div class="cc-stat-lbl">Ann. Yield</div></td>
+          <td><div class="cc-stat-val">${{ play.max_profit_per_contract }}</div><div class="cc-stat-lbl">Max Profit</div></td>
+          <td><div class="cc-stat-val">${{ play.breakeven_price }}</div><div class="cc-stat-lbl">Breakeven</div></td>
+        </tr></table>
+      </div>
+      <div class="cc-detail">
+        <strong style="color: var(--accent);">Expiry:</strong> {{ play.recommended_expiry }}
+        &nbsp;·&nbsp; {{ play.days_to_expiry }} days
+        &nbsp;·&nbsp; <strong style="color: var(--accent);">Timing:</strong> {{ play.timing }}
+        {% if play.historical_win_rate %}
+        <br/><strong style="color: var(--accent);">Historical:</strong> {{ play.historical_win_rate }}
+        {% endif %}
+        {% if play.upcoming_catalyst %}
+        <div class="cc-catalyst-warning" style="margin-top: 8px;">
+          ⚠ Catalyst: {{ play.upcoming_catalyst }}
+        </div>
+        {% endif %}
+      </div>
+
+      {% else %}
+      <div class="cc-skip-body">{{ play.skip_reason }}</div>
+      {% if play.watch_for %}
+      <div class="cc-skip-watch">Watch for: {{ play.watch_for }}</div>
+      {% endif %}
+      {% if play.upcoming_catalyst %}
+      <div class="cc-catalyst-warning">⚠ {{ play.upcoming_catalyst }}</div>
+      {% endif %}
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="insights-box">
+      <div class="insights-title">Key Insights This Week</div>
+      {% for insight in cc.key_insights %}
+      <div class="insight-item">{{ insight }}</div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
+
+<!-- ════════════════════════════════════════════════
+     PAGE 4 — CLUB BENCHMARKING
 ════════════════════════════════════════════════ -->
 {% set bench = data.sections.benchmarking %}
 <div class="page section-page">
@@ -898,7 +998,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ bench.title }}</div>
-    <div class="page-header-num">Page 3 of 6</div>
+    <div class="page-header-num">Page 4 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -957,7 +1057,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 <!-- ════════════════════════════════════════════════
-     PAGE 4 — SIDE INCOME & BUSINESS MOVES
+     PAGE 5 — SIDE INCOME & BUSINESS MOVES
 ════════════════════════════════════════════════ -->
 {% set income = data.sections.side_income %}
 <div class="page section-page">
@@ -966,7 +1066,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ income.title }}</div>
-    <div class="page-header-num">Page 4 of 6</div>
+    <div class="page-header-num">Page 5 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -1019,7 +1119,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 <!-- ════════════════════════════════════════════════
-     PAGE 5 — CONTENT & BRAND STRATEGY
+     PAGE 6 — CONTENT & BRAND STRATEGY
 ════════════════════════════════════════════════ -->
 {% set content = data.sections.content_strategy %}
 <div class="section-page">
@@ -1028,7 +1128,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ content.title }}</div>
-    <div class="page-header-num">Page 5 of 6</div>
+    <div class="page-header-num">Page 6 of 6</div>
   </div>
 
   <div class="section-hero">
@@ -1103,109 +1203,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   </div>
 </div>
-
-<!-- ════════════════════════════════════════════════
-     PAGE 6 — COVERED CALL STRATEGY
-════════════════════════════════════════════════ -->
-{% if data.sections.covered_calls is defined %}
-{% set cc = data.sections.covered_calls %}
-<div class="section-page">
-  <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ cc.title }}</div>
-    <div class="page-header-num">Page 6 of 6</div>
-  </div>
-
-  <div class="section-hero">
-    <div class="section-hero-title">{{ cc.title }}</div>
-    <div class="section-hero-sub">{{ cc.subtitle }}</div>
-  </div>
-
-  <div class="section-content">
-
-    <!-- IV Context + Primer -->
-    <div class="cc-primer">
-      <div class="cc-primer-label">What Is a Covered Call?</div>
-      {{ cc.covered_call_primer }}
-    </div>
-
-    {% if cc.market_iv_context %}
-    <div class="narrative" style="margin-bottom: 18px;">
-      <strong style="color: var(--accent);">This Week's IV Environment:</strong> {{ cc.market_iv_context }}
-    </div>
-    {% endif %}
-
-    <div class="section-label">Plays This Week</div>
-
-    {% for play in cc.plays %}
-    <div class="cc-play {% if not play.viable %}cc-skip{% endif %}">
-      <div class="cc-play-header">
-        <div class="cc-ticker">{{ play.ticker }}</div>
-        {% if play.viable %}
-        <span class="cc-badge-sell">SELL CALL</span>
-        {% else %}
-        <span class="cc-badge-skip">SKIP</span>
-        {% endif %}
-        <div class="cc-viability">
-          <strong style="color: var(--text-primary);">{{ play.name }}</strong>
-          &nbsp;·&nbsp; ${{ play.current_price }}
-          {% if play.viable and play.viability_reason %}
-          <br/>{{ play.viability_reason }}
-          {% endif %}
-        </div>
-      </div>
-
-      {% if play.viable %}
-      <!-- Stats row -->
-      <div class="cc-stats">
-        <table><tr>
-          <td><div class="cc-stat-val">${{ play.recommended_strike }}</div><div class="cc-stat-lbl">Strike</div></td>
-          <td><div class="cc-stat-val">{{ play.strike_pct_otm }}%</div><div class="cc-stat-lbl">OTM</div></td>
-          <td><div class="cc-stat-val">${{ play.estimated_premium }}</div><div class="cc-stat-lbl">Premium/sh</div></td>
-          <td><div class="cc-stat-val">{{ play.annualized_yield_pct }}%</div><div class="cc-stat-lbl">Ann. Yield</div></td>
-          <td><div class="cc-stat-val">${{ play.max_profit_per_contract }}</div><div class="cc-stat-lbl">Max Profit</div></td>
-          <td><div class="cc-stat-val">${{ play.breakeven_price }}</div><div class="cc-stat-lbl">Breakeven</div></td>
-        </tr></table>
-      </div>
-      <div class="cc-detail">
-        <strong style="color: var(--accent);">Expiry:</strong> {{ play.recommended_expiry }}
-        &nbsp;·&nbsp; {{ play.days_to_expiry }} days
-        &nbsp;·&nbsp; <strong style="color: var(--accent);">Timing:</strong> {{ play.timing }}
-        {% if play.historical_win_rate %}
-        <br/><strong style="color: var(--accent);">Historical:</strong> {{ play.historical_win_rate }}
-        {% endif %}
-        {% if play.upcoming_catalyst %}
-        <div class="cc-catalyst-warning" style="margin-top: 8px;">
-          ⚠ Catalyst: {{ play.upcoming_catalyst }}
-        </div>
-        {% endif %}
-      </div>
-
-      {% else %}
-      <!-- Skip card -->
-      <div class="cc-skip-body">{{ play.skip_reason }}</div>
-      {% if play.watch_for %}
-      <div class="cc-skip-watch">👁 Watch for: {{ play.watch_for }}</div>
-      {% endif %}
-      {% if play.upcoming_catalyst %}
-      <div class="cc-catalyst-warning">⚠ {{ play.upcoming_catalyst }}</div>
-      {% endif %}
-      {% endif %}
-    </div>
-    {% endfor %}
-
-    <div class="insights-box">
-      <div class="insights-title">Key Insights This Week</div>
-      {% for insight in cc.key_insights %}
-      <div class="insight-item">{{ insight }}</div>
-      {% endfor %}
-    </div>
-
-  </div>
-</div>
-{% endif %}
 
 <!-- Running footer element (WeasyPrint) -->
 <div id="page-footer">
