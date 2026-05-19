@@ -1,0 +1,384 @@
+{
+  "report_date": "2026-05-19",
+  "week_label": "Week of May 12 – May 19, 2026",
+  "sections": {
+    "portfolio": {
+      "title": "Investment Club Portfolio",
+      "subtitle": "Stock Picks, Holdings Review & Recommendations",
+      "market_summary": {
+        "sp500":  { "week_change_pct": -1.22, "current": 7353.61, "direction": "down" },
+        "nasdaq": { "week_change_pct": -2.01, "current": 25870.71, "direction": "down" },
+        "dow":    { "week_change_pct": -0.66, "current": 49363.88, "direction": "down" }
+      },
+      "week_narrative": "A brutal week for growth stocks as rising Treasury yields dominated every session. The 30-year Treasury yield cracked 5% for the first time in nearly two decades, the 20-year hit 5.19%, and the 10-year approached 4.66% — all at 52-week highs. The catalyst: Kevin Warsh was sworn in as the new Fed Chair, and markets quickly realized his path to rate cuts is far harder than Trump expected. Nasdaq led the decline at -2.01% as high-duration tech names got hammered by the rate spike. The one bright spot: MSFT surged 3% after Bill Ackman's Pershing Square disclosed a new stake, and NFLX quietly recovered +2%.",
+      "holdings": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 164.63,
+          "week_change_pct": -7.53,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Down 7.5% on a $1.5B convertible note repurchase announcement and a 2% Bitcoin decline. Pain this week, but TD Cowen just raised their target to $400 (+143% from here). Long-term Bitcoin accumulation thesis intact — do not panic sell."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 89.33,
+          "week_change_pct": 2.02,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "rationale": "Up 2% quietly while the market fell — relative strength is encouraging. Grinding back from 52-week lows. $25B buyback is providing a floor. Texas AG lawsuit is noise. Patience."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 220.61,
+          "week_change_pct": -2.31,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Earnings TOMORROW (May 20). The -2.31% this week is pre-earnings jitters, not a thesis change. FY2026 full year hit $215.94B revenue (+65% YoY). Blackwell demand remains insatiable. Hold — tomorrow is the decision point."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 674.59,
+          "week_change_pct": -1.15,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "rationale": "Pulled back 1.15% with the broader market on Treasury yield fears. Core long-term position — down weeks are dollar-cost averaging opportunities. No action needed."
+        }
+      ],
+      "watchlist": [
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "current_price": 417.42,
+          "week_change_pct": 3.01,
+          "direction": "up",
+          "rationale": "The week's standout — up 3% after Pershing Square (Bill Ackman) disclosed a new stake. Ackman targets undervalued large-caps with strong moats. His conviction buy is a strong signal. Watch for a breakout above $425."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "current_price": 602.61,
+          "week_change_pct": -2.27,
+          "direction": "down",
+          "rationale": "Down 2.3% alongside ad-revenue peers. Rate fears compress growth stock multiples. Still 24% off 52-week high. Long-term AI monetization thesis intact — monitor $580 support."
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust",
+          "current_price": 701.53,
+          "week_change_pct": -1.84,
+          "direction": "down",
+          "rationale": "Nasdaq-100 down 1.84% as Treasury yields pressured the entire tech complex. Watching QQQ as a leading indicator — a bounce here signals tech recovery. Support near $690."
+        },
+        {
+          "ticker": "DIA",
+          "name": "SPDR Dow Jones ETF",
+          "current_price": 493.98,
+          "week_change_pct": -0.58,
+          "direction": "down",
+          "rationale": "Dow held up better than tech this week (-0.58%) — industrials and value names are defensive in a rising rate environment. Watch for rotation into Dow components if yields stay elevated."
+        }
+      ],
+      "key_insights": [
+        "30-year Treasury at 5% is the week's macro story — rate cuts are off the table in 2026",
+        "NVDA earnings tomorrow May 20 — most important catalyst for the portfolio this month",
+        "MSFT Ackman stake is a strong signal — watch for breakout above $425"
+      ]
+    },
+    "covered_calls": {
+      "title": "Covered Call Strategy",
+      "subtitle": "Weekly Options Income on Club Holdings",
+      "market_iv_context": "VIX elevated above 20 as Treasury yields spike — this is one of the best IV environments for covered call premium collection we have seen this year. Rising rate fear creates persistent choppiness, which is ideal for selling calls. However, NVDA earnings tomorrow mean the most important play of the month happens AFTER the report, not before.",
+      "covered_call_primer": "A covered call means selling someone the right to buy your shares at a set price by a set date. You collect the premium today regardless of outcome. If the stock stays below the strike price, you keep the shares and the full premium. If it rises above the strike, your shares get called away at that price — you still profit, just capped at the strike.",
+      "plays": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 164.63,
+          "viable": true,
+          "viability_reason": "Post note-repurchase announcement, no major catalyst for 8+ weeks. IV remains extremely elevated from Bitcoin volatility. The -7.5% drop this week creates a lower strike baseline — sell wide OTM to preserve recovery upside.",
+          "upcoming_catalyst": "No scheduled catalysts. Bitcoin price movements ongoing but not dated events.",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": 180.00,
+          "recommended_expiry": "2026-06-19",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 9.3,
+          "estimated_premium": 6.50,
+          "annualized_yield_pct": 46.4,
+          "max_profit_per_contract": 2187,
+          "breakeven_price": 158.13,
+          "historical_win_rate": "MSTR calls at 8-12% OTM expire worthless approximately 61% of the time given Bitcoin's tendency to consolidate between major moves.",
+          "action": "SELL",
+          "timing": "Wait for Bitcoin to stabilize — ideally place Wednesday or Thursday this week after the post-NVDA earnings news cycle settles. Target the June 19 $180 call, collect ~$650 per contract.",
+          "shares_required": 100,
+          "skip_reason": null,
+          "watch_for": null
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 89.33,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Stock showing recovery momentum — covered call would cap upside right as it starts to move.",
+          "catalyst_date": null,
+          "catalyst_risk": "medium",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "skip_reason": "NFLX is showing upside momentum for the first time in months (+2% this week while the market fell). This is not the time to cap the recovery. Let it run.",
+          "watch_for": "Once NFLX reclaims $100+, covered calls at $105-$110 strike make sense to collect income on a position that has recovered."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 220.61,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Earnings TOMORROW May 20 — IV at 78th percentile. This is exactly why you do not sell a covered call today.",
+          "catalyst_date": "2026-05-20",
+          "catalyst_risk": "high",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "skip_reason": "Earnings tomorrow. The elevated IV you see right now EXISTS because of earnings risk. Selling a call today means you collect a small premium and expose yourself to a potential 10-15% gap up. Never sell before earnings.",
+          "watch_for": "Wednesday May 21 morning is the entry. After earnings, IV will still be elevated (NVDA rarely disappoints) but the binary risk is gone. A June 19 $240-$245 call placed Wednesday could yield 4-6% in 30 days."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 674.59,
+          "viable": true,
+          "viability_reason": "Broad market ETF pulling back from highs into choppy rate-driven trading. Elevated VIX boosts ETF premiums well above their usual baseline. Steady, reliable income with no earnings risk.",
+          "upcoming_catalyst": "No earnings. Macro-driven only — Fed statements and CPI are the only risks.",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": 690.00,
+          "recommended_expiry": "2026-06-19",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 2.3,
+          "estimated_premium": 3.80,
+          "annualized_yield_pct": 6.6,
+          "max_profit_per_contract": 2021,
+          "breakeven_price": 670.79,
+          "historical_win_rate": "VOO covered calls at 2-3% OTM expire worthless approximately 75% of the time — the most consistent income play in the portfolio.",
+          "action": "SELL",
+          "timing": "Place Monday or Tuesday this week. Target the June 19 $690 call. Collect ~$380 per contract for steady, predictable monthly income.",
+          "shares_required": 100,
+          "skip_reason": null,
+          "watch_for": null
+        }
+      ],
+      "key_insights": [
+        "Wednesday May 21 morning is the most important covered call opportunity of the month — NVDA post-earnings",
+        "MSTR at 46% annualized yield is the richest premium in the portfolio right now",
+        "VIX above 20 means all premiums are elevated — this week and next are ideal selling windows"
+      ]
+    },
+    "benchmarking": {
+      "title": "Club Benchmarking",
+      "subtitle": "What Winning Investment Clubs Do Differently",
+      "clubs_researched": [
+        {
+          "name": "HBS Black Investment Club",
+          "strategy": "Institutional deal flow pipeline — members rotate through sector research responsibilities and present directly to corporate partners like Apollo and Warburg Pincus",
+          "tool": "Formal sector rotation system with written quarterly thesis reviews per sector lead",
+          "takeaway": "FI Community should formalize sector ownership this quarter — assign each member one sector, require a 5-minute monthly update. Low effort, high knowledge compounding."
+        },
+        {
+          "name": "BetterInvesting / NAIC Network",
+          "strategy": "Stock Study methodology — standardized 5-year EPS growth analysis required before any buy vote; clubs track their prediction accuracy over time",
+          "tool": "BetterInvesting Stock Study tool; clubs publish their thesis accuracy rate annually as a performance metric",
+          "takeaway": "Tracking prediction accuracy creates accountability and improves decision quality over time. FI Community could keep a simple running scorecard of thesis outcomes."
+        },
+        {
+          "name": "LA Black Investors Club",
+          "strategy": "Community-first, barrier-free model — monthly in-person meetups, financial education first, portfolio second. Uses Meetup.com for discovery, M1 Finance and Robinhood for low-barrier investing ($5 minimums)",
+          "tool": "Meetup.com + social media for community discovery; low-cost brokerage apps for member onboarding",
+          "takeaway": "FI Community's $150 minimum is already accessible — lean into the 'lower barrier than you think' messaging in all content to drive membership growth."
+        }
+      ],
+      "strategies_to_adopt": [
+        {
+          "strategy": "Formalize sector ownership assignments this week",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Assign each active FI Community member one sector: Tech, Finance, Energy, Consumer, Healthcare",
+            "Each member gives a 5-minute sector update at every meeting — what moved, what to watch",
+            "Rotate assignments every 6 months to build cross-sector knowledge across the club"
+          ]
+        },
+        {
+          "strategy": "Start a thesis accuracy scorecard",
+          "difficulty": "Low",
+          "impact": "Medium",
+          "steps": [
+            "For every BUY recommendation made, record the thesis, target price, and time horizon",
+            "Review each thesis at expiry — was it right? Why or why not?",
+            "Publish the scorecard to members quarterly — this builds trust and improves discipline"
+          ]
+        },
+        {
+          "strategy": "Set up fintech brand partnership outreach this week",
+          "difficulty": "Medium",
+          "impact": "High",
+          "steps": [
+            "Identify 3 fintech platforms aligned with FI Community's mission (SoFi, Webull, Acorns)",
+            "Pitch a co-branded event or member benefit — leverage FI Community's demographics and mission",
+            "This week's rising rate / Treasury news creates urgency: people are looking for guidance NOW"
+          ]
+        }
+      ],
+      "key_insights": [
+        "Sector ownership turns every member into a researcher — implement this week, zero cost",
+        "Thesis scorecard separates disciplined clubs from guessing clubs — start tracking now",
+        "Rising rate uncertainty is creating peak demand for financial guidance and community"
+      ]
+    },
+    "side_income": {
+      "title": "Side Income & Business Moves",
+      "subtitle": "Specific Opportunities This Week",
+      "opportunities": [
+        {
+          "name": "30-Year Treasury Bond at 5.058% — Best Risk-Free Yield in 2 Decades",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "5.058% guaranteed, backed by U.S. government",
+          "how_to_start": "Open TreasuryDirect.gov — free account, takes 10 minutes. Purchase 30-year bonds at the next auction or buy TLT ETF through any brokerage for immediate exposure. This is the highest risk-free yield available since before the 2008 financial crisis.",
+          "time_sensitive": true
+        },
+        {
+          "name": "NVDA Post-Earnings Covered Call — Wednesday Morning Entry",
+          "type": "Options Income",
+          "effort": "Medium",
+          "potential_return": "Estimated 4-6% in 30 days (June 19 $240-$245 call)",
+          "how_to_start": "Do nothing today or tomorrow. After NVDA earnings report Tuesday night (May 20), assess the reaction. Wednesday morning, if NVDA trades above $220, sell a June 19 $240 or $245 call. IV will still be elevated post-earnings but binary risk is gone. See Page 3 for full setup.",
+          "time_sensitive": true
+        },
+        {
+          "name": "MSFT Momentum — Ackman Stake Signal",
+          "type": "Equities",
+          "effort": "Low",
+          "potential_return": "Ackman's typical investment horizon is 2-3 years; his entry signals significant upside from $417",
+          "how_to_start": "Bill Ackman's Pershing Square disclosed a new MSFT stake this week. Ackman is known for concentrated, high-conviction bets on undervalued wide-moat companies. This is a quality signal — consider a small position at current levels ahead of what could be a catalyst-driven re-rating.",
+          "time_sensitive": false
+        },
+        {
+          "name": "High-Yield Savings — Still at 5% APY",
+          "type": "Fixed Income",
+          "effort": "Low",
+          "potential_return": "5.00% APY (Wealthfront, Ally)",
+          "how_to_start": "With Warsh as new Fed Chair and rate cuts pushed out indefinitely, 5% HYSA rates are going to persist longer than expected. Every dollar sitting in a 0.38% checking account is losing real purchasing power. Move cash to HYSA today.",
+          "time_sensitive": false
+        }
+      ],
+      "news_hooks": [
+        {
+          "event": "30-Year Treasury yield hits 5.058% — first time in nearly 2 decades",
+          "opportunity": "Lock in guaranteed 5%+ returns right now before any future rate shift changes the picture",
+          "action": "Buy 30-year Treasury bonds via TreasuryDirect.gov or TLT ETF this week"
+        },
+        {
+          "event": "Kevin Warsh sworn in as new Fed Chair — rate cuts off the table for 2026",
+          "opportunity": "Rising rates mean HYSA and T-bills will stay elevated all year — don't wait to move idle cash",
+          "action": "Consolidate all emergency fund and idle cash into a 5% HYSA immediately"
+        }
+      ],
+      "key_insights": [
+        "30-year Treasury at 5% is the best risk-free yield in 20 years — a once-in-a-cycle opportunity",
+        "NVDA post-earnings Wednesday is the best covered call entry of the quarter — set a reminder",
+        "Warsh as Fed Chair means 5% savings rates persist through 2026 — lock in HYSA now"
+      ]
+    },
+    "content_strategy": {
+      "title": "Content & Brand Strategy",
+      "subtitle": "Angles, Growth Moves & Monetization This Week",
+      "content_angles": [
+        {
+          "headline": "The 30-Year Treasury Just Hit 5% for the First Time in Almost 20 Years. Here's What That Actually Means.",
+          "platform": "Instagram Carousel + LinkedIn",
+          "hook": "The last time the 30-year Treasury yield was at 5%, Obama had just been elected president. It just happened again. Here's what it means for your money, your mortgage, and your investments in plain English...",
+          "format": "7-slide carousel: what Treasury yields are → why 5% matters → impact on mortgages → impact on stocks → what to do with savings → what FI Community is doing → CTA",
+          "cta": "Follow FI Community — we break down the macro moves that affect YOUR money every week."
+        },
+        {
+          "headline": "NVDA Earnings Are Tomorrow. Here's Exactly What We're Doing (Nothing — and Why That's the Right Move).",
+          "platform": "TikTok + Instagram Reel",
+          "hook": "NVIDIA reports earnings tomorrow. Our position is down 2% this week. Everyone's asking what we're going to do. The answer might surprise you...",
+          "format": "60-second reel explaining the earnings discipline — show the process, not just the pick. This is premium brand content.",
+          "cta": "This is how FI Community makes decisions. Follow for the post-earnings update tomorrow night."
+        },
+        {
+          "headline": "New Fed Chair, Rising Rates, Falling Stocks. Here's the FI Community Game Plan.",
+          "platform": "Twitter/X Thread + YouTube Short",
+          "hook": "Kevin Warsh just became Fed Chair. Stocks fell. Rates hit 20-year highs. Most people have no idea what to do. Here's our exact 3-move plan...",
+          "format": "5-tweet thread with the 3 moves (30-year Treasuries, HYSA, NVDA post-earnings play) + YouTube Short version",
+          "cta": "Join the FI Community newsletter for the full weekly breakdown — link in bio"
+        }
+      ],
+      "audience_growth_moves": [
+        {
+          "tactic": "Post the Treasury yield carousel TODAY — this is a historic macro moment and content window is 24-48 hours",
+          "platform": "Instagram + LinkedIn",
+          "effort": "Low",
+          "expected_reach": "Historic macro events drive 4-6x average reach on finance content — this is the week's highest-upside post"
+        },
+        {
+          "tactic": "Post the NVDA earnings update Wednesday after the report drops — be first to explain what happened",
+          "platform": "TikTok + Instagram Reel",
+          "effort": "Low",
+          "expected_reach": "Earnings reaction content is the most-searched finance content on the 24 hours following a major report"
+        },
+        {
+          "tactic": "DM 3 HBCU finance club accounts to cross-post the Treasury yield content",
+          "platform": "Instagram",
+          "effort": "Low",
+          "expected_reach": "500-2,000 new followers per successful cross-post — this week's macro content is universally shareable"
+        }
+      ],
+      "monetization_ideas": [
+        {
+          "idea": "FI Community Investment Club Starter Kit — launch this week",
+          "tied_to_event": "Rate fears and market volatility are driving peak 'how do I protect my money' searches — exactly when people join investment clubs",
+          "revenue_model": "One-time digital download $37-47 on Gumroad",
+          "steps": "Package bylaws template, contribution tracker, stock thesis template, and meeting agenda into one PDF. Create Gumroad listing (10 min). Drop the link in every piece of content this week while macro anxiety is high."
+        },
+        {
+          "idea": "Covered Call Strategy Guide — sell the NVDA post-earnings playbook",
+          "tied_to_event": "Everyone will be searching for NVDA options strategies Wednesday morning post-earnings",
+          "revenue_model": "Digital guide $17-27",
+          "steps": "Write a 5-page PDF Wednesday morning using the exact NVDA post-earnings setup from this report. Title: 'The Post-Earnings Covered Call: How We Generate Income on NVDA.' Sell on Gumroad or Stan Store same day."
+        }
+      ],
+      "key_insights": [
+        "Post the Treasury 5% content today — macro milestones have the shortest content windows",
+        "Wednesday NVDA earnings reaction post is the highest-upside piece of content this week",
+        "Rate uncertainty is peak demand for financial community — launch the Starter Kit this week"
+      ]
+    }
+  }
+}
