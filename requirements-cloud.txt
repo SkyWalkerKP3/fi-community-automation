@@ -1,0 +1,10 @@
+xhtml2pdf
+Jinja2
+yfinance
+Pillow
+feedparser
+newsapi-python
+requests
+pandas
+python-dateutil
+anthropic

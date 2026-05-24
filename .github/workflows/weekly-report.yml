@@ -27,8 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install anthropic
+          pip install -r requirements-cloud.txt
 
       - name: Generate weekly report
         env:
