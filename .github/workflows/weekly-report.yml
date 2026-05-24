@@ -1,0 +1,45 @@
+name: FI Community Weekly Report
+
+on:
+  schedule:
+    # Every Monday at 11:00 AM UTC (6:00 AM CT / 7:00 AM ET)
+    - cron: "0 11 * * 1"
+  workflow_dispatch:   # Allow manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write    # Required to commit and push the PDF output
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install anthropic
+
+      - name: Generate weekly report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/github_actions_report.py
+
+      - name: Commit and push outputs
+        run: |
+          DATE=$(date +'%Y-%m-%d')
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f output/${DATE}_weekly-report.pdf output/${DATE}_report_data.json output/${DATE}_market_data.json
+          git diff --staged --quiet && echo "Nothing to commit" || git commit -m "Weekly report: ${DATE}"
+          git push

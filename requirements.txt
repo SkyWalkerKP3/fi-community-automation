@@ -8,3 +8,4 @@ newsapi-python
 requests
 pandas
 python-dateutil
+anthropic
