@@ -28,6 +28,16 @@ def run_market_data():
     return json.loads(out.read_text())
 
 
+SYSTEM_PERSONA = """You are an expert investor and financial advisor with decades of experience advising Fortune 50 companies. You have excelled across multiple advanced investment strategies including options (covered calls, spreads, LEAPS), futures, equity analysis, and portfolio risk management. You understand both institutional and retail investment perspectives and communicate complex financial concepts in a clear, actionable way suited to an investment club audience. Every recommendation you make is grounded in current market data, recent news, and the club's specific holdings, cost basis, and risk profile."""
+
+
+def load_holdings_lots() -> dict:
+    lots_path = PROJECT_ROOT / "resources" / "holdings_lots.json"
+    if lots_path.exists():
+        return json.loads(lots_path.read_text())
+    return {}
+
+
 def research_and_synthesize(market_data: dict) -> dict:
     client = anthropic.Anthropic()
 
@@ -35,11 +45,17 @@ def research_and_synthesize(market_data: dict) -> dict:
     holdings = portfolio["club_holdings"]    # MSTR, NFLX, NVDA, VOO
     watchlist = portfolio["watchlist"]        # MSFT, META, QQQ, DIA
     schema = (PROJECT_ROOT / "scripts" / "test_report_data.json").read_text()
+    lots = load_holdings_lots()
 
     ticker_list = ", ".join(holdings + watchlist)
     cc_tickers  = ", ".join(holdings)
 
+    lots_context = ""
+    if lots:
+        lots_context = f"\n## Club's actual position data (cost basis & lots):\n{json.dumps(lots, indent=2)}\n\nUse cost basis when evaluating unrealized P/L, covered call strikes vs. breakeven, and BUY/HOLD/SELL recommendations.\n"
+
     prompt = f"""Today is {DATE} ({MONTH_YEAR}). Generate the complete FI Community Weekly Intelligence Report.
+{lots_context}
 
 ## Market data (live, already fetched via yfinance):
 {json.dumps(market_data, indent=2)}
@@ -79,6 +95,7 @@ Return ONLY the JSON object — no markdown code fences, no explanation, no prea
         response = client.messages.create(
             model="claude-opus-4-7",
             max_tokens=16000,
+            system=SYSTEM_PERSONA,
             tools=[{"type": "web_search_20250305", "name": "web_search"}],
             messages=messages,
         )

@@ -1,0 +1,49 @@
+{
+  "last_updated": "2026-05-24",
+  "lots": [
+    {
+      "ticker": "MSTR",
+      "lots": [
+        {
+          "shares": 0,
+          "purchase_price": 0.00,
+          "purchase_date": "YYYY-MM-DD",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "lots": [
+        {
+          "shares": 0,
+          "purchase_price": 0.00,
+          "purchase_date": "YYYY-MM-DD",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "lots": [
+        {
+          "shares": 0,
+          "purchase_price": 0.00,
+          "purchase_date": "YYYY-MM-DD",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "ticker": "VOO",
+      "lots": [
+        {
+          "shares": 0,
+          "purchase_price": 0.00,
+          "purchase_date": "YYYY-MM-DD",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}
