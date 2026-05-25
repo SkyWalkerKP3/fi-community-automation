@@ -1,49 +1,69 @@
 {
   "last_updated": "2026-05-24",
-  "lots": [
-    {
-      "ticker": "MSTR",
-      "lots": [
-        {
-          "shares": 0,
-          "purchase_price": 0.00,
-          "purchase_date": "YYYY-MM-DD",
-          "notes": ""
-        }
-      ]
+  "summary": {
+    "MSTR": {
+      "total_shares": 7,
+      "total_cost": 2261.27,
+      "avg_cost_basis": 323.04
     },
-    {
-      "ticker": "NFLX",
-      "lots": [
-        {
-          "shares": 0,
-          "purchase_price": 0.00,
-          "purchase_date": "YYYY-MM-DD",
-          "notes": ""
-        }
-      ]
+    "NFLX": {
+      "total_shares": 10,
+      "total_cost": 1106.30,
+      "avg_cost_basis": 110.63
     },
-    {
-      "ticker": "NVDA",
-      "lots": [
-        {
-          "shares": 0,
-          "purchase_price": 0.00,
-          "purchase_date": "YYYY-MM-DD",
-          "notes": ""
-        }
-      ]
+    "NVDA": {
+      "total_shares": 6,
+      "total_cost": 764.18,
+      "avg_cost_basis": 127.36
     },
-    {
-      "ticker": "VOO",
-      "lots": [
-        {
-          "shares": 0,
-          "purchase_price": 0.00,
-          "purchase_date": "YYYY-MM-DD",
-          "notes": ""
-        }
-      ]
+    "VOO": {
+      "total_shares": 24.6122,
+      "total_cost": 12274.60,
+      "avg_cost_basis": 498.90
     }
-  ]
+  },
+  "lots": {
+    "MSTR": [
+      { "date": "2024-12-19", "shares": 2,    "purchase_price": 371.13, "lot_cost": 742.26  },
+      { "date": "2025-02-24", "shares": 1,    "purchase_price": 293.50, "lot_cost": 293.50  },
+      { "date": "2025-08-08", "shares": 1,    "purchase_price": 394.56, "lot_cost": 394.56  },
+      { "date": "2025-09-12", "shares": 2,    "purchase_price": 329.11, "lot_cost": 658.22  },
+      { "date": "2025-11-21", "shares": 1,    "purchase_price": 172.73, "lot_cost": 172.73  }
+    ],
+    "NFLX": [
+      { "date": "2025-10-24", "shares": 10,   "purchase_price": 110.63, "lot_cost": 1106.30 }
+    ],
+    "NVDA": [
+      { "date": "2024-12-19", "shares": 1,    "purchase_price": 131.68, "lot_cost": 131.68  },
+      { "date": "2025-01-29", "shares": 5,    "purchase_price": 126.50, "lot_cost": 632.50  }
+    ],
+    "VOO": [
+      { "date": "2023-05-08", "shares": 1,      "purchase_price": 379.26, "lot_cost": 379.26  },
+      { "date": "2023-07-05", "shares": 0.015,  "purchase_price": 420.00, "lot_cost": 6.30    },
+      { "date": "2023-07-13", "shares": 1,      "purchase_price": 413.77, "lot_cost": 413.77  },
+      { "date": "2023-09-11", "shares": 3,      "purchase_price": 410.98, "lot_cost": 1232.94 },
+      { "date": "2023-10-03", "shares": 0.031,  "purchase_price": 385.81, "lot_cost": 11.96   },
+      { "date": "2023-11-13", "shares": 1,      "purchase_price": 405.17, "lot_cost": 405.17  },
+      { "date": "2023-12-27", "shares": 0.0372, "purchase_price": 437.90, "lot_cost": 16.29   },
+      { "date": "2024-03-18", "shares": 2,      "purchase_price": 474.50, "lot_cost": 949.00  },
+      { "date": "2024-03-28", "shares": 0.0356, "purchase_price": 480.34, "lot_cost": 17.10   },
+      { "date": "2024-06-04", "shares": 2,      "purchase_price": 483.98, "lot_cost": 967.96  },
+      { "date": "2024-07-02", "shares": 0.0466, "purchase_price": 502.15, "lot_cost": 23.40   },
+      { "date": "2024-09-03", "shares": 1,      "purchase_price": 510.00, "lot_cost": 510.00  },
+      { "date": "2024-10-01", "shares": 0.0446, "purchase_price": 520.40, "lot_cost": 23.21   },
+      { "date": "2024-10-25", "shares": 1,      "purchase_price": 532.15, "lot_cost": 532.15  },
+      { "date": "2024-12-19", "shares": 1,      "purchase_price": 543.80, "lot_cost": 543.80  },
+      { "date": "2024-12-26", "shares": 0.051,  "purchase_price": 552.55, "lot_cost": 28.18   },
+      { "date": "2025-03-27", "shares": 1,      "purchase_price": 521.68, "lot_cost": 521.68  },
+      { "date": "2025-03-31", "shares": 0.0583, "purchase_price": 505.49, "lot_cost": 29.47   },
+      { "date": "2025-05-07", "shares": 6,      "purchase_price": 515.00, "lot_cost": 3090.00 },
+      { "date": "2025-07-02", "shares": 0.0716, "purchase_price": 568.30, "lot_cost": 40.69   },
+      { "date": "2025-08-08", "shares": 1,      "purchase_price": 585.60, "lot_cost": 585.60  },
+      { "date": "2025-09-12", "shares": 2,      "purchase_price": 604.61, "lot_cost": 1209.22 },
+      { "date": "2025-10-01", "shares": 0.0752, "purchase_price": 610.64, "lot_cost": 45.92   },
+      { "date": "2025-11-21", "shares": 1,      "purchase_price": 602.26, "lot_cost": 602.26  },
+      { "date": "2025-12-24", "shares": 0.0682, "purchase_price": 635.34, "lot_cost": 43.33   },
+      { "date": "2026-03-31", "shares": 0.0779, "purchase_price": 589.73, "lot_cost": 45.94   }
+    ]
+  }
 }
