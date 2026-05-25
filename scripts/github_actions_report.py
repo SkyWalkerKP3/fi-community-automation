@@ -56,37 +56,68 @@ def research_and_synthesize(market_data: dict) -> dict:
 
     prompt = f"""Today is {DATE} ({MONTH_YEAR}). Generate the complete FI Community Weekly Intelligence Report.
 {lots_context}
-
 ## Market data (live, already fetched via yfinance):
 {json.dumps(market_data, indent=2)}
 
-## Research tasks — use web_search for each:
+## Research tasks — use web_search for ALL of the following:
+
+### MACROECONOMIC & MARKET
 1. "major business economic news this week {MONTH_YEAR}" → top 3 stories (Reuters, WSJ, Bloomberg, CNBC)
-2. "stock market weekly recap {DATE[:7]}" → market narrative, key sector drivers
-3. "Black investment club strategies 2026 HBCU finance club" → 2–3 clubs with specific strategies
-4. "BetterInvesting NAIC investment club top strategies tools" → frameworks & templates
-5. "best passive income opportunities {MONTH_YEAR}" → 3–4 opportunities with concrete return figures
-6. "Federal Reserve interest rate decision {MONTH_YEAR}" + "CPI inflation news this week" → macro impact
-7. "financial content creator growth 2026 Black finance Instagram TikTok" → 2–3 growth tactics
-8. For EACH of {ticker_list}: "[TICKER] stock news analysis {MONTH_YEAR}" → key news, analyst sentiment, price levels, earnings dates
-9. For EACH of {cc_tickers}: "[TICKER] covered call implied volatility options {MONTH_YEAR}" → IV level (low/normal/elevated), upcoming earnings dates/catalysts, range-bound vs trending
+2. "stock market weekly recap {DATE[:7]}" → market narrative, sector rotation, key drivers
+3. "Federal Reserve interest rate CPI inflation jobs report {MONTH_YEAR}" → Fed stance, inflation trajectory, employment data; note short-term equity impact AND long-term rate environment outlook
+
+### POLITICAL, GEOPOLITICAL & SOCIOECONOMIC
+4. "US government policy legislation economic market impact {MONTH_YEAR}" → executive actions, congressional bills, regulatory changes; identify sector winners/losers short-term and structural shifts long-term
+5. "geopolitical risk trade tariffs supply chain global markets {MONTH_YEAR}" → trade tensions, sanctions, global conflicts affecting markets; flight-to-safety moves short-term, supply chain reshoring trends long-term
+6. "Black investors wealth gap retail investor socioeconomic trends consumer spending {MONTH_YEAR}" → demographic wealth-building patterns, consumer behavior shifts; which sectors benefit from rising Black wealth and Gen Z investing long-term
+7. "technology AI regulation policy crypto Bitcoin legislation {MONTH_YEAR}" → any regulation affecting MSTR/Bitcoin, NVDA/AI, NFLX/streaming; flag caps on growth or buying opportunities
+
+### INVESTMENT CLUB & OPPORTUNITIES
+8. "Black investment club HBCU finance club strategies 2026" → 2–3 clubs with specific strategies and results
+9. "BetterInvesting NAIC investment club strategies tools" → frameworks and templates
+10. "best passive income side hustle opportunities {MONTH_YEAR}" → 3–4 opportunities with concrete return figures
+11. "financial content creator growth Black finance Instagram TikTok 2026" → 2–3 growth tactics with expected results
+
+### PER-TICKER DEEP RESEARCH
+12. For EACH of {ticker_list}:
+    - "[TICKER] stock fundamental technical analysis {MONTH_YEAR}" → earnings growth, revenue, P/E, support/resistance, moving averages, RSI, volume
+    - "[TICKER] analyst price target rating {MONTH_YEAR}" → short-term (3-month) and long-term (12-month) price targets
+    - How do current political/macro/regulatory developments affect THIS company specifically?
+13. For EACH of {cc_tickers}: "[TICKER] options implied volatility covered call {MONTH_YEAR}" → IV level (low/normal/elevated), earnings dates, catalysts, range-bound vs trending
 
 ## Synthesis rules:
-- Holdings recommendation must be exactly: BUY, HOLD, or SELL
-- key_insights: exactly 3 bullets, each ≤15 words, action-oriented
-- covered_calls.plays[].viable = false if any earnings date is within 3 weeks of {DATE}
-- Covered call strike: 3–8% OTM (3–5% if range-bound/low-IV; 5–8% if trending/high-IV)
-- DTE target: 25–45 days
+
+### RECOMMENDATION FORMAT (apply to every holding):
+Each holding must have ALL of the following:
+- `recommendation`: BUY, HOLD, or SELL
+- `short_term_strategy`: specific action for 0–8 weeks — what to do NOW based on technicals, near-term catalysts, and this week's news. Include price targets or entry/exit levels.
+- `long_term_strategy`: thesis for 6–24 months — fundamentals, how political/regulatory/socioeconomic trends support or threaten the position, whether to accumulate or reduce over time.
+- `rationale`: 2–3 sentences connecting this week's political, macro, and news context to why both strategies make sense RIGHT NOW.
+- `cost_basis_note`: compare current price to the club's avg cost basis — note if the position is profitable, underwater, or near breakeven, and how that affects the recommended action.
+
+### POLITICAL/SOCIOECONOMIC INTEGRATION:
+- Weave political, geopolitical, and socioeconomic context INTO every recommendation — not as a separate section
+- Every BUY/SELL/HOLD must reference at least one macro or political factor driving it
+- The week_narrative must describe the political and macro environment, not just price moves
+
+### COVERED CALLS:
+- viable = false if earnings within 3 weeks of {DATE}
+- Strike: 3–8% OTM (3–5% range-bound/low-IV; 5–8% trending/high-IV)
+- DTE: 25–45 days
 - annualized_yield_pct = (estimated_premium / current_price) * (365 / days_to_expiry) * 100
 - max_profit_per_contract = ((recommended_strike - current_price) + estimated_premium) * 100
 - breakeven_price = current_price - estimated_premium
-- NEVER recommend selling covered calls within 3 weeks of earnings
+- NEVER recommend covered calls within 3 weeks of earnings
+
+### GENERAL:
+- key_insights: exactly 3 bullets, each ≤15 words, action-oriented
+- Every opportunity must have a concrete how_to_start
+- Every content angle must include a hook sentence and platform
 
 ## Schema to follow exactly:
 {schema}
 
 Replace ALL placeholder/example values with real, researched data for {DATE}.
-
 Return ONLY the JSON object — no markdown code fences, no explanation, no preamble."""
 
     messages = [{"role": "user", "content": prompt}]

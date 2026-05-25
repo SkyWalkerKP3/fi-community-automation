@@ -46,51 +46,87 @@ Wait for confirmation that the file was created. If it fails, check that `yfinan
 
 ---
 
-## Step 2 — Research (9 Web Searches)
+## Step 2 — Research (13 Web Searches)
 
-Run these searches in order. For each, extract the 3 most relevant findings and note the source.
+Run these searches in order. For each, extract the 3 most relevant findings and note the source. Every finding should be evaluated through two lenses: **short-term impact (0–8 weeks)** and **long-term impact (6–24 months)**.
+
+### Macroeconomic & Market Research
 
 1. **Business & economic news** — Search: `major business news this week [MONTH YEAR]`
    - Target: Reuters, WSJ, Bloomberg, CNBC
    - Capture: top 3 stories with 1-sentence summary each
+   - Note: short-term market reaction vs. long-term structural shift
 
 2. **Stock market week-in-review** — Search: `stock market weekly recap [DATE RANGE]`
    - Capture: market narrative, key drivers up/down, sector rotation notes
+   - Note: is this a short-term dip/rally or a longer-term trend change?
 
-3. **Black investment clubs & HBCU finance clubs** — Search: `Black investment club strategies 2025 2026` + `HBCU investment club best practices`
+3. **Macro / Fed / rates / economic indicators** — Search: `Federal Reserve interest rate decision [MONTH YEAR]` + `CPI inflation jobs report [MONTH YEAR]`
+   - Capture: Fed stance, inflation trajectory, employment data
+   - Short-term: how does this affect equities and bonds this week?
+   - Long-term: what does the rate environment mean for growth stocks, value stocks, and dividend strategies over the next 12–24 months?
+
+### Political & Socioeconomic Research
+
+4. **U.S. political & policy developments** — Search: `US government policy economic impact [MONTH YEAR]` + `Congress legislation markets [MONTH YEAR]`
+   - Capture: legislation, executive actions, regulatory changes that directly affect markets or specific sectors
+   - Short-term: immediate sector winners/losers (e.g., defense, energy, healthcare)
+   - Long-term: structural policy shifts that could reshape entire industries over 1–3 years
+
+5. **Geopolitical & global risk** — Search: `geopolitical risk markets [MONTH YEAR]` + `global trade tariffs supply chain [MONTH YEAR]`
+   - Capture: trade tensions, sanctions, wars, election outcomes affecting markets
+   - Short-term: flight-to-safety moves, commodity spikes, currency impacts
+   - Long-term: supply chain reshoring trends, emerging market opportunities, energy transitions
+
+6. **Socioeconomic trends affecting wealth & investing** — Search: `wealth gap Black investors economic trends [MONTH YEAR]` + `retail investor trends consumer spending [MONTH YEAR]`
+   - Capture: shifts in consumer behavior, wage trends, demographic wealth-building patterns
+   - Short-term: consumer-facing stocks (retail, tech, media) sentiment
+   - Long-term: which sectors benefit from demographic shifts, rising Black wealth, Gen Z investors entering the market?
+
+7. **Sector-specific political/regulatory risk** — Search: `tech regulation AI policy [MONTH YEAR]` + `financial services regulation crypto policy [MONTH YEAR]`
+   - Capture: any proposed or passed legislation affecting the club's holdings (MSTR/Bitcoin exposure, NVDA/AI policy, NFLX/streaming regulation)
+   - Flag: any regulation that could cap growth or create a buying opportunity
+
+### Investment Club & Benchmarking Research
+
+8. **Black investment clubs & HBCU finance clubs** — Search: `Black investment club strategies 2025 2026` + `HBCU investment club best practices`
    - Capture: 2–3 specific clubs with strategies, tools they use, standout results
 
-4. **BetterInvesting / NAIC network** — Search: `BetterInvesting NAIC investment club top strategies tools`
+9. **BetterInvesting / NAIC network** — Search: `BetterInvesting NAIC investment club top strategies tools`
    - Capture: specific frameworks, templates, or tools recommended by NAIC
 
-5. **Side hustle & passive income opportunities** — Search: `best passive income opportunities [MONTH YEAR]` + `side income ideas this week`
-   - Capture: 3–4 specific opportunities with concrete return figures
+10. **Side hustle & passive income opportunities** — Search: `best passive income opportunities [MONTH YEAR]` + `side income ideas this week`
+    - Capture: 3–4 specific opportunities with concrete return figures
 
-6. **Macro / Fed / rates news** — Search: `Federal Reserve interest rate decision [MONTH YEAR]` + `inflation CPI news this week`
-   - Capture: what happened, what it means for savers and investors, time-sensitive opportunities
+11. **Financial content creator growth** — Search: `financial literacy content creator growth strategy 2026` + `Black finance creator Instagram TikTok growth`
+    - Capture: 2–3 specific tactics with expected results
 
-7. **Financial content creator growth** — Search: `financial literacy content creator growth strategy 2026` + `Black finance creator Instagram TikTok growth`
-   - Capture: 2–3 specific tactics with expected results
+### Per-Holding Research
 
-8. **Per-ticker analysis** — For each ticker in `resources/portfolio_config.json` (club_holdings + watchlist):
-   - Search: `[TICKER] stock analysis this week [MONTH YEAR]`
-   - Capture: key news, analyst sentiment, price levels to watch, upcoming earnings dates
+12. **Per-ticker analysis** — For each ticker in `resources/portfolio_config.json` (club_holdings + watchlist):
+    - Search: `[TICKER] stock analysis fundamental technical [MONTH YEAR]`
+    - Capture:
+      - **Fundamental**: earnings growth, revenue, P/E vs. sector, competitive moat
+      - **Technical**: support/resistance levels, moving averages, volume trends, RSI
+      - **Political/macro overlay**: how do current policy, rates, or geopolitical events affect this company specifically?
+      - Analyst price targets (short-term 3-month and long-term 12-month)
+      - Upcoming earnings dates and major catalysts
 
-9. **Covered call options research** — For each ticker in `club_holdings` only:
-   - Search: `[TICKER] options implied volatility covered call strategy [MONTH YEAR]`
-   - Capture:
-     - Current implied volatility (IV) level and whether it is elevated, normal, or low
-     - Any upcoming earnings dates, dividends, or major catalysts in the next 60 days
-     - Recent analyst price targets and consensus rating
-     - Whether the stock has been trending, range-bound, or declining (ideal covered call conditions)
-     - Historical behavior: has this stock tended to stay below OTM strikes over 30–45 day periods?
-   - **Key rule:** NEVER recommend selling covered calls in the week before or after an earnings date — IV crush and gap risk make the risk/reward unfavorable
+13. **Covered call options research** — For each ticker in `club_holdings` only:
+    - Search: `[TICKER] options implied volatility covered call strategy [MONTH YEAR]`
+    - Capture:
+      - Current implied volatility (IV) level: elevated, normal, or low
+      - Any upcoming earnings dates, dividends, or major catalysts in the next 60 days
+      - Recent analyst price targets and consensus rating
+      - Whether the stock is trending, range-bound, or declining
+      - Historical behavior: has this stock tended to stay below OTM strikes over 30–45 day periods?
+    - **Key rule:** NEVER recommend selling covered calls in the week before or after an earnings date
 
 ---
 
 ## Step 3 — Synthesize Into 5 Sections
 
-Using the market data from Step 1 and research from Step 2, construct the full report data. Follow this schema exactly.
+Using the market data from Step 1 and all research from Step 2, construct the full report data. Follow this schema exactly.
 
 ### Rules for synthesis:
 - `key_insights`: exactly 3 bullets, each ≤15 words, action-oriented
@@ -99,12 +135,19 @@ Using the market data from Step 1 and research from Step 2, construct the full r
 - All recommendations must be tied to specific events from this week's research
 - Holdings `recommendation` must be one of: `BUY`, `HOLD`, or `SELL`
 - Holdings `direction` must be one of: `up` or `down`
+- **Every holding recommendation must include BOTH a short-term strategy AND a long-term strategy with a clear explanation for each**
+- **Political, socioeconomic, and macro context must be woven into every recommendation — not listed separately**
 
 ### Section 1 — Portfolio (`sections.portfolio`)
 - Pull `week_change_pct`, `current_price`, and `direction` from `output/DATE_market_data.json`
-- Write a 2–3 sentence `week_narrative` summarizing the market environment
-- For each holding: assign recommendation + rationale tied to this week's news
-- For each watchlist ticker: explain why it's being watched and what to look for
+- Write a 2–3 sentence `week_narrative` that integrates market performance WITH the political and macro environment driving it
+- For each holding, provide:
+  - **Recommendation** (BUY / HOLD / SELL) with overall rationale
+  - **Short-term strategy (0–8 weeks)**: specific action tied to current price, technical levels, near-term catalysts, and this week's news. Include entry/exit price targets if applicable.
+  - **Long-term strategy (6–24 months)**: fundamental thesis, how political/regulatory/socioeconomic trends support or threaten the position, and whether to accumulate, hold steady, or reduce over time.
+  - **Why this week's context changes things**: explicitly connect political events, Fed policy, or socioeconomic shifts to how they affect this specific stock RIGHT NOW vs. over the longer term.
+  - **Cost basis context**: compare current price to the club's avg cost basis and note whether the position is profitable, underwater, or near breakeven — and how that affects the recommended action.
+- For each watchlist ticker: explain the short-term entry trigger to watch for AND the long-term thesis for why it might eventually become a holding.
 
 ### Section 2 — Benchmarking (`sections.benchmarking`)
 - List 2–3 clubs researched with strategy, tool, and key takeaway
