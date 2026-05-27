@@ -1,0 +1,415 @@
+{
+  "report_date": "2026-05-27",
+  "week_label": "Week of May 21 – May 27, 2026",
+  "sections": {
+    "portfolio": {
+      "title": "Investment Club Portfolio",
+      "subtitle": "Holdings Review, Dual-Timeframe Strategy & Recommendations",
+      "market_summary": {
+        "sp500":  { "week_change_pct": 1.18, "current": 7520.36, "direction": "up" },
+        "nasdaq": { "week_change_pct": 1.54, "current": 26674.73, "direction": "up" },
+        "dow":    { "week_change_pct": 1.27, "current": 50644.28, "direction": "up" }
+      },
+      "week_narrative": "Markets reached fresh all-time highs this week — the S&P 500 broke 7,520 and the Nasdaq extended its seventh weekly gain in eight — powered by NVIDIA’s record $81.6B Q1 earnings beat and broad market participation widening beyond mega-cap tech. The political and macro backdrop is constructive: the Trump administration’s pro-AI, minimal-regulation stance continues to attract $2.7 trillion in domestic tech investment, while geopolitical easing (US-Iran peace deal outlines) helped push oil below $90, relieving inflation pressure. The Federal Reserve held rates at 3.5–3.75% with core CPI at 2.6%, as one dissenting vote for a cut signals rate relief is on the horizon. The critical tension to monitor is the divergence between all-time equity highs and the University of Michigan Consumer Sentiment Index crashing to a record low of 44.8 — historically, this gap closes either by stocks correcting or consumer confidence recovering. For FI Community, two holdings are deeply underwater (MSTR, NFLX) while two are significantly profitable (NVDA, VOO), creating a split-strategy portfolio that requires different approaches for each pair.",
+      "holdings": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 154.20,
+          "week_change_pct": -7.0,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "avg_cost_basis": 323.04,
+          "unrealized_pct": -52.3,
+          "unrealized_dollars": -1182.28,
+          "short_term_strategy": "Do NOT add to this position until MSTR reclaims the $162–165 resistance zone with volume confirmation. The stock is below its EMA20 ($169), EMA50 ($162), and EMA200 ($202) — all three moving averages are stacked bearishly above price. Key support is at $152; a break below that level opens a test of $140–145. If you are willing to speculate, a small tactical add at $148–150 is defensible with a strict stop at $140 — but this is a high-risk bounce trade, not a conviction add. Near-term target on a bounce: $165–170.",
+          "long_term_strategy": "Hold all 7 shares for a 12–24 month Bitcoin cycle recovery play. The regulatory environment has fundamentally shifted: the GENIUS Act (signed July 2025) created the first comprehensive US crypto framework, the SEC-CFTC MOU (March 2026) clarified legal treatment of digital assets, and the Trump administration’s pro-Bitcoin stance is the most supportive policy backdrop Bitcoin has ever had. Strategy’s consistent BTC accumulation model becomes a major advantage as institutional money flows into Bitcoin with regulatory clarity. Analyst consensus 12-month target: $358.57 — a 133% increase from today. This requires patience through volatility.",
+          "rationale": "MSTR is not a stock — it is leveraged Bitcoin exposure. This week’s 7% decline mirrors Bitcoin’s cooling after a recent run, not a fundamental change to Strategy’s thesis. The geopolitical environment (crypto-friendly US policy, GENIUS Act implementation, institutional Bitcoin adoption accelerating) is the most favorable it has ever been for this position. However, with a 52.3% loss vs. your $323.04 avg cost basis, the time horizon must be 18–24 months minimum. Cutting losses here means missing the recovery.",
+          "cost_basis_note": "52.3% below avg cost basis of $323.04. All 5 lots are underwater — the deepest loss is the Aug 2025 lot at $394.56 (61% underwater). Current portfolio loss on MSTR: -$1,182.28. Avoid adding large amounts until technical confirmation. The Nov 2025 lot at $172.73 is the one nearest to breakeven at current prices."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 87.35,
+          "week_change_pct": -0.84,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "avg_cost_basis": 110.63,
+          "unrealized_pct": -21.0,
+          "unrealized_dollars": -232.80,
+          "short_term_strategy": "Watch for a base to form in the $85–90 range over the next 2–3 weeks as earnings momentum builds. Netflix’s last quarter beat estimates by 61% — the market tends to pre-price positive momentum 4–6 weeks before earnings. A tactical add between $85–87 has a favorable risk/reward: stop below $80 (52-week low area), target $95–98 pre-earnings. Earnings date: July 16 — hold through the report. Resistance at $93 and $100.",
+          "long_term_strategy": "Netflix is executing a fundamental transformation that the current price does not fully reflect. The ad-supported tier is scaling into a new revenue layer, live sports deals (NFL Christmas games, boxing) expand the total addressable market, and gaming and interactive content create differentiation competitors cannot easily replicate. Analysts project a 12-month target of $115 — a 32% increase from today. The socioeconomic tailwind is real: 48% of Gen Z gets financial and lifestyle content from streaming platforms, and Netflix’s position as the #1 platform is structurally protected. The US government has shown zero appetite for breaking up entertainment companies, removing regulatory risk.",
+          "rationale": "Despite a slight decline this week, Netflix’s fundamentals are improving quarter over quarter. The 21% loss vs. your $110.63 cost basis is painful, but the July 16 earnings event is the catalyst most likely to recover ground. If Netflix repeats its Q1 surprise pattern (61% beat), the stock could move 10–15% in a single session. The risk of selling now and missing that recovery is greater than the risk of holding through it.",
+          "cost_basis_note": "21% below avg cost basis of $110.63 (single lot, Oct 2025). Current loss: -$232.80 on 10 shares. July 16 earnings is the clearest near-term catalyst to recover the position. Break-even at $110.63 requires a 27% rally from current levels — achievable but requires patience and a positive earnings catalyst."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 212.60,
+          "week_change_pct": -4.86,
+          "direction": "down",
+          "recommendation": "HOLD",
+          "avg_cost_basis": 127.36,
+          "unrealized_pct": 66.9,
+          "unrealized_dollars": 511.44,
+          "short_term_strategy": "The 4.86% pullback is a textbook ‘sell the news’ reaction after a record earnings beat — not a fundamental deterioration. NVDA reported $81.6B in Q1 revenue (85% YoY growth) and guided Q2 to $91B, both well above estimates. Support sits at $205–210; a dip into that range is a high-conviction add opportunity. Short-term target: $225–235 as the market digests Blackwell chip ramp. IV is deflating post-earnings, which is actually ideal for a tactical add before the next leg up. Set a limit buy at $207 for a partial add.",
+          "long_term_strategy": "NVDA is the central nervous system of the global AI infrastructure buildout. The Trump administration’s policy of minimal AI regulation and US global leadership creates the most favorable domestic policy environment for semiconductor companies in history. The $2.7 trillion in US AI investment commitments announced in 2026 flows directly to Nvidia hardware. Blackwell architecture demand described as ‘off the charts,’ inferencing workloads expanding beyond training, and emerging robotics/edge AI applications represent a multi-year growth runway. 62 analyst Strong Buy consensus. Long-term 24-month target: $280–320 as inference scales. This is a core compounding position — do not sell.",
+          "rationale": "Despite the post-earnings selloff, NVDA’s fundamentals have never been stronger. The decline is a technical rotation, not a business deterioration. Geopolitically, US AI policy is explicitly designed to keep Nvidia dominant. Even the $90B in AI investments to Pennsylvania alone signals the domestic policy tailwind. At 30x forward earnings, the multiple is high — but justified by 85% revenue growth and forward visibility into Q2 at $91B.",
+          "cost_basis_note": "66.9% above avg cost basis of $127.36 (Dec 2024 lot at $131.68 and Jan 2025 lot at $126.50, both profitable). Current unrealized gain: +$511.44 on 6 shares. This is the portfolio’s highest-performing position percentage-wise. Do not sell this position. It is also the best candidate for future covered call income once the club builds to 100 shares."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 689.96,
+          "week_change_pct": 1.23,
+          "direction": "up",
+          "recommendation": "HOLD",
+          "avg_cost_basis": 498.90,
+          "unrealized_pct": 38.3,
+          "unrealized_dollars": 4700.58,
+          "short_term_strategy": "VOO is near its 52-week high ($691.51) and consolidating. Continue your existing DCA cadence — do not make a large lump-sum addition at all-time highs. Consumer sentiment at record lows (44.8) is a caution signal: historically, this level of sentiment divergence from equity prices resolves through a 5–10% pullback within 2–3 months. A tactical approach: set a limit order to add 1 share at $670–675 to take advantage of any pullback. Short-term hold — no action needed at current price.",
+          "long_term_strategy": "VOO is your portfolio’s anchor and largest holding at $12,274 invested. Continue monthly DCA regardless of market conditions. Goldman Sachs raised their year-end S&P 500 target to 8,000 (vs. current 7,520), suggesting 6–8% additional upside in 2026 alone. The broader macro backdrop — Q1 earnings up 27% YoY (strongest since 2004), AI-driven productivity gains across sectors, and Fed rate cuts on the horizon — all support continued S&P 500 appreciation. Long-term 24-month target: $750–820 on VOO (aligned with S&P 9,000–10,000 projections).",
+          "rationale": "This week’s +1.23% gain reflects genuine broad-market strength: small caps outperformed (Russell 2000 +2.75%), market breadth improved with the equal-weighted S&P up 2.51%, and NVIDIA’s earnings provided a macro signal that AI monetization is real. The ‘One Big Beautiful Bill Act’ provides a modest GDP boost (+0.75% through 2027), and reduced tariff uncertainty from US-Iran talks eased energy prices. VOO is the right long-term play and this week validated that thesis.",
+          "cost_basis_note": "38.3% above avg cost basis of $498.90 across 32 lots going back to May 2023. Current unrealized gain: +$4,700.58 on 24.61 shares. This is your largest position by total investment ($12,274) and your single biggest contributor to portfolio gains. The disciplined DCA strategy has worked — keep executing it. Earliest lot (May 2023 at $379.26) is up 82%."
+        }
+      ],
+      "watchlist": [
+        {
+          "ticker": "MSFT",
+          "name": "Microsoft Corporation",
+          "current_price": 412.67,
+          "week_change_pct": -1.78,
+          "direction": "down",
+          "rationale": "Microsoft pulled back 1.78% despite a strong broad market week, likely due to profit-taking after recent run. Azure AI cloud growth is a structural story — the company is the biggest beneficiary of OpenAI’s enterprise adoption. Short-term entry trigger: a close above $420 with volume would confirm a resumption of the uptrend. Long-term entry thesis: MSFT is undervalued vs. NVDA for AI exposure with a more defensive earnings base. Watch for a dip to $400–405 as a high-conviction entry for the club. 12-month analyst target: $520+."
+        },
+        {
+          "ticker": "META",
+          "name": "Meta Platforms, Inc.",
+          "current_price": 635.26,
+          "week_change_pct": 4.99,
+          "direction": "up",
+          "rationale": "Meta surged 4.99% this week — the strongest performer on the watchlist. AI-driven advertising efficiency improvements are boosting margins. Llama’s open-source AI strategy is gaining enterprise traction globally. Still 20% below its $796.25 52-week high, meaning room remains for recovery. Long-term entry thesis: Meta is building an AI-native advertising business that has no peer in social media. Watch for a pullback to $600–615 as an entry point. The socioeconomic angle: Meta’s platforms reach more Black consumers than any other social network, making it strategically relevant to FI Community’s content distribution."
+        },
+        {
+          "ticker": "QQQ",
+          "name": "Invesco QQQ Trust",
+          "current_price": 729.45,
+          "week_change_pct": 2.29,
+          "direction": "up",
+          "rationale": "QQQ at $729 is near its 52-week high ($733.32) with a 12-month analyst target of $819 (+12%). This is a broad Nasdaq-100 play with heavy NVDA, MSFT, META, and AMZN weighting. If the club wants additional tech exposure without stock-picking risk, QQQ at $710–720 is a better entry than at current all-time high levels. Watch: Fed rate cut confirmation would be the long-term catalyst for a QQQ breakout to $800+."
+        },
+        {
+          "ticker": "DIA",
+          "name": "SPDR Dow Jones Industrial ETF",
+          "current_price": 506.88,
+          "week_change_pct": 1.33,
+          "direction": "up",
+          "rationale": "DIA near its 52-week high ($508.74) reflects Dow strength in the industrial and financial sectors. The tariff reduction environment (US-Iran easing, ASEAN supply chain shift reducing costs) benefits industrial companies disproportionately. Watch as a defensive hedge: if tech corrects, DIA and VOO tend to hold value better. Not an immediate entry candidate given proximity to highs, but worth monitoring for a 3–5% pullback to $485–495."
+        }
+      ],
+      "key_insights": [
+        "VOO and NVDA are carrying the portfolio — combined unrealized gain of $5,212 offsets MSTR and NFLX losses",
+        "MSTR’s 52% loss is a long-term hold: crypto regulation tailwinds and analyst $358 target justify patience",
+        "NFLX July 16 earnings is the single most important near-term catalyst — hold through it"
+      ]
+    },
+    "benchmarking": {
+      "title": "Club Benchmarking",
+      "subtitle": "What Winning Investment Clubs Do Differently",
+      "clubs_researched": [
+        {
+          "name": "HBS Black Investment Club",
+          "strategy": "Partners directly with Apollo, Warburg Pincus, L Catterton, and Providence Equity to create a pipeline from student investors into institutional deal flow. Members research both public equities and private equity deals with a dual public/private lens.",
+          "tool": "Bloomberg Terminal (via university) + proprietary deal memo templates + alumni network access to institutional research",
+          "takeaway": "The most effective Black investment clubs build institutional relationships early — not just to learn, but to access deal flow and mentorship unavailable to retail-only investors. FI Community should identify 1–2 local financial firms or advisors willing to provide mentorship and market access."
+        },
+        {
+          "name": "Spelman College Investment Club",
+          "strategy": "Sector rotation with quarterly rebalancing. Dedicated research leads assigned per sector. Each member owns deep expertise in 1–2 sectors and presents a 5-minute update at every meeting.",
+          "tool": "Google Sheets portfolio tracker + Yahoo Finance screener + Morningstar for ESG ratings",
+          "takeaway": "Sector ownership accountability creates members who are genuinely expert in their area. When someone ‘owns’ a sector, they read the news differently. FI Community can implement this with 4 members covering Tech, Financials, Consumer, and Macro/ETFs."
+        },
+        {
+          "name": "Black Wealth Summit Network",
+          "strategy": "Community-first approach: financial wellness and wealth-building education as the gateway to investing. Converts financially-curious people into investors through structured curriculum before introducing stock picks.",
+          "tool": "Event-based community building + social media content + alumni success stories as social proof",
+          "takeaway": "The most successful Black wealth-building organizations lead with education and community identity, not just returns. FI Community’s brand should emphasize the journey from ‘financially curious’ to ‘fully invested’ — that narrative is a powerful recruiting and retention tool."
+        }
+      ],
+      "strategies_to_adopt": [
+        {
+          "strategy": "Written investment thesis requirement before any buy/sell vote",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Create a 1-page thesis template: ticker, 3-sentence thesis, key risks, price target (short-term 3-month and long-term 12-month), and catalysts to watch",
+            "Require submission 48 hours before any club vote on a new position",
+            "Archive all theses in a shared Google Drive folder — review them quarterly to see what was right and wrong"
+          ]
+        },
+        {
+          "strategy": "Sector ownership assignments",
+          "difficulty": "Low",
+          "impact": "High",
+          "steps": [
+            "Assign each active member 1–2 sectors: Technology, Financials, Consumer/Retail, Macro/Policy/ETFs",
+            "Sector lead delivers a 5-minute prepared update at each meeting covering top news and any impact on club holdings",
+            "Rotate sector assignments every 6 months to build cross-functional expertise"
+          ]
+        },
+        {
+          "strategy": "Institutional relationship building",
+          "difficulty": "Medium",
+          "impact": "High",
+          "steps": [
+            "Identify 2–3 local financial advisors, RIAs, or investment firm contacts willing to serve as mentors or guest speakers",
+            "Host a quarterly ‘Pro Insights’ meeting where an industry professional reviews your portfolio and methodology",
+            "Use these relationships to access research, tools, and eventually private deal flow as the club grows"
+          ]
+        }
+      ],
+      "key_insights": [
+        "Elite Black investment clubs win by building institutional pipelines, not just picking stocks",
+        "Sector ownership assignments are free to implement and create genuine expertise within 90 days",
+        "Leading with financial education builds a more loyal and engaged member base than leading with returns"
+      ]
+    },
+    "side_income": {
+      "title": "Side Income & Business Moves",
+      "subtitle": "Specific Opportunities This Week",
+      "opportunities": [
+        {
+          "name": "Finance YouTube Channel (FI Community branded)",
+          "type": "Content Monetization",
+          "effort": "Medium",
+          "potential_return": "$1,000–$2,000/month passive within 12 months (finance niche CPM: $10–$20 per 1,000 views)",
+          "how_to_start": "Start with a 3-video test series: (1) NVDA earnings breakdown, (2) MSTR/Bitcoin position update, (3) 'We started an investment club at $150/month.' Post weekly market recaps. Monetize through YouTube AdSense + brand deals with fintech apps (Robinhood, Webull, Acorns pay $20–$75 per referred account).",
+          "time_sensitive": true
+        },
+        {
+          "name": "Investment Club Starter Kit (digital download)",
+          "type": "Digital Product",
+          "effort": "Low",
+          "potential_return": "$27–$47 per download. 50 sales/month = $1,350–$2,350 monthly",
+          "how_to_start": "Create a PDF kit with: club bylaws template, monthly contribution tracker, stock thesis template, meeting agenda, and this week’s covered call primer. List on Gumroad or Stan Store. Promote via FI Community social. Zero marginal cost to deliver.",
+          "time_sensitive": false
+        },
+        {
+          "name": "Dividend Reinvestment (DRIP) on VOO",
+          "type": "Compounding",
+          "effort": "Low",
+          "potential_return": "Automatically compounds VOO’s ~1.3% annual yield. On 24.61 shares at $690, that’s ~$221/year reinvested as fractional shares.",
+          "how_to_start": "Enable DRIP in your brokerage account settings for VOO. All quarterly dividends auto-purchase fractional shares at market price. Takes 2 minutes to set up and runs forever.",
+          "time_sensitive": false
+        },
+        {
+          "name": "TikTok Finance Creator + Brand Partnerships",
+          "type": "Content Monetization",
+          "effort": "Medium",
+          "potential_return": "Micro-influencers in finance (under 250K followers) earn $50,000–$180,000/year through brand deals. Finance CPM: $10–$20.",
+          "how_to_start": "Post one 60-second video this week on the NVDA earnings story (‘NVDA made $81.6B and the stock dropped — here’s why that’s actually good news’). Repurpose to Instagram Reels and YouTube Shorts. After 10–20 posts with consistent engagement, DM fintech brands (SoFi, Robinhood, M1 Finance) directly for partnership discussions.",
+          "time_sensitive": true
+        }
+      ],
+      "news_hooks": [
+        {
+          "event": "Consumer sentiment fell to a record low of 44.8 (University of Michigan, May 2026)",
+          "opportunity": "People are anxious about money — financial education and investment club content has peak demand right now",
+          "action": "Post a '5 things to do with your money when everyone is scared' Instagram carousel or TikTok this week. This type of content gets 3–5x normal engagement during sentiment lows."
+        },
+        {
+          "event": "NVIDIA reported record $81.6B earnings and the stock dropped 4.86%",
+          "opportunity": "The 'sell the news' phenomenon is confusing to most retail investors — it’s the perfect FI Community teaching moment",
+          "action": "Post a breakdown explaining 'buy the rumor, sell the news.' Use FI Community’s actual NVDA position as the real-world example. This type of authentic, personal investing content builds significant trust and following."
+        }
+      ],
+      "key_insights": [
+        "Market anxiety at record highs = peak demand for financial education content — post this week",
+        "NVDA’s post-earnings dip is FI Community’s best content hook of the quarter",
+        "DRIP on VOO is a 2-minute setup that compounds wealth automatically forever"
+      ]
+    },
+    "content_strategy": {
+      "title": "Content & Brand Strategy",
+      "subtitle": "Angles, Growth Moves & Monetization This Week",
+      "content_angles": [
+        {
+          "headline": "NVIDIA Made $81.6 Billion and the Stock DROPPED. Here’s What That Means for Your Money.",
+          "platform": "TikTok + Instagram Reels",
+          "hook": "The most valuable company in AI just had its best quarter ever — and investors sold it off. If that confuses you, this video is for you.",
+          "format": "60–90 second explainer with text overlay. Show the earnings number, the stock price drop, then explain ‘buy the rumor, sell the news.’ End with FI Community’s actual position and what we’re doing.",
+          "cta": "Follow FI Community for our weekly breakdown of what’s actually happening in your portfolio"
+        },
+        {
+          "headline": "The S&P 500 Is at All-Time Highs But Consumer Confidence Just Hit a Record Low. What Do You Do?",
+          "platform": "Instagram Carousel + LinkedIn",
+          "hook": "The stock market is celebrating. Regular people are scared. Both things are true. Here’s what that gap means for your investments.",
+          "format": "7-slide carousel: Slide 1 - the tension (market vs. sentiment). Slides 2-5: what this has historically meant for investors. Slide 6: the FI Community approach. Slide 7: CTA.",
+          "cta": "Save this post. Share it with someone who needs to see it."
+        },
+        {
+          "headline": "Bitcoin Got Legal in America Last Year. Here’s How That Changed Everything.",
+          "platform": "YouTube + LinkedIn",
+          "hook": "Most people don’t know that Congress passed the GENIUS Act in 2025 — the first federal crypto law. We hold MSTR, the biggest corporate Bitcoin holder. Here’s how we think about it now.",
+          "format": "8–10 minute YouTube explainer covering: GENIUS Act basics, what it means for Bitcoin institutional adoption, why FI Community holds MSTR, the long-term thesis vs. short-term pain.",
+          "cta": "Subscribe for weekly investment club insights. Join our waitlist — link in bio."
+        }
+      ],
+      "audience_growth_moves": [
+        {
+          "tactic": "Post NVDA breakdown video before Friday market close — news cycle is still hot",
+          "platform": "TikTok + Instagram Reels",
+          "effort": "Low",
+          "expected_reach": "Finance content on hot stories gets 3–5x algorithm boost in first 48 hours. First-mover advantage in your niche."
+        },
+        {
+          "tactic": "Multi-platform repurposing: film one TikTok and repost to Instagram Reels, YouTube Shorts, and LinkedIn video",
+          "platform": "All platforms",
+          "effort": "Low",
+          "expected_reach": "Multiplies ROI of every piece of content 3–4x with minimal extra work. Proven to grow accounts 20–40% faster than single-platform posting."
+        },
+        {
+          "tactic": "DM 3 HBCU or Black finance club accounts this week for a collab or shoutout exchange",
+          "platform": "Instagram",
+          "effort": "Medium",
+          "expected_reach": "1,000–4,000 new targeted followers per collab. These audiences are pre-qualified as financially interested."
+        }
+      ],
+      "monetization_ideas": [
+        {
+          "idea": "Investment Club Starter Kit (digital PDF bundle)",
+          "tied_to_event": "Consumer anxiety at record highs drives search for financial clarity and tools. ‘How to start an investment club’ search volume spikes during market uncertainty.",
+          "revenue_model": "One-time purchase $27–$47. Target 50 sales/month = $1,350–$2,350.",
+          "platform": "Gumroad or Stan Store",
+          "steps": "Build a PDF kit this week: club bylaws template, stock thesis template, covered call primer, contribution tracker. Post 3 pieces of content pointing to it. Price at $37."
+        },
+        {
+          "idea": "Paid newsletter (FI Community Weekly Intelligence — Insider Tier)",
+          "tied_to_event": "The weekly report you’re generating is premium financial intelligence. There is a clear market for it.",
+          "revenue_model": "$7–$10/month subscriber. 100 subscribers = $700–$1,000 MRR.",
+          "platform": "Substack or Beehiiv",
+          "steps": "Launch free tier first (3 months, build trust). Gate the full holdings analysis, covered call plays, and dual-timeframe strategies behind a $7/month paywall. The weekly report workflow already creates this content automatically."
+        }
+      ],
+      "key_insights": [
+        "NVDA post-earnings is the hottest financial story of the week — publish before the news cycle moves on",
+        "Your weekly report is already a premium product — monetize it through a paid Substack tier",
+        "Consumer anxiety at record lows is the single best time to grow a financial education audience"
+      ]
+    },
+    "covered_calls": {
+      "title": "Covered Call Strategy",
+      "subtitle": "Weekly Options Income on Club Holdings",
+      "market_iv_context": "Post-NVDA earnings, IV is deflating from elevated levels (weekly IV was at 83, settling back toward the 46 IV baseline). This is a transitional week for options premiums — good window for initiating new positions before IV compresses further. CRITICAL NOTE: All current FI Community positions hold fewer than 100 shares in any single ticker. A standard covered call contract requires 100 shares. None of the plays below can currently be executed — this section is a forward planning guide for when positions are built to sufficient size.",
+      "covered_call_primer": "A covered call means selling someone the right to buy your shares at a set price (the strike) by a set date (expiry). You collect the premium today regardless of outcome. If the stock stays below the strike price, you keep both the shares and the full premium — pure income. If it rises above the strike, your shares get called away at the strike price — you still profit, just capped. The key: you must own at least 100 shares per contract.",
+      "shares_needed_note": "Current share counts: MSTR (7), NFLX (10), NVDA (6), VOO (24.61). To execute 1 covered call contract, you need 100 shares. NVDA is the highest-priority position to build toward 100 shares due to its elevated IV and strong fundamentals.",
+      "plays": [
+        {
+          "ticker": "MSTR",
+          "name": "Strategy Inc",
+          "current_price": 154.20,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Bitcoin price action + ongoing regulatory developments",
+          "catalyst_date": null,
+          "catalyst_risk": "high",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "shares_held": 7,
+          "skip_reason": "Three reasons to skip: (1) Only 7 shares held — need 93 more for 1 contract. (2) Stock in a sharp downtrend below all major moving averages — covered calls in a downtrend cap recovery without adequately compensating for downside. (3) Cost basis $323.04 vs. current $154.20 — any call exercised here locks in a catastrophic loss. Wait for a technical recovery above $165 before even considering this strategy.",
+          "watch_for": "Re-evaluate when: (a) MSTR holds above $165 for 3+ days with volume, (b) share count reaches 100, and (c) Bitcoin shows trend stabilization. Then sell calls 5–8% OTM to generate income on a recovering position."
+        },
+        {
+          "ticker": "NFLX",
+          "name": "Netflix, Inc.",
+          "current_price": 87.35,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "Q2 Earnings — July 16, 2026",
+          "catalyst_date": "2026-07-16",
+          "catalyst_risk": "medium",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "shares_held": 10,
+          "skip_reason": "Two reasons to skip: (1) Only 10 shares held — need 90 more for 1 contract. (2) Position is 21% underwater ($110.63 cost basis vs. $87.35 current). Selling a covered call at $91–93 would generate $2–3/share in premium while permanently capping the recovery potential needed to break even. The July 16 earnings event is the recovery catalyst — protect your upside through it.",
+          "watch_for": "After July 16 earnings: if NFLX reports strong and moves to $100+, evaluate covered calls at $110–115 (near cost basis) for income while protecting the break-even level. Build toward 100 shares before implementing."
+        },
+        {
+          "ticker": "NVDA",
+          "name": "NVIDIA Corporation",
+          "current_price": 212.60,
+          "viable": true,
+          "viability_reason": "Post-earnings IV deflation creates ideal entry for covered call premiums. No next earnings for ~90 days. Stock in a long-term uptrend with strong fundamental support. Most profitable position in portfolio — plenty of cushion above cost basis. HOWEVER: only 6 shares held. Theoretical play shown for planning purposes.",
+          "upcoming_catalyst": "Q2 Earnings — approximately late August 2026",
+          "catalyst_date": "2026-08-20",
+          "catalyst_risk": "low",
+          "recommended_strike": 225.00,
+          "recommended_expiry": "2026-06-27",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 5.8,
+          "estimated_premium": 4.80,
+          "annualized_yield_pct": 26.6,
+          "max_profit_per_contract": 1728,
+          "breakeven_price": 207.80,
+          "historical_win_rate": "NVDA calls at 5-6% OTM have expired worthless approximately 65% of the time over the past 18 months based on historical options data, given the stock’s elevated IV and tendency to consolidate after earnings beats.",
+          "action": "SELL (when 100 shares available)",
+          "timing": "This is a PLANNING trade, not an executable trade today (only 6 shares held). When share count reaches 100: sell the Jun 27 $225 call at market open Monday morning. Premium target: $4.80–5.20/share ($480–$520/contract). Best window is first thing Monday when IV has not yet fully compressed.",
+          "shares_required": 100,
+          "shares_held": 6,
+          "skip_reason": null,
+          "watch_for": "Priority action: build NVDA position to 100 shares. At current price ($212.60), 94 additional shares = ~$19,985. Once at 100 shares, this becomes a recurring monthly income generator at ~$480–$520/contract on a position worth $21,260."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 689.96,
+          "viable": false,
+          "viability_reason": null,
+          "upcoming_catalyst": "No earnings. Broad market events only (Fed meetings, CPI reports).",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": null,
+          "recommended_expiry": null,
+          "days_to_expiry": null,
+          "strike_pct_otm": null,
+          "estimated_premium": null,
+          "annualized_yield_pct": null,
+          "max_profit_per_contract": null,
+          "breakeven_price": null,
+          "historical_win_rate": null,
+          "action": "SKIP",
+          "timing": null,
+          "shares_required": 100,
+          "shares_held": 24,
+          "skip_reason": "Two reasons to skip: (1) Only 24.61 shares — need 76 more for 1 contract. (2) VOO’s implied volatility is extremely low (~12–15%) as a broad market ETF. At $690/share, a 30-day $710 covered call would yield ~$2–3/share in premium (0.3–0.4% annualized) — not meaningful enough to justify locking up $69,000 in shares (100-share block). VOO is a DCA/compounding vehicle, not an options income vehicle.",
+          "watch_for": "VOO covered calls only make strategic sense if the club builds a 100-share block specifically for this purpose. At $690/share, that requires $69,000 in VOO alone. Recommend focusing covered call strategy on NVDA (more volatile, higher premiums, smaller per-share price) once that position reaches 100 shares."
+        }
+      ],
+      "key_insights": [
+        "Priority action: build NVDA to 100 shares — it unlocks a ~$500/month covered call income stream at current IV levels",
+        "No position currently qualifies for a standard covered call contract — this section is a forward planning roadmap",
+        "After NFLX July 16 earnings, if the stock recovers toward $100+, reassess covered calls as an income tool on the recovered position"
+      ]
+    }
+  }
+}
