@@ -374,6 +374,66 @@
         "Elevated VIX means richer-than-normal premiums across all viable plays this week",
         "Skip NVDA entirely until after earnings — the risk/reward is unfavorable pre-report"
       ]
+    },
+    "community_events": {
+      "title": "Atlanta Community Events",
+      "subtitle": "Network, Build & Create Partnerships This Month",
+      "networking_strategy": "Attend as a team of 2–3 with branded FI Community materials. Prioritize real estate and entrepreneurship events for highest-value partner and member connections. Follow up within 48 hours on LinkedIn after every event.",
+      "events": [
+        {
+          "name": "Atlanta Black Business Expo",
+          "date": "2026-05-03",
+          "time": "10:00 AM – 6:00 PM",
+          "location": "Atlanta Convention Center, Atlanta, GA",
+          "category": "Entrepreneurship",
+          "description": "Annual expo featuring 200+ Black-owned businesses, panel discussions on scaling, funding, and brand building, plus a pitch competition with cash prizes.",
+          "cost": "Free – $35",
+          "why_attend": "High concentration of Black entrepreneurs and potential FI Community members. The funding panel is directly aligned with the club's investment education mission.",
+          "rsvp_or_link": "atlantablackbusinessexpo.com",
+          "time_sensitive": true
+        },
+        {
+          "name": "Atlanta Real Estate Investors Association Monthly Meeting",
+          "date": "2026-05-08",
+          "time": "6:30 PM – 9:00 PM",
+          "location": "Crowne Plaza Atlanta Perimeter, Dunwoody, GA",
+          "category": "Real Estate",
+          "description": "Monthly REIA meeting with guest speaker on short-term rentals, networking with active investors, and deal-sharing roundtable.",
+          "cost": "$20 (non-members)",
+          "why_attend": "Direct access to active real estate investors who overlap with FI Community's investment thesis. Potential to find accredited investor partners for future club syndications.",
+          "rsvp_or_link": "atlantareia.com",
+          "time_sensitive": false
+        },
+        {
+          "name": "Black Wealth Summit Atlanta",
+          "date": "2026-05-17",
+          "time": "9:00 AM – 4:00 PM",
+          "location": "Cobb Galleria Centre, Atlanta, GA",
+          "category": "Finance & Banking",
+          "description": "Full-day wealth-building conference covering investing, credit, homeownership, and generational wealth strategies. Hosted by a coalition of Black financial advisors.",
+          "cost": "$50 – $150",
+          "why_attend": "Alignment with FI Community's core mission. Opportunity to table or present, gain visibility, and connect with financial advisors who could co-market or partner with the club.",
+          "rsvp_or_link": "blackwealthsummit.com",
+          "time_sensitive": false
+        },
+        {
+          "name": "Invest Atlanta Entrepreneur Cohort Info Session",
+          "date": "2026-05-20",
+          "time": "5:30 PM – 7:30 PM",
+          "location": "Invest Atlanta HQ, 133 Peachtree St NE, Atlanta, GA",
+          "category": "Community Building",
+          "description": "Info session for the Invest Atlanta small business support cohort offering grants, loans, and mentorship for Atlanta-based entrepreneurs.",
+          "cost": "Free",
+          "why_attend": "Potential funding source for FI Community's operational costs. Also an opportunity to refer club members who own small businesses to Invest Atlanta's programs — builds goodwill and positions FI Community as a connector.",
+          "rsvp_or_link": "investatlanta.com",
+          "time_sensitive": true
+        }
+      ],
+      "key_insights": [
+        "Real estate investor meetings offer the highest ROI for finding accredited investor partners",
+        "Black Wealth Summit is the best brand-building event — consider tabling or presenting",
+        "Invest Atlanta cohort deadline is urgent — apply this week for grant funding access"
+      ]
     }
   }
 }

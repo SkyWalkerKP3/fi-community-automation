@@ -718,6 +718,33 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     width: 99%;
   }
 
+  /* ── Event Cards ── */
+  .event-card {
+    background: var(--bg-surface);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .event-title {
+    font-size: 11pt;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+  }
+  .event-meta {
+    margin-bottom: 8px;
+  }
+  .event-why {
+    background: var(--bg-deep);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 8.5pt;
+    color: var(--text-body);
+    line-height: 1.55;
+    margin-top: 6px;
+  }
+
 </style>
 </head>
 <body>
@@ -765,11 +792,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="cover-card-bullet">{{ insight }}</div>
       {% endfor %}
     </div>
-    <!-- Card 5: Covered Calls — full width -->
+    <!-- Card 5: Covered Calls -->
     {% if data.sections.covered_calls is defined %}
-    <div class="cover-card cover-card-full">
+    <div class="cover-card">
       <div class="cover-card-title">📊 Covered Call Strategy</div>
       {% for insight in data.sections.covered_calls.key_insights[:2] %}
+      <div class="cover-card-bullet">{{ insight }}</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <!-- Card 6: Atlanta Community Events -->
+    {% if data.sections.community_events is defined %}
+    <div class="cover-card">
+      <div class="cover-card-title">🤝 Atlanta Community Events</div>
+      {% for insight in data.sections.community_events.key_insights[:2] %}
       <div class="cover-card-bullet">{{ insight }}</div>
       {% endfor %}
     </div>
@@ -787,7 +823,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ port.title }}</div>
-    <div class="page-header-num">Page 2 of 6</div>
+    <div class="page-header-num">Page 2 of 7</div>
   </div>
 
   <div class="section-hero">
@@ -899,7 +935,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ cc.title }}</div>
-    <div class="page-header-num">Page 3 of 6</div>
+    <div class="page-header-num">Page 3 of 7</div>
   </div>
 
   <div class="section-hero">
@@ -998,7 +1034,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ bench.title }}</div>
-    <div class="page-header-num">Page 4 of 6</div>
+    <div class="page-header-num">Page 4 of 7</div>
   </div>
 
   <div class="section-hero">
@@ -1066,7 +1102,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ income.title }}</div>
-    <div class="page-header-num">Page 5 of 6</div>
+    <div class="page-header-num">Page 5 of 7</div>
   </div>
 
   <div class="section-hero">
@@ -1122,13 +1158,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
      PAGE 6 — CONTENT & BRAND STRATEGY
 ════════════════════════════════════════════════ -->
 {% set content = data.sections.content_strategy %}
-<div class="section-page">
+<div class="page section-page">
   <div class="page-header">
     {% if logo_light_uri %}
     <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
     {% endif %}
     <div class="page-header-title">{{ content.title }}</div>
-    <div class="page-header-num">Page 6 of 6</div>
+    <div class="page-header-num">Page 6 of 7</div>
   </div>
 
   <div class="section-hero">
@@ -1203,6 +1239,67 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   </div>
 </div>
+
+<!-- ════════════════════════════════════════════════
+     PAGE 7 — ATLANTA COMMUNITY EVENTS
+════════════════════════════════════════════════ -->
+{% if data.sections.community_events is defined %}
+{% set evts = data.sections.community_events %}
+<div class="section-page">
+  <div class="page-header">
+    {% if logo_light_uri %}
+    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
+    {% endif %}
+    <div class="page-header-title">{{ evts.title }}</div>
+    <div class="page-header-num">Page 7 of 7</div>
+  </div>
+
+  <div class="section-hero">
+    <div class="section-hero-title">{{ evts.title }}</div>
+    <div class="section-hero-sub">{{ evts.subtitle }}</div>
+  </div>
+
+  <div class="section-content">
+
+    {% if evts.networking_strategy %}
+    <div class="narrative">
+      <strong style="color: var(--accent);">Networking Strategy:</strong> {{ evts.networking_strategy }}
+    </div>
+    {% endif %}
+
+    <div class="section-label">Upcoming Events</div>
+    {% for event in evts.events %}
+    <div class="event-card">
+      <div class="event-title">{{ event.name }}</div>
+      <div class="event-meta">
+        <span class="tag">{{ event.category }}</span>
+        <span class="tag">{{ event.date }}{% if event.time %} · {{ event.time }}{% endif %}</span>
+        <span class="tag">{{ event.cost }}</span>
+        {% if event.time_sensitive %}<span class="tag" style="background: {{ c.sell_red }}; color: #fff;">RSVP Soon</span>{% endif %}
+      </div>
+      <div style="font-size: 8.5pt; color: var(--text-muted); margin-bottom: 6px;">📍 {{ event.location }}</div>
+      <div style="font-size: 9pt; color: var(--text-body); line-height: 1.55; margin-bottom: 6px;">{{ event.description }}</div>
+      <div class="event-why">
+        <strong style="color: var(--accent);">Why Attend:</strong> {{ event.why_attend }}
+      </div>
+      {% if event.rsvp_or_link %}
+      <div style="font-size: 8pt; color: var(--text-muted); margin-top: 8px; font-style: italic;">
+        RSVP / Info: {{ event.rsvp_or_link }}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="insights-box">
+      <div class="insights-title">Community Building Focus</div>
+      {% for insight in evts.key_insights %}
+      <div class="insight-item">{{ insight }}</div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
 
 <!-- Running footer element (WeasyPrint) -->
 <div id="page-footer">

@@ -46,7 +46,7 @@ Wait for confirmation that the file was created. If it fails, check that `yfinan
 
 ---
 
-## Step 2 — Research (13 Web Searches)
+## Step 2 — Research (14 Web Searches)
 
 Run these searches in order. For each, extract the 3 most relevant findings and note the source. Every finding should be evaluated through two lenses: **short-term impact (0–8 weeks)** and **long-term impact (6–24 months)**.
 
@@ -101,9 +101,16 @@ Run these searches in order. For each, extract the 3 most relevant findings and 
 11. **Financial content creator growth** — Search: `financial literacy content creator growth strategy 2026` + `Black finance creator Instagram TikTok growth`
     - Capture: 2–3 specific tactics with expected results
 
+12. **Atlanta community events** — Search: `Atlanta Black entrepreneurship finance real estate community events [MONTH YEAR]` + `Atlanta networking events Black business investing [MONTH YEAR]`
+    - Capture: 4–6 upcoming events in the Atlanta metro area covering community building, real estate investing, finance/banking, and entrepreneurship
+    - For each event: name, date, time, venue, cost ($), brief 1–2 sentence description, and why FI Community should attend (networking value, partner potential, member recruitment)
+    - Flag any events happening within the next 2 weeks as `time_sensitive: true` (RSVP urgently)
+    - Note: which events are best for finding accredited investor partners, financial advisor collaborators, or potential new club members?
+    - Also search: `Invest Atlanta` + `SCORE Atlanta` + `Black chamber of commerce Atlanta events [MONTH YEAR]` for institutional events
+
 ### Per-Holding Research
 
-12. **Per-ticker analysis** — For each ticker in `resources/portfolio_config.json` (club_holdings + watchlist):
+13. **Per-ticker analysis** — For each ticker in `resources/portfolio_config.json` (club_holdings + watchlist):
     - Search: `[TICKER] stock analysis fundamental technical [MONTH YEAR]`
     - Capture:
       - **Fundamental**: earnings growth, revenue, P/E vs. sector, competitive moat
@@ -112,7 +119,7 @@ Run these searches in order. For each, extract the 3 most relevant findings and 
       - Analyst price targets (short-term 3-month and long-term 12-month)
       - Upcoming earnings dates and major catalysts
 
-13. **Covered call options research** — For each ticker in `club_holdings` only:
+14. **Covered call options research** — For each ticker in `club_holdings` only:
     - Search: `[TICKER] options implied volatility covered call strategy [MONTH YEAR]`
     - Capture:
       - Current implied volatility (IV) level: elevated, normal, or low
@@ -124,7 +131,7 @@ Run these searches in order. For each, extract the 3 most relevant findings and 
 
 ---
 
-## Step 3 — Synthesize Into 5 Sections
+## Step 3 — Synthesize Into 6 Sections
 
 Using the market data from Step 1 and all research from Step 2, construct the full report data. Follow this schema exactly.
 
@@ -196,11 +203,23 @@ A plain-English explanation: "A covered call means selling someone the right to 
 - The current IV environment (high/normal/low) and what it means for premiums
 - One risk to watch across all plays this week
 
+### Section 6 — Atlanta Community Events (`sections.community_events`)
+- List 4–6 upcoming events in the Atlanta metro area from the community events research (Step 12)
+- Focus areas: Community Building, Real Estate, Finance & Banking, Entrepreneurship
+- For each event include:
+  - `name`, `date`, `time`, `location`, `category` (one of the four focus areas), `cost`
+  - `description`: 1–2 sentence summary of what the event offers
+  - `why_attend`: specific strategic reason FI Community should attend — what connections, partnerships, or member recruitment opportunities does it offer?
+  - `rsvp_or_link`: website, Eventbrite link, or registration instructions
+  - `time_sensitive`: true if RSVP is needed within 1 week
+- Write a `networking_strategy`: 2–3 sentences on how FI Community should approach these events as a team (materials, goals, follow-up)
+- `key_insights`: exactly 3 bullets, ≤15 words each, focused on community building priorities
+
 ---
 
 ## Step 4 — Write report_data.json
 
-Construct the complete JSON object following the schema in `scripts/test_report_data.json` as reference. Merge market data from Step 1 with synthesized content from Step 3. The JSON must include all 5 sections: `portfolio`, `benchmarking`, `side_income`, `content_strategy`, and `covered_calls`.
+Construct the complete JSON object following the schema in `scripts/test_report_data.json` as reference. Merge market data from Step 1 with synthesized content from Step 3. The JSON must include all 6 sections: `portfolio`, `benchmarking`, `side_income`, `content_strategy`, `covered_calls`, and `community_events`.
 
 Save to: `output/DATE_report_data.json`
 

@@ -78,12 +78,15 @@ def research_and_synthesize(market_data: dict) -> dict:
 10. "best passive income side hustle opportunities {MONTH_YEAR}" → 3–4 opportunities with concrete return figures
 11. "financial content creator growth Black finance Instagram TikTok 2026" → 2–3 growth tactics with expected results
 
+### COMMUNITY BUILDING
+12. "Atlanta Black entrepreneurship finance real estate community events {MONTH_YEAR}" + "Atlanta Black business networking investing events {MONTH_YEAR}" + "Invest Atlanta SCORE Atlanta Black chamber events {MONTH_YEAR}" → 4–6 upcoming events in Atlanta covering community building, real estate, finance/banking, and entrepreneurship. For each event: name, date, time, venue, cost, 1–2 sentence description, why FI Community should attend (networking value, partner potential, member recruitment). Flag events within 2 weeks as time_sensitive.
+
 ### PER-TICKER DEEP RESEARCH
-12. For EACH of {ticker_list}:
+13. For EACH of {ticker_list}:
     - "[TICKER] stock fundamental technical analysis {MONTH_YEAR}" → earnings growth, revenue, P/E, support/resistance, moving averages, RSI, volume
     - "[TICKER] analyst price target rating {MONTH_YEAR}" → short-term (3-month) and long-term (12-month) price targets
     - How do current political/macro/regulatory developments affect THIS company specifically?
-13. For EACH of {cc_tickers}: "[TICKER] options implied volatility covered call {MONTH_YEAR}" → IV level (low/normal/elevated), earnings dates, catalysts, range-bound vs trending
+14. For EACH of {cc_tickers}: "[TICKER] options implied volatility covered call {MONTH_YEAR}" → IV level (low/normal/elevated), earnings dates, catalysts, range-bound vs trending
 
 ## Synthesis rules:
 
