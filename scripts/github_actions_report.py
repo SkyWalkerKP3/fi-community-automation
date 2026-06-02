@@ -10,6 +10,8 @@ from datetime import date
 from pathlib import Path
 
 import anthropic
+import httpx
+import time
 
 PROJECT_ROOT = Path(__file__).parent.parent
 DATE = date.today().strftime("%Y-%m-%d")
@@ -39,7 +41,7 @@ def load_holdings_lots() -> dict:
 
 
 def research_and_synthesize(market_data: dict) -> dict:
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(timeout=httpx.Timeout(600.0, connect=10.0))
 
     portfolio = json.loads((PROJECT_ROOT / "resources" / "portfolio_config.json").read_text())
     holdings = portfolio["club_holdings"]    # MSTR, NFLX, NVDA, VOO
@@ -124,35 +126,56 @@ Replace ALL placeholder/example values with real, researched data for {DATE}.
 Return ONLY the JSON object — no markdown code fences, no explanation, no preamble."""
 
     messages = [{"role": "user", "content": prompt}]
+    max_retries = 3
 
-    while True:
-        response = client.messages.create(
-            model="claude-opus-4-7",
-            max_tokens=16000,
-            system=SYSTEM_PERSONA,
-            tools=[{"type": "web_search_20250305", "name": "web_search"}],
-            messages=messages,
-        )
+    for attempt in range(max_retries):
+        try:
+            while True:
+                with client.messages.stream(
+                    model="claude-opus-4-8",
+                    max_tokens=32000,
+                    system=SYSTEM_PERSONA,
+                    tools=[{"type": "web_search_20260209", "name": "web_search"}],
+                    messages=messages,
+                ) as stream:
+                    response = stream.get_final_message()
 
-        if response.stop_reason == "end_turn":
-            for block in response.content:
-                if hasattr(block, "text"):
-                    text = block.text.strip()
-                    text = re.sub(r"^```(?:json)?\s*", "", text)
-                    text = re.sub(r"\s*```$", "", text.strip())
-                    return json.loads(text.strip())
-            raise ValueError("No text block in final response")
+                if response.stop_reason == "end_turn":
+                    # Collect all text blocks — JSON may be inside a code fence mid-block
+                    text_blocks = [b.text.strip() for b in response.content if hasattr(b, "text") and b.text and b.text.strip()]
+                    full_text = "\n".join(text_blocks)
+                    (OUTPUT_DIR / f"{DATE}_raw_response.txt").write_text(full_text, encoding="utf-8")
+                    # Strategy 1: extract from ```json ... ``` fence anywhere in the response
+                    fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", full_text, re.DOTALL)
+                    if fence_match:
+                        return json.loads(fence_match.group(1))
+                    # Strategy 2: find first { and parse from there
+                    brace_pos = full_text.find("{")
+                    if brace_pos != -1:
+                        candidate = full_text[brace_pos:]
+                        candidate = re.sub(r"\s*```$", "", candidate.strip()).strip()
+                        return json.loads(candidate)
+                    raise ValueError(f"No JSON found in {len(text_blocks)} text block(s)")
 
-        # Handle tool_use round (built-in web_search is server-executed; acknowledge and continue)
-        messages.append({"role": "assistant", "content": response.content})
-        tool_results = [
-            {"type": "tool_result", "tool_use_id": blk.id, "content": ""}
-            for blk in response.content
-            if blk.type == "tool_use"
-        ]
-        if not tool_results:
-            raise ValueError(f"Unexpected stop_reason with no tool_use: {response.stop_reason}")
-        messages.append({"role": "user", "content": tool_results})
+                # Handle tool_use round (built-in web_search is server-executed; acknowledge and continue)
+                messages.append({"role": "assistant", "content": response.content})
+                tool_results = [
+                    {"type": "tool_result", "tool_use_id": blk.id, "content": ""}
+                    for blk in response.content
+                    if blk.type == "tool_use"
+                ]
+                if not tool_results:
+                    raise ValueError(f"Unexpected stop_reason with no tool_use: {response.stop_reason}")
+                messages.append({"role": "user", "content": tool_results})
+
+        except (httpx.ReadError, httpx.RemoteProtocolError, anthropic.APIConnectionError) as e:
+            if attempt < max_retries - 1:
+                wait = 10 * (attempt + 1)
+                print(f"      Connection dropped ({e.__class__.__name__}), retrying in {wait}s (attempt {attempt + 1}/{max_retries})...")
+                messages = [{"role": "user", "content": prompt}]  # reset to fresh start
+                time.sleep(wait)
+            else:
+                raise
 
 
 def generate_pdf(report_data: dict) -> Path:
