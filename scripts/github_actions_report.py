@@ -149,12 +149,12 @@ Return ONLY the JSON object — no markdown code fences, no explanation, no prea
                     fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", full_text, re.DOTALL)
                     if fence_match:
                         return json.loads(fence_match.group(1))
-                    # Strategy 2: find first { and parse from there
+                    # Strategy 2: find first { and parse from there, ignoring trailing text
                     brace_pos = full_text.find("{")
                     if brace_pos != -1:
                         candidate = full_text[brace_pos:]
-                        candidate = re.sub(r"\s*```$", "", candidate.strip()).strip()
-                        return json.loads(candidate)
+                        obj, _ = json.JSONDecoder().raw_decode(candidate)
+                        return obj
                     raise ValueError(f"No JSON found in {len(text_blocks)} text block(s)")
 
                 # Handle tool_use round (built-in web_search is server-executed; acknowledge and continue)
