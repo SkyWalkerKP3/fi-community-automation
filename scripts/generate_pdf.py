@@ -64,6 +64,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   @page {
     size: letter;
     margin: 0;
+    background-color: {{ c.bg_dark }};
     @bottom-center {
       content: element(page-footer);
     }
@@ -87,6 +88,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
+  html {
+    background: var(--bg-dark);
+  }
+
   body {
     font-family: Helvetica, Arial, sans-serif;
     background: var(--bg-dark);
@@ -101,9 +106,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     width: 100%;
     height: 30px;
     background: var(--bg-deep);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 8px;
   }
   #page-footer span {
     color: var(--accent);
@@ -120,18 +124,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   /* ── COVER PAGE ── */
   .cover {
     background: var(--bg-dark);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 1056px;
+    display: block;
+    text-align: center;
     padding: 0 48px 48px;
   }
   .cover-hero {
     width: 100%;
     background: var(--bg-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    text-align: center;
     padding: 64px 48px 40px;
     border-bottom: 3px solid var(--accent);
   }
@@ -171,19 +173,19 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }
 
   .cover-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     margin-top: 40px;
     width: 100%;
   }
   .cover-card {
-    flex: 1 1 calc(50% - 10px);
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
     background: var(--bg-surface);
     border-radius: 10px;
     border-top: 3px solid var(--accent);
     padding: 22px 24px;
-    min-width: 200px;
+    margin-right: 1%;
+    margin-bottom: 16px;
   }
   .cover-card-title {
     font-size: 12pt;
@@ -210,7 +212,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   /* ── SECTION PAGES ── */
   .section-page {
     background: var(--bg-dark);
-    min-height: 100vh;
+    min-height: 1056px;
     padding: 0;
   }
 
@@ -218,16 +220,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .page-header {
     background: var(--bg-surface);
     height: 48px;
-    display: flex;
-    align-items: center;
-    padding: 0 36px;
+    display: block;
     border-bottom: 2px solid var(--bg-deep);
+  }
+  .page-header-table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 48px;
   }
   .page-header-logo {
     height: 22px;
   }
   .page-header-title {
-    flex: 1;
     text-align: center;
     font-size: 8.5pt;
     color: var(--text-muted);
@@ -239,6 +243,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     font-size: 8.5pt;
     color: var(--text-muted);
     letter-spacing: 0.06em;
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 36px;
   }
 
   /* Section hero band */
@@ -246,7 +253,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     background: var(--bg-surface);
     padding: 24px 36px 20px;
     border-left: 5px solid var(--accent);
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
   .section-hero-title {
     font-size: 22pt;
@@ -264,26 +271,28 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   /* Content wrapper */
   .section-content {
-    padding: 0 36px 36px;
+    background: var(--bg-dark);
+    padding: 24px 36px 36px;
   }
 
   /* ── Market Summary Band ── */
   .market-band {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px 0;
+    margin-bottom: 22px;
     background: var(--bg-deep);
     border-radius: 10px;
-    display: flex;
-    gap: 2px;
-    margin-bottom: 22px;
-    overflow: hidden;
   }
   .market-stat {
-    flex: 1;
+    width: 33%;
     padding: 18px 16px;
     text-align: center;
     background: var(--bg-surface);
+    vertical-align: middle;
   }
-  .market-stat:first-child { border-radius: 10px 0 0 10px; }
-  .market-stat:last-child  { border-radius: 0 10px 10px 0; }
+  .market-stat-first { border-radius: 10px 0 0 10px; }
+  .market-stat-last  { border-radius: 0 10px 10px 0; }
   .market-stat-num {
     font-size: 22pt;
     font-weight: bold;
@@ -388,11 +397,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   /* ── Grid ── */
   .grid-2 {
-    display: flex;
-    gap: 18px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 16px 0;
     margin-bottom: 16px;
   }
-  .grid-2 > * { flex: 1; }
+  .grid-2 td { width: 50%; vertical-align: top; }
 
   /* ── Key Insights Box ── */
   .insights-box {
@@ -455,18 +465,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   /* ── Watchlist cards ── */
   .watchlist-grid {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
     margin-bottom: 20px;
   }
   .watchlist-card {
-    flex: 1;
-    min-width: 160px;
+    width: 50%;
     background: var(--bg-surface);
     border-radius: 8px;
     border-left: 3px solid var(--accent-dim);
     padding: 14px 16px;
+    vertical-align: top;
   }
   .watchlist-ticker {
     font-size: 13pt;
@@ -523,9 +533,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     border-radius: 50%;
     font-size: 7pt;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    line-height: 16px;
     top: 6px;
   }
   .step-list { counter-reset: step; }
@@ -579,16 +588,17 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     opacity: 0.75;
   }
   .cc-play-header {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+    width: 100%;
+    border-collapse: collapse;
     margin-bottom: 10px;
   }
   .cc-ticker {
     font-size: 16pt;
     font-weight: bold;
     color: var(--text-primary);
-    min-width: 60px;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-right: 10px;
   }
   .cc-badge-sell {
     background: {{ c.buy_green }};
@@ -611,10 +621,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     text-transform: uppercase;
   }
   .cc-viability {
-    flex: 1;
     font-size: 8.5pt;
     color: var(--text-body);
     line-height: 1.5;
+    vertical-align: middle;
+    padding-left: 4px;
   }
   .cc-stats {
     width: 100%;
@@ -819,11 +830,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {% set port = data.sections.portfolio %}
 <div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ port.title }}</div>
-    <div class="page-header-num">Page 2 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ port.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 2 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -835,26 +846,26 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <!-- Market Summary Band -->
     {% set ms = port.market_summary %}
-    <div class="market-band">
-      <div class="market-stat">
+    <table class="market-band"><tr>
+      <td class="market-stat market-stat-first">
         <div class="market-stat-num {{ 'up' if ms.sp500.direction == 'up' else 'down' }}">
           {{ arrow(ms.sp500.direction) }} {{ fmt_pct(ms.sp500.week_change_pct) }}
         </div>
         <div class="market-stat-label">S&amp;P 500</div>
-      </div>
-      <div class="market-stat">
+      </td>
+      <td class="market-stat">
         <div class="market-stat-num {{ 'up' if ms.nasdaq.direction == 'up' else 'down' }}">
           {{ arrow(ms.nasdaq.direction) }} {{ fmt_pct(ms.nasdaq.week_change_pct) }}
         </div>
         <div class="market-stat-label">Nasdaq</div>
-      </div>
-      <div class="market-stat">
+      </td>
+      <td class="market-stat market-stat-last">
         <div class="market-stat-num {{ 'up' if ms.dow.direction == 'up' else 'down' }}">
           {{ arrow(ms.dow.direction) }} {{ fmt_pct(ms.dow.week_change_pct) }}
         </div>
         <div class="market-stat-label">Dow Jones</div>
-      </div>
-    </div>
+      </td>
+    </tr></table>
 
     <!-- Week Narrative -->
     <div class="narrative">{{ port.week_narrative }}</div>
@@ -898,9 +909,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <!-- Watchlist -->
     <div class="section-label">Watchlist</div>
-    <div class="watchlist-grid">
+    <table class="watchlist-grid">
       {% for w in port.watchlist %}
-      <div class="watchlist-card">
+      {% if loop.index0 % 2 == 0 %}<tr>{% endif %}
+      <td class="watchlist-card">
         <div class="watchlist-ticker">
           {{ w.ticker }}
           <span style="font-size: 9pt; color: {{ sign_color(w.week_change_pct, brand) }}; font-weight: normal; margin-left: 8px;">
@@ -909,9 +921,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <div class="watchlist-name">{{ w.name }}</div>
         <div class="watchlist-body">{{ w.rationale }}</div>
-      </div>
+      </td>
+      {% if loop.index0 % 2 == 1 or loop.last %}
+      {% if loop.last and loop.index0 % 2 == 0 %}<td></td>{% endif %}
+      </tr>{% endif %}
       {% endfor %}
-    </div>
+    </table>
 
     <!-- Key Insights -->
     <div class="insights-box">
@@ -931,11 +946,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {% set cc = data.sections.covered_calls %}
 <div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ cc.title }}</div>
-    <div class="page-header-num">Page 3 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ cc.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 3 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -960,21 +975,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     {% for play in cc.plays %}
     <div class="cc-play {% if not play.viable %}cc-skip{% endif %}">
-      <div class="cc-play-header">
-        <div class="cc-ticker">{{ play.ticker }}</div>
-        {% if play.viable %}
-        <span class="cc-badge-sell">SELL CALL</span>
-        {% else %}
-        <span class="cc-badge-skip">SKIP</span>
-        {% endif %}
-        <div class="cc-viability">
+      <table class="cc-play-header"><tr>
+        <td class="cc-ticker">{{ play.ticker }}</td>
+        <td style="vertical-align:middle; white-space:nowrap; padding-right:10px;">
+          {% if play.viable %}
+          <span class="cc-badge-sell">SELL CALL</span>
+          {% else %}
+          <span class="cc-badge-skip">SKIP</span>
+          {% endif %}
+        </td>
+        <td class="cc-viability">
           <strong style="color: var(--text-primary);">{{ play.name }}</strong>
           &nbsp;·&nbsp; ${{ play.current_price }}
           {% if play.viable and play.viability_reason %}
           <br/>{{ play.viability_reason }}
           {% endif %}
-        </div>
-      </div>
+        </td>
+      </tr></table>
 
       {% if play.viable %}
       <div class="cc-stats">
@@ -1030,11 +1047,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {% set bench = data.sections.benchmarking %}
 <div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ bench.title }}</div>
-    <div class="page-header-num">Page 4 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ bench.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 4 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -1063,17 +1080,17 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="section-label" style="margin-top: 20px;">Strategies to Adopt</div>
     {% for strat in bench.strategies_to_adopt %}
     <div class="card-accent" style="margin-bottom: 16px;">
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
-        <div class="card-title" style="flex: 1;">{{ strat.strategy }}</div>
-        <div style="text-align: right; font-size: 8pt; color: var(--text-muted);">
+      <table style="width:100%; border-collapse:collapse; margin-bottom:10px;"><tr>
+        <td style="vertical-align:middle;"><div class="card-title">{{ strat.strategy }}</div></td>
+        <td style="text-align:right; vertical-align:middle; font-size:8pt; color:var(--text-muted); white-space:nowrap; padding-left:12px;">
           Difficulty:&nbsp;
           <span class="dot dot-{{ strat.difficulty | lower }}"></span>
           {{ strat.difficulty }}&nbsp;&nbsp;
           Impact:&nbsp;
           <span class="dot dot-{{ strat.impact | lower }}"></span>
           {{ strat.impact }}
-        </div>
-      </div>
+        </td>
+      </tr></table>
       <ol class="step-list">
         {% for step in strat.steps %}
         <li>{{ step }}</li>
@@ -1098,11 +1115,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {% set income = data.sections.side_income %}
 <div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ income.title }}</div>
-    <div class="page-header-num">Page 5 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ income.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 5 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -1115,20 +1132,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="section-label">Opportunities This Week</div>
     {% for opp in income.opportunities %}
     <div class="card-accent">
-      <div style="display: flex; align-items: flex-start; gap: 16px; margin-bottom: 10px;">
-        <div style="flex: 1;">
+      <table style="width:100%; border-collapse:collapse; margin-bottom:10px;"><tr>
+        <td style="vertical-align:top;">
           <div class="card-title">{{ opp.name }}</div>
           <div style="margin-top: 4px;">
             <span class="tag">{{ opp.type }}</span>
             <span class="tag">Effort: {{ opp.effort }}</span>
             {% if opp.time_sensitive %}<span class="tag" style="background: {{ c.sell_red }}; color: #fff;">Time Sensitive</span>{% endif %}
           </div>
-        </div>
-        <div style="text-align: right; flex-shrink: 0;">
+        </td>
+        <td style="text-align:right; vertical-align:top; white-space:nowrap; padding-left:16px;">
           <div style="font-size: 14pt; font-weight: bold; color: {{ c.buy_green }};">{{ opp.potential_return }}</div>
           <div style="font-size: 7.5pt; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em;">Potential Return</div>
-        </div>
-      </div>
+        </td>
+      </tr></table>
       <div style="background: var(--bg-deep); border-radius: 6px; padding: 10px 14px; font-size: 9pt; color: var(--text-body); line-height: 1.6;">
         <strong style="color: var(--accent);">How to start:</strong> {{ opp.how_to_start }}
       </div>
@@ -1160,11 +1177,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 {% set content = data.sections.content_strategy %}
 <div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ content.title }}</div>
-    <div class="page-header-num">Page 6 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ content.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 6 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -1177,15 +1194,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <div class="section-label">Content Angles This Week</div>
     {% for angle in content.content_angles %}
     <div class="card">
-      <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 8px;">
-        <div style="flex: 1;">
-          <div class="card-title">{{ angle.headline }}</div>
-          <div style="margin-top: 4px;">
-            {% for platform in angle.platform.split('+') %}
-            <span class="tag">{{ platform.strip() }}</span>
-            {% endfor %}
-            <span class="tag">{{ angle.format }}</span>
-          </div>
+      <div style="margin-bottom: 8px;">
+        <div class="card-title">{{ angle.headline }}</div>
+        <div style="margin-top: 4px;">
+          {% for platform in angle.platform.split('+') %}
+          <span class="tag">{{ platform.strip() }}</span>
+          {% endfor %}
+          <span class="tag">{{ angle.format }}</span>
         </div>
       </div>
       <div style="background: var(--bg-deep); border-radius: 6px; padding: 10px 14px; margin-bottom: 8px;">
@@ -1198,9 +1213,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
     {% endfor %}
 
-    <div class="grid-2" style="margin-top: 4px;">
+    <table class="grid-2" style="margin-top: 4px;">
+      <tr>
       <!-- Audience Growth -->
-      <div>
+      <td>
         <div class="section-label">Audience Growth Moves</div>
         {% for move in content.audience_growth_moves %}
         <div class="card-accent" style="margin-bottom: 12px;">
@@ -1212,10 +1228,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <div style="font-size: 8.5pt; color: {{ c.buy_green }};">{{ move.expected_reach }}</div>
         </div>
         {% endfor %}
-      </div>
+      </td>
 
       <!-- Monetization -->
-      <div>
+      <td>
         <div class="section-label">Monetization Ideas</div>
         {% for idea in content.monetization_ideas %}
         <div class="card-accent" style="margin-bottom: 12px;">
@@ -1227,8 +1243,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <div style="font-size: 8.5pt; color: var(--text-body); line-height: 1.5;">{{ idea.steps }}</div>
         </div>
         {% endfor %}
-      </div>
-    </div>
+      </td>
+      </tr>
+    </table>
 
     <div class="insights-box">
       <div class="insights-title">Key Insights This Week</div>
@@ -1245,13 +1262,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 ════════════════════════════════════════════════ -->
 {% if data.sections.community_events is defined %}
 {% set evts = data.sections.community_events %}
-<div class="section-page">
+<div class="page section-page">
   <div class="page-header">
-    {% if logo_light_uri %}
-    <img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>
-    {% endif %}
-    <div class="page-header-title">{{ evts.title }}</div>
-    <div class="page-header-num">Page 7 of 7</div>
+    <table class="page-header-table"><tr>
+      <td style="width:80px; padding-left:36px; vertical-align:middle;">{% if logo_light_uri %}<img class="page-header-logo" src="{{ logo_light_uri }}" alt="FI"/>{% endif %}</td>
+      <td class="page-header-title" style="vertical-align:middle;">{{ evts.title }}</td>
+      <td class="page-header-num" style="vertical-align:middle;">Page 7 of 7</td>
+    </tr></table>
   </div>
 
   <div class="section-hero">
@@ -1360,7 +1377,28 @@ def resolve_css_vars(html: str) -> str:
     return html
 
 
-def render_xhtml2pdf(html: str, output_path: Path):
+def _hex_to_rgb(hex_color: str) -> tuple:
+    h = hex_color.lstrip("#")
+    return (int(h[0:2], 16) / 255, int(h[2:4], 16) / 255, int(h[4:6], 16) / 255)
+
+
+def apply_page_background(pdf_path: Path, bg_hex: str):
+    """Stamp a solid background rectangle behind every page using PyMuPDF."""
+    import fitz
+    color = _hex_to_rgb(bg_hex)
+    doc = fitz.open(str(pdf_path))
+    for page in doc:
+        shape = page.new_shape()
+        shape.draw_rect(page.rect)
+        shape.finish(fill=color, color=None)
+        shape.commit(overlay=False)
+    tmp = pdf_path.with_suffix(".bg.pdf")
+    doc.save(str(tmp), deflate=True)
+    doc.close()
+    tmp.replace(pdf_path)
+
+
+def render_xhtml2pdf(html: str, output_path: Path, bg_hex: str = "#1B1B1E"):
     try:
         from xhtml2pdf import pisa
     except ImportError:
@@ -1372,6 +1410,7 @@ def render_xhtml2pdf(html: str, output_path: Path):
     if result.err:
         print(f"xhtml2pdf errors: {result.err}")
         sys.exit(1)
+    apply_page_background(output_path, bg_hex)
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -1432,7 +1471,7 @@ def main():
     print(f"Rendering PDF with {engine}...")
 
     if engine == "xhtml2pdf":
-        render_xhtml2pdf(html, out_path)
+        render_xhtml2pdf(html, out_path, brand["colors"].get("bg_dark", "#1B1B1E"))
     else:
         render_weasyprint(html, out_path)
 
