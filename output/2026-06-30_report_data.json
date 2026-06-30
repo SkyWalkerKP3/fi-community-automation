@@ -7,110 +7,110 @@
       "subtitle": "Stock Picks, Holdings Review & Recommendations",
       "market_summary": {
         "sp500": {
-          "week_change_pct": 1.61,
-          "current": 7476.74,
+          "week_change_pct": 1.72,
+          "current": 7484.91,
           "direction": "up"
         },
         "nasdaq": {
-          "week_change_pct": 2.38,
-          "current": 26082.04,
+          "week_change_pct": 2.56,
+          "current": 26128.41,
           "direction": "up"
         },
         "dow": {
-          "week_change_pct": 0.8,
-          "current": 52263.47,
+          "week_change_pct": 0.81,
+          "current": 52268.8,
           "direction": "up"
         }
       },
-      "week_narrative": "Markets closed the first half of 2026 on a risk-on note as a U.S.-Iran resolution came into sight, easing the energy-price and flight-to-safety fears that dominated the spring. The S&P 500 (+1.61%) and Nasdaq (+2.38%) led gains, and JPMorgan hiked its 2026 S&P target to 7,800, implying another ~5% of upside. The cross-current is policy: Thursday's PCE report showed core inflation at 3.4% \u2014 a three-year high \u2014 and the Fed held at 3.50\u20133.75% on June 17 with Chair Warsh keeping a possible rate HIKE on the table. That combination (strong consumer + sticky inflation + Iran de-escalation + tariff/customs-enforcement escalation under the June 3 executive order) is rewarding broad index and quality-tech exposure while punishing the most leveraged, rate-sensitive bets \u2014 most visibly MSTR, which fell 9.3% on the week as Bitcoin cooled.",
+      "week_narrative": "In plain terms: stocks had a good week because the U.S. and Iran moved toward ending their war, which pushed oil prices down and made investors feel safer \u2014 that matters to you because cheaper oil means cheaper gas and less inflation pressure on your wallet, and a calmer world usually means your investments grow. With a U.S.-Iran resolution now in sight, Wall Street turned more optimistic at the year's halfway mark: JPMorgan hiked its 2026 S&P 500 target to 7,800 from 7,200, suggesting another 5% rise from current levels is possible. The catch \u2014 Thursday's PCE report showed inflation at its highest in roughly three years, but it also confirmed that consumer spending remains robust, suggesting the U.S. economy can absorb what many hope is a one-time spike in energy prices. The Federal Reserve (the U.S. central bank that sets interest rates) kept the fed funds rate unchanged at the 3.5%\u20133.75% target range for a third consecutive meeting, signaling patience. Beneath the surface, money rotated OUT of the biggest AI names (Alphabet, Meta, Nvidia softened) and INTO smaller companies and value plays \u2014 the Russell 2000 has surged nearly 21%, while the S&P 500 has added less than 10% in 2026. China also slapped MP Materials and USA Rare Earth with export controls, a reminder that supply-chain and tariff tensions remain a long-term wildcard.",
       "holdings": [
         {
           "ticker": "MSTR",
           "name": "Strategy Inc",
-          "current_price": 85.34,
-          "week_change_pct": -9.34,
+          "current_price": 85.86,
+          "week_change_pct": -8.79,
           "direction": "down",
           "recommendation": "HOLD",
-          "short_term_strategy": "Do NOT add here. MSTR is sitting just above its 52-week low ($81.81) after a ~56% slide from its peak and a -9.3% week. Wait for Bitcoin to stabilize and the stock to reclaim and hold the $95\u2013$100 zone on volume before considering any add. Hard mental stop / re-evaluation if it breaks below $81.81 on a weekly close. Q2 earnings on Aug 4 is a near-term volatility event \u2014 do not chase into it.",
-          "long_term_strategy": "MSTR is a leveraged Bitcoin proxy holding ~847,000 BTC at a ~$75,650 average cost; the thesis is intact only if you remain structurally bullish on Bitcoin over 12\u201324 months. Crypto policy is turning supportive \u2014 the GENIUS Act is law and a state has launched a Bitcoin reserve \u2014 which favors institutional BTC adoption long term. Keep the position small as a high-beta satellite, and accumulate only via tiny DCA tranches on deep Bitcoin drawdowns rather than lump sums.",
-          "rationale": "This week's macro backdrop \u2014 sticky 3.4% core PCE and a Fed signaling it may hike rather than cut \u2014 is precisely the higher-for-longer rate environment that punishes leveraged crypto bets like MSTR, explaining its -9.3% week. The HOLD reflects a still-constructive long-term crypto-policy tailwind (GENIUS Act, state Bitcoin reserves) against a hostile short-term rate and risk-appetite setup. Patience over panic-selling near the 52-week low.",
-          "cost_basis_note": "Average cost basis is $323.04 vs. $85.34 \u2014 the position is deeply underwater (~-74%), roughly a $1,663 unrealized loss on 7 shares. Because the loss is already large and the long-term BTC thesis is unbroken, selling here crystallizes the worst-case; HOLD and let the thesis play out rather than capitulating at the low."
+          "short_term_strategy": "Do NOT add and do NOT panic-sell at the very bottom. MSTR sits at $85.86, just above its 52-week low of $81.81 and down 8.79% on the week. Technically, $81\u2013$82 is critical support; holding above $66.30 while making a clear and confirmed close above $94.20 should take us on a bounce target for MSTR, $116.10. Hold and watch Bitcoin and the Aug 4 earnings; only consider trimming into any sharp bounce above $94.",
+          "long_term_strategy": "Over 6\u201324 months MSTR is a leveraged bet on Bitcoin, not an operating business \u2014 its value tracks the ~847,000 BTC on its balance sheet. The 2026 crash (roughly -56% from highs) was driven by Bitcoin's slide and growing fears that the company must keep issuing new shares (dilution); Strategy began 2026 with a $2.25 billion liquidity pool; that figure has declined to $900 million. The clearer 2026 U.S. crypto regulatory framework is a structural positive, but only accumulate if you have high risk tolerance.",
+          "rationale": "This week's risk-on rally lifted indexes but NOT MSTR, because its decline is crypto- and balance-sheet-specific rather than macro. With the Fed on hold (steady rates remove a tailwind for speculative crypto) and dilution fears front-and-center, the prudent move is to hold an already-small 7-share stake through the Aug 4 report rather than realize a deep loss at the lows.",
+          "cost_basis_note": "Deeply underwater: avg cost basis $323.04 vs $85.86 now, an unrealized loss of about -73%. Because the position is only 7 shares and a small dollar amount, selling here locks in a near-total loss; hold and treat as a high-risk lottery ticket on Bitcoin."
         },
         {
           "ticker": "NFLX",
           "name": "Netflix, Inc.",
-          "current_price": 72.72,
-          "week_change_pct": 1.22,
+          "current_price": 72.62,
+          "week_change_pct": 1.09,
           "direction": "up",
           "recommendation": "HOLD",
-          "short_term_strategy": "Hold into the July 16 Q2 earnings report \u2014 do NOT initiate covered calls (earnings within 3 weeks). NFLX is grinding just above its 52-week low ($70.86); a clean earnings beat could spark a relief rally toward $80\u2013$85, while a miss risks a retest of the low. Consider adding a small tranche only after earnings clears the uncertainty and the stock holds above $75.",
-          "long_term_strategy": "Netflix remains the streaming leader with strong cash flow and a fast-growing ad tier; analysts carry a Buy consensus with a ~$114 average target (well above current price). Its real-estate moves (reported Radford Studio purchase) and live-content push deepen the moat. Streaming faces limited near-term regulatory threat, making it a cleaner long-term compounder than the AI/crypto names \u2014 accumulate on post-earnings weakness for a 12\u201324 month hold.",
-          "rationale": "With consumer spending still robust per this week's PCE data, Netflix's subscription + ad model is well positioned even as inflation pressures discretionary budgets. The HOLD is driven by the July 16 earnings catalyst landing inside the next three weeks \u2014 too close to add aggressively or to sell calls. The ~$114 analyst target frames meaningful long-term upside from a near-52-week-low entry.",
-          "cost_basis_note": "Average cost basis is $110.63 vs. $72.72 \u2014 underwater ~-34% (~$379 unrealized loss on 10 shares). The single 2025 lot is well below breakeven, so the recommended action is to hold through earnings rather than sell at a loss; the gap to the analyst target supports patience."
+          "short_term_strategy": "Hold tight into the July 16 Q2 earnings report \u2014 do not sell or write options before it. NFLX is $72.62 (post the November 2025 10-for-1 split that took it from ~$1,100 to ~$110), sitting just above its 52-week low of $70.86. The $70\u2013$71 zone is key support. Avoid adding right before earnings; reassess the trading day AFTER July 16.",
+          "long_term_strategy": "Over 6\u201324 months the bull case is advertising revenue scaling toward $3B, membership growth past 325M, and the company's ability to sustain a 31.5% operating margin target. According to 50 analysts polled by S&P Global, Netflix stock has a consensus rating of 'Buy' and an average price target of $114.15 \u2014 well above today's price. If Q2 confirms ad and margin momentum, accumulate on dips toward $70.",
+          "rationale": "This week's communication-services weakness and an upcoming July 16 earnings date make NFLX a classic 'wait-and-see.' With the consumer still spending despite elevated inflation (a macro tailwind for subscription services), the long-term thesis is intact, but it would be reckless to add or sell right before a binary earnings event.",
+          "cost_basis_note": "Underwater: avg cost basis $110.63 vs $72.62, about -34%. Selling now realizes a loss right before a potential earnings catalyst, so HOLD; if Q2 disappoints and breaks $70 support, then reconsider trimming."
         },
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
-          "current_price": 197.93,
-          "week_change_pct": -0.54,
+          "current_price": 198.6,
+          "week_change_pct": -0.2,
           "direction": "down",
           "recommendation": "BUY",
-          "short_term_strategy": "Accumulate on weakness between $185\u2013$198. NVDA is consolidating below its 52-week high ($236.54) after a flat week, with semis broadly strong (Micron surged ~16% on earnings; SOX +3.2% that session). Add a tranche now and keep dry powder to buy a dip toward the $185 support shelf. Next earnings Aug 26 is the major catalyst \u2014 position before the late-summer run.",
-          "long_term_strategy": "NVDA posted record Q1 FY27 revenue of $81.6B (+85% YoY) with Data Center +92% \u2014 the AI infrastructure buildout remains the dominant secular growth story, and analysts show 77 Buy vs. 1 Hold with an average target near $304. The key risk is policy: Senator Warren's June compliance inquiry and pending chip-export licensing rules could cap China revenue. Net-net, accumulate steadily; the structural AI demand outweighs the export-control overhang over 12\u201324 months.",
-          "rationale": "This week's risk-on tape, Iran de-escalation, and blowout semiconductor earnings reinforce the AI capex super-cycle that drives NVDA. The BUY explicitly weighs that secular tailwind against a real political headwind \u2014 tightening U.S. chip-export rules and Warren's NVIDIA inquiry \u2014 which is why we add on dips rather than chase strength. With the stock below its high and earnings ahead, the risk/reward favors accumulation.",
-          "cost_basis_note": "Average cost basis is $127.36 vs. $197.93 \u2014 the position is solidly profitable (~+55%, ~$423 unrealized gain on 6 shares). The healthy cushion lets us add to a winner with confidence and gives room to ride volatility into the Aug 26 earnings without threatening breakeven."
+          "short_term_strategy": "Accumulate on weakness. NVDA is $198.60, roughly flat on the week but down ~23% from its May peak amid AI-sector rotation. Use dollar-cost averaging (DCA \u2014 investing a fixed amount on a schedule regardless of price): add a small tranche near $195\u2013$200 and another if it dips toward the $185\u2013$190 support shelf. No earnings until Aug 26.",
+          "long_term_strategy": "Over 6\u201324 months NVDA remains the core AI infrastructure holding \u2014 record revenue of $81.6 billion, up 85% from a year ago, and record Data Center revenue of $75.2 billion, up 92% in Q1 FY2027. Analyst targets cluster around $300\u2013$350. The regulation loosens restrictions on the export of Nvidia H200 chips to China, a tailwind, though export policy remains a political wildcard. Continue accumulating.",
+          "rationale": "This week's rotation OUT of mega-cap AI created the dip \u2014 a gift for long-term buyers, not a thesis-breaker. With the Fed steady (stable rates support growth-stock valuations) and AI capex still booming, buying weakness in the sector leader is the right move; the only caution is the Aug 26 earnings and ongoing U.S.-China chip-export politics.",
+          "cost_basis_note": "Solidly profitable: avg cost basis $127.36 vs $198.60, about +56% unrealized gain. The strong gain gives a cushion to add more without raising blended cost dramatically \u2014 DCA into the dip rather than chasing strength."
         },
         {
           "ticker": "VOO",
           "name": "Vanguard S&P 500 ETF",
-          "current_price": 684.66,
-          "week_change_pct": 1.62,
+          "current_price": 685.38,
+          "week_change_pct": 1.73,
           "direction": "up",
           "recommendation": "BUY",
-          "short_term_strategy": "Continue automatic dollar-cost averaging \u2014 no market timing needed. VOO is +1.62% on the week and just 2% below its 52-week high ($699.15) as the index pushes toward Wall Street's 7,800 S&P target. Keep buying on schedule; if a sticky-inflation scare triggers a 3\u20135% pullback, add an extra tranche near the $650 area.",
-          "long_term_strategy": "VOO is the club's core engine \u2014 broad, low-cost S&P 500 exposure that compounds through cycles. Analysts see the S&P reaching 7,500\u20137,600+ by year-end, with bull cases above on AI-driven earnings. The structural rise in retail and Gen Z/Black investor participation supports steady inflows into index products. Maximize DRIP and keep contributing every cycle for the 12\u201324 month base and beyond.",
-          "rationale": "An improving geopolitical picture (Iran resolution in sight) and resilient consumer spending underpin the broad market, even as the Fed's higher-for-longer stance caps the pace of gains. The BUY/keep-DCA call leans on the index's diversification to absorb the inflation and tariff cross-currents that whip individual names like MSTR. Dollar-cost averaging neutralizes the timing risk created by an uncertain rate path.",
-          "cost_basis_note": "Average cost basis is $498.90 vs. $684.66 \u2014 profitable ~+37% (~$4,569 unrealized gain on 24.61 shares). The large cushion and core-holding role make continued accumulation the right move; this is the position to keep feeding every contribution cycle."
+          "short_term_strategy": "Keep buying on schedule. VOO is $685.38, up 1.73% on the week and near its 52-week high of $699.15 as the S&P 500 pushes toward records. Don't try to time the top \u2014 maintain automatic DCA contributions. If a pullback comes, add extra near the $660\u2013$670 area.",
+          "long_term_strategy": "VOO is the portfolio's anchor \u2014 it holds roughly 500 stocks across all market sectors, the single best vehicle for steady, diversified compounding. With JPMorgan targeting S&P 7,800 and 2026 U.S.-listed ETF flows reaching $1 trillion, less than halfway through the year, the structural trend is up. This is a forever-hold.",
+          "rationale": "This week's broad rally and the U.S.-Iran de-escalation reinforce why a diversified index beats stock-picking for core money. Even with PCE inflation elevated and the Fed on hold, broad U.S. equities have absorbed the shock \u2014 so the boring, consistent DCA plan continues to be the highest-probability path to wealth.",
+          "cost_basis_note": "Profitable: avg cost basis $498.90 vs $685.38, about +37% unrealized gain. Healthy gains confirm the DCA strategy is working; keep adding regularly rather than waiting for a dip that may not come."
         }
       ],
       "watchlist": [
         {
           "ticker": "MSFT",
           "name": "Microsoft Corporation",
-          "current_price": 370.7,
-          "week_change_pct": 1.43,
+          "current_price": 370.16,
+          "week_change_pct": 1.29,
           "direction": "up",
-          "rationale": "Microsoft sits near its 52-week low ($349.20) and well below the ~$561 average analyst target, even as Azure AI and Copilot adoption keep growing and operating margins run ~46.8%. A recent Xbox price hike weighed on sentiment, but the AI franchise is now larger than some legacy businesses. Watch for stabilization above $365 as a quality-on-sale entry."
+          "rationale": "Microsoft trades at $370.16, well off its 52-week high of $555.45 after unveiling price hikes for Xbox consoles, adding to concerns that companies are passing rising costs on to consumers. Out of roughly 97 analysts covering the stock, most rate MSFT as a 'Strong Buy' or 'Buy,' with an average price target in the range of $589 and $592 \u2014 large upside. The pullback is a watch-for-entry opportunity below $360; AI/Azure and a steady-rate backdrop support the long-term case."
         },
         {
           "ticker": "META",
           "name": "Meta Platforms, Inc.",
-          "current_price": 556.42,
-          "week_change_pct": -0.22,
+          "current_price": 556.29,
+          "week_change_pct": -0.25,
           "direction": "down",
-          "rationale": "Meta is ~30% below its 52-week high ($796.25) amid AI-talent-departure and heavy capex concerns, with revenue still up ~22% YoY and an ~$841 average analyst target signaling large upside. The pullback is sentiment-driven, not fundamental. Monitor for a base near $520 (the 52-week low) before adding."
+          "rationale": "Meta is $556.29, down sharply from its 52-week high of $796.25 amid AI-talent-departure worries and a Trump threat of 100% tariffs weighing on sentiment. META's current price target is $840.60 \u2014 substantial implied upside. Watch for stabilization above the $520 52-week-low/support zone before an entry; rising Black and Gen Z digital ad consumption is a long-term tailwind."
         },
         {
           "ticker": "QQQ",
           "name": "Invesco QQQ Trust",
-          "current_price": 732.7,
-          "week_change_pct": 3.11,
+          "current_price": 734.32,
+          "week_change_pct": 3.34,
           "direction": "up",
-          "rationale": "QQQ jumped +3.11% on the week and is pressing its 52-week high ($748.65) on renewed AI optimism and strong semis. It offers concentrated mega-cap tech exposure if the club wants more growth tilt than VOO. Watch for entries on pullbacks toward the $705 support rather than chasing the breakout."
+          "rationale": "QQQ (the Nasdaq-100 ETF, tech-heavy growth) jumped 3.34% this week to $734.32, just under its 52-week high of $748.65 \u2014 the strongest mover on our watchlist as tech rebounded. It's a cleaner, diversified way to own the AI theme than single stocks. Consider it as a complement to VOO for members wanting more growth tilt; add on dips rather than at all-time highs."
         },
         {
           "ticker": "DIA",
           "name": "SPDR Dow Jones Industrial Average ETF Trust",
-          "current_price": 521.79,
-          "week_change_pct": 0.63,
+          "current_price": 521.84,
+          "week_change_pct": 0.64,
           "direction": "up",
-          "rationale": "DIA recently hit a fresh 52-week high and offers blue-chip value exposure (financials ~27%, industrials ~17%) that benefits from the rotation into cyclicals and small/value seen this week (Caterpillar +4% one session). It's a lower-volatility diversifier vs. the tech-heavy book. Consider as a defensive ballast if inflation forces a value rotation."
+          "rationale": "DIA (tracks the 30-stock Dow, tilted to established value/industrial names) rose 0.64% to $521.84, near its 52-week high of $526.57. It benefited from this week's rotation into value and industrials \u2014 the Dow Jones Industrial Average added 148.01 points, led by a nearly 4% gain in Caterpillar. A useful diversifier if the value-over-growth rotation persists, but lower growth potential than VOO/QQQ; monitor rather than rush in."
         }
       ],
       "key_insights": [
-        "Sticky 3.4% core PCE punishes leveraged MSTR; favors broad index VOO/QQQ",
-        "NVDA profitable +55% \u2014 accumulate dips into the Aug 26 earnings catalyst",
-        "Hold NFLX through July 16 earnings; no calls inside the window"
+        "Buy the AI dip: accumulate NVDA near $195\u2013$200, keep DCA into VOO",
+        "Hold MSTR and NFLX through earnings \u2014 don't sell at lows",
+        "Rotation into small-caps and value is the week's real story"
       ]
     },
     "benchmarking": {
@@ -119,32 +119,32 @@
       "clubs_researched": [
         {
           "name": "BetterInvesting / NAIC National Network",
-          "strategy": "75-year-old commonsense Stock Study method \u2014 standardized 5-year EPS and sales-growth analysis and a documented buy/hold/sell decision before any vote.",
-          "tool": "BetterInvesting Stock Selection Guide (SSG) + online portfolio management resources",
-          "takeaway": "A required written, data-driven study before every vote removes emotion \u2014 exactly the discipline that would have kept the club from chasing MSTR at its highs."
+          "strategy": "Stock Selection Guide (SSG) methodology \u2014 a standardized study of ~5 years of sales and EPS (Earnings Per Share \u2014 a company's profit divided by its shares) growth required before any buy vote, removing emotion from decisions.",
+          "tool": "BetterInvesting Stock Selection Guide tool + online community and 90-day free trial",
+          "takeaway": "A formal written study before every purchase has, per BetterInvesting, empowered hundreds of thousands of individual investors and stops impulse buying."
         },
         {
-          "name": "Black Investment Club @ Harvard Business School (with AASU)",
-          "strategy": "Builds a pipeline into public markets, PE, VC and alternatives via corporate partnerships; runs a flagship annual conference with alumni and professionals.",
-          "tool": "Corporate-sponsor network + annual conference programming for deal flow and mentorship",
-          "takeaway": "Partnerships and a signature annual event create deal flow, mentorship and recruitment \u2014 a model FI Community can mirror through Atlanta event tabling."
+          "name": "Black Investment Club @ Harvard Business School (BIC)",
+          "strategy": "Builds pipelines into venture capital, private equity, and public markets; partners with the African American Student Union (AASU) on a flagship annual conference connecting alumni, students, and practitioners.",
+          "tool": "Alumni mentorship network + annual conference programming",
+          "takeaway": "Pairing investing education with a recurring signature event drives recruitment, retention, and real career/deal access \u2014 a model FI Community can mirror in Atlanta."
         },
         {
-          "name": "HBCU / Gen Z Black Investor Cohorts",
-          "strategy": "Peer-led financial-literacy and investing groups capitalizing on the documented rise in Gen Z Black investors, focused on real estate, stocks and long-term wealth-building.",
-          "tool": "Social-media-native education + simple shared trackers and curriculum",
-          "takeaway": "Community-values alignment and peer education drive engagement among the fastest-growing investor demographic \u2014 a direct recruitment lane for FI Community."
+          "name": "HBCU Campus Finance Clubs (Spelman/Howard model)",
+          "strategy": "Sector-ownership with quarterly rebalancing \u2014 each member 'owns' a sector and presents updates; some add an ESG/community-impact screen aligning returns with community values.",
+          "tool": "Google Sheets portfolio tracker + free Yahoo Finance / Morningstar screeners",
+          "takeaway": "Assigning sector accountability deepens member expertise, and a community-values screen boosts engagement among Black and Gen Z investors."
         }
       ],
       "strategies_to_adopt": [
         {
-          "strategy": "Written investment thesis requirement (NAIC-style Stock Study lite)",
+          "strategy": "Written investment thesis requirement (NAIC SSG-style)",
           "difficulty": "Low",
           "impact": "High",
           "steps": [
-            "Create a 1-page template: ticker, thesis, 5-year growth, risks, price target, time horizon, cost-basis vs. price",
+            "Create a 1-page thesis template: ticker, thesis, key risks, price target, time horizon, cost-basis impact",
             "Require submission 48 hours before any buy/sell vote",
-            "Archive every thesis in a shared Google Drive for quarterly review"
+            "Archive every thesis in a shared Google Drive to review against actual results"
           ]
         },
         {
@@ -152,26 +152,26 @@
           "difficulty": "Low",
           "impact": "High",
           "steps": [
-            "Assign each member 1\u20132 sectors (Tech, Comm Services, Index/Macro, Crypto) to monitor monthly",
-            "Sector lead gives a 5-minute update each meeting tied to the week's macro/political news",
+            "Assign each member 1\u20132 sectors (e.g., Tech=NVDA/MSFT, Comm Services=NFLX/META) to monitor monthly",
+            "Sector lead gives a 5-minute update each meeting",
             "Rotate assignments every 6 months for cross-training"
           ]
         },
         {
-          "strategy": "Quarterly cost-basis & thesis-review meeting",
+          "strategy": "Signature recurring community event (BIC model)",
           "difficulty": "Medium",
           "impact": "High",
           "steps": [
-            "Schedule a dedicated quarterly session separate from regular meetings",
-            "Review each holding against its original thesis AND current P/L vs. cost basis",
-            "Vote on rebalancing/trimming with full quorum (e.g., review the MSTR underwater thesis)"
+            "Launch a quarterly 'FI Community Wealth Night' tied to an Atlanta venue or partner",
+            "Invite a local Black financial advisor or HBCU club as co-host for reach",
+            "Use the event for member recruitment and to showcase the club's track record"
           ]
         }
       ],
       "key_insights": [
-        "Top clubs win on process, not picks \u2014 build the written-thesis framework first",
-        "ESG/community-values alignment is FI Community's strongest recruitment hook",
-        "Quarterly cost-basis reviews catch underwater theses like MSTR before they deepen"
+        "Top clubs win on process and a written thesis \u2014 not hot stock picks",
+        "Sector ownership creates accountability and member expertise fast",
+        "A signature recurring event drives recruitment and partner deals"
       ]
     },
     "side_income": {
@@ -179,54 +179,54 @@
       "subtitle": "Specific Opportunities This Week",
       "opportunities": [
         {
-          "name": "High-Yield Savings Account (HYSA) for club reserves",
+          "name": "High-Yield Savings Account (HYSA)",
           "type": "Fixed Income",
           "effort": "Low",
-          "potential_return": "Up to ~4.15% APY (top June 2026 accounts per Bankrate)",
-          "how_to_start": "Open a top-rate online HYSA (e.g., CIT Platinum Savings, which tops out for $5,000+ balances and charges no monthly fee). Move club operating cash and emergency reserves online in ~10 minutes.",
+          "potential_return": "Up to ~4.10\u20135.00% APY (Annual Percentage Yield \u2014 yearly interest earned) as of late June 2026",
+          "how_to_start": "Open an online HYSA. Bankrate and Fortune listings show top accounts paying up to ~4.15\u20135.00% APY. Move the club's idle operating cash and any emergency reserve from a 0% checking account \u2014 takes about 15 minutes.",
           "time_sensitive": true
         },
         {
           "name": "Treasury Bills via TreasuryDirect",
           "type": "Fixed Income",
           "effort": "Low",
-          "potential_return": "~3\u20135% annualized (4-week to 1-year T-bills)",
-          "how_to_start": "Create a free TreasuryDirect.gov account and buy 4-week or 13-week T-bills at auction (minimum $100). With the Fed holding at 3.50\u20133.75% and a hike on the table, short-bill yields stay attractive and carry zero credit risk.",
-          "time_sensitive": true
+          "potential_return": "Yields tracking the Fed's 3.5%\u20133.75% range, with zero credit risk (backed by the U.S. government)",
+          "how_to_start": "Create a free account at TreasuryDirect.gov and buy a 4-week or 13-week T-bill at auction; minimum $100. Good home for cash the club won't deploy for a couple of months.",
+          "time_sensitive": false
         },
         {
-          "name": "Digital products / templates (investment-club starter kit)",
+          "name": "Digital Product: Investment Club Starter Kit",
           "type": "Digital Product",
           "effort": "Medium",
-          "potential_return": "Recurring micro-revenue; digital templates rank among top 2026 passive-income earners",
-          "how_to_start": "Package the club's bylaws, contribution tracker and thesis template into a downloadable kit and list it on Gumroad/Stan Store for $27\u201347. Zero inventory; created once, sold repeatedly.",
+          "potential_return": "$27\u2013$47 per sale; near-zero cost to create and infinite to resell",
+          "how_to_start": "Package the club's own templates (bylaws, contribution tracker, 1-page thesis template, meeting agenda) into a PDF and list on Gumroad or Stan Store. Rising retail/Gen Z investing interest in 2026 means strong search demand for 'how to start an investment club.'",
           "time_sensitive": false
         },
         {
           "name": "Dividend Reinvestment (DRIP) on VOO",
           "type": "Compounding",
           "effort": "Low",
-          "potential_return": "Accelerates compounding on the 24.6-share VOO core position",
-          "how_to_start": "Turn on automatic DRIP for VOO in the brokerage so quarterly distributions auto-buy fractional shares. Set-and-forget compounding with no monthly action.",
+          "potential_return": "Automatically reinvests VOO dividends into fractional shares, accelerating compounding",
+          "how_to_start": "Toggle on automatic DRIP (Dividend Reinvestment Plan) for VOO in the brokerage so every dividend buys more shares with no manual effort.",
           "time_sensitive": false
         }
       ],
       "news_hooks": [
         {
-          "event": "Fed holds at 3.50\u20133.75% on June 17 with a possible HIKE still on the table after 3.4% core PCE",
-          "opportunity": "Short-term yields (HYSA, T-bills) stay elevated \u2014 lock in idle club cash now while rates are high",
-          "action": "Move club reserves from a 0% checking account into a top HYSA or 4-week T-bill this week"
+          "event": "Fed holds rates at 3.5%\u20133.75% for a third straight meeting",
+          "opportunity": "Cash yields near 4\u20135% are still available, but once the Fed eventually cuts, HYSA and T-bill rates will fall \u2014 lock in / deploy idle cash now",
+          "action": "Move club operating cash into an HYSA or short T-bill this week"
         },
         {
-          "event": "Core inflation hit a 3-year high (3.4%) while consumer spending stayed robust",
-          "opportunity": "Resilient spending favors consumer/streaming names; sticky inflation favors short-duration fixed income over long bonds",
-          "action": "Keep new cash in short T-bills, not long-duration bond funds, until the rate path clears"
+          "event": "PCE inflation hit a ~3-year high while consumer spending stayed robust",
+          "opportunity": "Resilient spending favors subscription and consumer-platform businesses \u2014 reinforces the long-term NFLX and META theses",
+          "action": "Frame a content piece on 'why your subscriptions are an investing signal'"
         }
       ],
       "key_insights": [
-        "Idle club cash at 0% is a silent drag \u2014 HYSA is a 10-minute fix",
-        "Short T-bills beat long bond funds with zero credit risk now",
-        "A starter-kit digital product is launchable this week at near-zero cost"
+        "Idle checking cash earns 0% \u2014 an HYSA is a 15-minute fix",
+        "Lock in ~4\u20135% cash yields before the Fed eventually cuts",
+        "Turn the club's own templates into a $27\u2013$47 digital product"
       ]
     },
     "content_strategy": {
@@ -234,154 +234,154 @@
       "subtitle": "Angles, Growth Moves & Monetization This Week",
       "content_angles": [
         {
-          "headline": "Inflation Just Hit a 3-Year High. Here's What Our Club Actually Did.",
+          "headline": "The Market Hit Records This Week \u2014 Here's What We Actually Did",
           "platform": "Instagram Reel + TikTok",
-          "hook": "Core inflation just hit a 3-year high and the Fed might HIKE \u2014 here's the 3 moves a real investment club made this week instead of panicking.",
-          "format": "45\u201360 second talking-head with on-screen text overlay (HYSA, T-bills, DCA)",
+          "hook": "Everyone's celebrating new highs. Here's what a real investment club does when the S&P is near a record and the Fed won't budge...",
+          "format": "60-second talking-head with on-screen text overlay",
           "cta": "Follow FI Community for our weekly market breakdown"
         },
         {
-          "headline": "We're Down 74% on This Stock. Why We're NOT Selling.",
+          "headline": "$2.1 Trillion in Black Spending Power \u2014 But Who Owns the Stocks?",
           "platform": "Instagram Carousel",
-          "hook": "Our club is down 74% on one position \u2014 here's why we're holding, and the cost-basis rule that keeps us from panic-selling at the low.",
-          "format": "7-slide carousel: hook + MSTR story + cost-basis rule + 3 lessons + follow CTA",
-          "cta": "Save this for the next time YOUR position drops"
+          "hook": "Black America will spend $2.1T in 2026. Imagine if even 5% became OWNERSHIP instead of just spending. Here's how we start.",
+          "format": "7-slide carousel: hook + the spending-vs-ownership gap + 5 action slides + follow CTA",
+          "cta": "Save this and send it to one person you want to build wealth with"
         },
         {
-          "headline": "AI Stocks Are Ripping Again \u2014 Here's the One We're Buying the Dip On.",
+          "headline": "We're Down 73% on MSTR. Here's Why We're NOT Selling.",
           "platform": "YouTube + LinkedIn",
-          "hook": "NVIDIA just posted $81.6B in revenue, up 85%. Here's exactly why our club is buying the dip \u2014 and the export-control risk we're watching.",
+          "hook": "Our riskiest pick crashed 73%. Most people would panic-sell. Here's the cost-basis math and why we're holding instead.",
           "format": "8\u201310 minute YouTube video + LinkedIn text-post version",
           "cta": "Join the FI Community waitlist \u2014 link in bio"
         }
       ],
       "audience_growth_moves": [
         {
-          "tactic": "Collab with 2\u20133 HBCU / Black finance creator accounts \u2014 tap the fastest-growing investor demographic (Gen Z Black investors)",
+          "tactic": "Collab with 3 HBCU finance clubs / Black finance creators this week (reels + duets)",
           "platform": "Instagram + TikTok",
           "effort": "Medium",
           "expected_reach": "1,000\u20134,000 new followers per collab"
         },
         {
-          "tactic": "Post the weekly market recap every Monday by 9 AM \u2014 be first in feed (NerdWallet built ~200k on TikTok by making finance digestible)",
-          "platform": "TikTok + Instagram",
+          "tactic": "Lead with a strong hook in the first 1\u20132 seconds and post Reels/Shorts consistently (the 2026 algorithm rewards Reels and watch-through)",
+          "platform": "Instagram + TikTok",
           "effort": "Low",
-          "expected_reach": "Algorithm consistency; 20\u201340% follower growth over 90 days"
+          "expected_reach": "20\u201340% follower growth over 90 days from consistency"
         },
         {
-          "tactic": "Reply to 20 comments/day on Black-finance and personal-finance creators' posts to build community recognition",
-          "platform": "Instagram",
+          "tactic": "Post the weekly market recap every Monday by 9 AM to be first in feed",
+          "platform": "Instagram + TikTok",
           "effort": "Low",
-          "expected_reach": "Drives profile visits and steady organic follows"
+          "expected_reach": "Builds algorithm consistency and repeat viewership"
         }
       ],
       "monetization_ideas": [
         {
           "idea": "Investment Club Starter Kit (digital download)",
-          "tied_to_event": "Rising 2026 interest among Black and Gen Z investors in real estate, stocks and starting clubs",
-          "revenue_model": "One-time purchase $27\u201347",
+          "tied_to_event": "Rising Gen Z/retail investing interest = high search for 'how to start an investment club'",
+          "revenue_model": "One-time purchase $27\u2013$47",
           "platform": "Gumroad or Stan Store",
-          "steps": "Build a PDF kit (bylaws, contribution tracker, thesis template, meeting agenda) and list on Gumroad; promote off the weekly recap content."
+          "steps": "Bundle bylaws, contribution tracker, thesis template, and meeting agenda into a PDF; list and promote via the weekly recap."
         },
         {
-          "idea": "Monthly Market Recap Newsletter (paid tier)",
-          "tied_to_event": "Consistent weekly content builds trust for a paid upgrade; finance audiences reward digestible recaps",
-          "revenue_model": "$5\u201310/month per subscriber",
+          "idea": "Weekly Market Recap Newsletter (free \u2192 paid tier)",
+          "tied_to_event": "Consistent weekly content builds the trust needed for a paid upgrade",
+          "revenue_model": "$5\u2013$10/month subscriber",
           "platform": "Substack or Beehiiv",
-          "steps": "Run a free tier for 3 months, then gate full picks and cost-basis commentary behind a $7/month paywall."
+          "steps": "Run a free tier for 3 months, then gate premium content (full picks, club P/L, cost-basis breakdowns) behind a $7/month paywall."
         }
       ],
       "key_insights": [
-        "Inflation-high week = peak content opportunity \u2014 post your take fast",
-        "The 'down 74%, not selling' MSTR angle teaches cost-basis discipline authentically",
-        "HBCU/Gen Z Black-creator collabs target the fastest-growing investor group"
+        "$2.1T Black spending power is your most shareable content angle",
+        "Hook in the first 2 seconds \u2014 2026 algorithm rewards Reels/Shorts",
+        "Turn the club's losses into honest, trust-building teaching content"
       ]
     },
     "covered_calls": {
       "title": "Covered Call Strategy",
       "subtitle": "Weekly Options Income on Club Holdings",
-      "market_iv_context": "Implied volatility has cooled from the spring's geopolitical spike now that a U.S.-Iran resolution is in sight and indices are pressing record highs \u2014 broad-market IV (VOO/SPY) is on the lower end, while single names like MSTR and NVDA still carry elevated IV ahead of their August earnings. IMPORTANT: the club currently holds fewer than 100 shares of MSTR (7), NFLX (10) and NVDA (6), so single-contract covered calls are not yet executable on those names \u2014 the plays below are educational/positioning targets for when share counts reach 100, except where noted.",
-      "covered_call_primer": "A covered call means selling someone the right to buy 100 of your shares at a set strike by a set date. You collect the premium today no matter what. If the stock stays below the strike, you keep the shares and the full premium. If it rises above the strike, your shares get called away at that price \u2014 you still profit, just capped at the strike. You must own at least 100 shares per contract.",
+      "market_iv_context": "IV (Implied Volatility \u2014 the market's expectation of how much a stock will move; higher IV = richer option premiums) is mixed in late June 2026. After major geopolitical shocks (the Iran conflict) and an AI-stock rotation, single-name volatility is elevated on names like MSTR and NVDA even as broad-index volatility eases on the U.S.-Iran de-escalation. IMPORTANT CLUB NOTE: a covered call requires owning at least 100 shares per contract. FI Community currently owns 7 MSTR, 10 NFLX, 6 NVDA, and ~24.6 VOO \u2014 below 100 shares each \u2014 so the plays below are EDUCATIONAL setups to learn the mechanics now and execute once a position reaches 100 shares.",
+      "covered_call_primer": "A covered call means selling someone the right to buy 100 of your shares at a set 'strike price' by a set expiration date, in exchange for cash today called the 'premium.' Key terms: STRIKE PRICE = the price your shares could be sold at; PREMIUM = the cash you collect upfront and keep no matter what; DTE = Days To Expiration; OTM = Out of The Money (a strike above today's price, so there's room to rise); annualized yield = the premium scaled to a full-year rate for comparison. If the stock stays below the strike, you keep your shares AND the premium. If it rises above the strike, your shares get 'called away' (sold) at the strike \u2014 you still profit, just capped.",
       "plays": [
-        {
-          "ticker": "VOO",
-          "name": "Vanguard S&P 500 ETF",
-          "current_price": 684.66,
-          "viable": false,
-          "viability_reason": null,
-          "upcoming_catalyst": "No earnings; macro events only (July 2 jobs report, ongoing inflation prints)",
-          "catalyst_date": null,
-          "catalyst_risk": "low",
-          "recommended_strike": 705.0,
-          "recommended_expiry": "2026-08-07",
-          "days_to_expiry": 38,
-          "strike_pct_otm": 3.0,
-          "estimated_premium": 5.5,
-          "annualized_yield_pct": 7.7,
-          "max_profit_per_contract": 2584,
-          "breakeven_price": 679.16,
-          "historical_win_rate": "Broad-index ETF calls at ~3% OTM have historically expired worthless the large majority of the time, making VOO the most consistent (lowest-IV) candidate in the book.",
-          "action": "SKIP",
-          "timing": null,
-          "shares_required": 100,
-          "skip_reason": "The club holds only 24.6 VOO shares \u2014 below the 100 needed for one contract. Setup is otherwise ideal (no earnings, near highs, ~3% OTM). Keep accumulating toward 100 shares to unlock this low-risk income.",
-          "watch_for": "Once VOO holdings reach 100 shares, sell the ~$705 call ~35\u201340 DTE for ~$550 premium (~7.7% annualized) in any low-IV, range-bound stretch."
-        },
         {
           "ticker": "NVDA",
           "name": "NVIDIA Corporation",
-          "current_price": 197.93,
-          "viable": false,
-          "viability_reason": null,
-          "upcoming_catalyst": "Q2 FY27 earnings on Aug 26, 2026 \u2014 a 35-45 DTE call would span the report; IV is elevated and will spike into it",
+          "current_price": 198.6,
+          "viable": true,
+          "viability_reason": "No earnings until Aug 26, 2026 \u2014 comfortably outside the 3-week no-call window. Elevated single-name IV after the AI rotation means richer premiums; stock is consolidating after a ~23% drop from its May peak.",
+          "upcoming_catalyst": "Q2 FY2027 earnings on Aug 26, 2026 (about 8 weeks away \u2014 ample room for a 25\u201345 day trade)",
           "catalyst_date": "2026-08-26",
-          "catalyst_risk": "high",
+          "catalyst_risk": "low",
           "recommended_strike": 210.0,
-          "recommended_expiry": "2026-08-07",
-          "days_to_expiry": 38,
-          "strike_pct_otm": 6.1,
-          "estimated_premium": 6.0,
-          "annualized_yield_pct": 29.1,
-          "max_profit_per_contract": 1807,
-          "breakeven_price": 191.93,
-          "historical_win_rate": "NVDA calls at 5\u20138% OTM expire worthless a majority of the time outside earnings windows, but elevated IV makes outcomes wider.",
-          "action": "SKIP",
-          "timing": null,
+          "recommended_expiry": "2026-07-31",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 5.7,
+          "estimated_premium": 6.5,
+          "annualized_yield_pct": 38.5,
+          "max_profit_per_contract": 1790,
+          "breakeven_price": 192.1,
+          "historical_win_rate": "AI-leader calls at ~5\u20136% OTM with elevated IV have historically expired worthless a majority of the time, but NVDA can trend hard \u2014 treat the cap risk as real.",
+          "action": "EDUCATIONAL \u2014 execute once position reaches 100 shares",
+          "timing": "If/when the club holds 100 NVDA shares, target the July 31 $210 call (~5.7% OTM, 31 DTE) for ~$6.50 premium. Today the club holds only 6 shares, so paper-trade this setup.",
           "shares_required": 100,
-          "skip_reason": "Two blockers: (1) the club owns only 6 NVDA shares, far below 100; and (2) NVDA is a BUY-and-accumulate name we don't want capped \u2014 selling calls would cut off upside in our most profitable position (+55%). A pre-Aug-26 expiry also risks IV crush around earnings.",
-          "watch_for": "Revisit only if the club ever reaches 100 NVDA shares AND shifts to an income posture. The best entry is typically the week AFTER the Aug 26 earnings once IV crushes and a new range forms."
+          "skip_reason": null,
+          "watch_for": "Build toward 100 shares via DCA on dips; the elevated post-rotation IV is the attraction, but NVDA's uptrend means a called-away outcome is likely if it rallies."
+        },
+        {
+          "ticker": "VOO",
+          "name": "Vanguard S&P 500 ETF",
+          "current_price": 685.38,
+          "viable": true,
+          "viability_reason": "ETFs have no single-company earnings risk, so there is no earnings blackout. IV is low (broad-index volatility eased on the Iran de-escalation), making this a steady, low-yield income setup rather than a high-premium one.",
+          "upcoming_catalyst": "No earnings \u2014 only broad macro events (jobs report July 2, CPI/PCE prints). Near 52-week high of $699.15.",
+          "catalyst_date": null,
+          "catalyst_risk": "low",
+          "recommended_strike": 705.0,
+          "recommended_expiry": "2026-07-31",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 2.9,
+          "estimated_premium": 4.8,
+          "annualized_yield_pct": 8.3,
+          "max_profit_per_contract": 2442,
+          "breakeven_price": 680.58,
+          "historical_win_rate": "Broad-index ETF calls at ~3% OTM are the most consistent 'expire worthless' performers, but low IV means modest premium.",
+          "action": "EDUCATIONAL \u2014 execute once position reaches 100 shares",
+          "timing": "With only ~24.6 VOO shares, this is a learning setup. At 100 shares, the July 31 $705 call (~2.9% OTM) collects ~$4.80; consider a slightly higher strike to avoid capping VOO's core-holding upside.",
+          "shares_required": 100,
+          "skip_reason": null,
+          "watch_for": "VOO is the portfolio anchor \u2014 if writing calls later, keep strikes far OTM so the long-term compounding engine isn't capped."
         },
         {
           "ticker": "MSTR",
           "name": "Strategy Inc",
-          "current_price": 85.34,
-          "viable": false,
-          "viability_reason": null,
-          "upcoming_catalyst": "Q2 2026 earnings on Aug 4, 2026 \u2014 a 25\u201345 DTE covered call would span the report",
+          "current_price": 85.86,
+          "viable": true,
+          "viability_reason": "Earnings are Aug 4, 2026 \u2014 just outside the 3-week window from June 30. IV is very elevated (Bitcoin-driven), producing extremely rich premiums, but the same volatility makes this the riskiest, most speculative call.",
+          "upcoming_catalyst": "Q2 earnings Aug 4, 2026; Bitcoin price and any dilution news are the real day-to-day catalysts.",
           "catalyst_date": "2026-08-04",
-          "catalyst_risk": "high",
-          "recommended_strike": null,
-          "recommended_expiry": null,
-          "days_to_expiry": null,
-          "strike_pct_otm": null,
-          "estimated_premium": null,
-          "annualized_yield_pct": null,
-          "max_profit_per_contract": null,
-          "breakeven_price": null,
-          "historical_win_rate": null,
-          "action": "SKIP",
-          "timing": null,
+          "catalyst_risk": "medium",
+          "recommended_strike": 92.0,
+          "recommended_expiry": "2026-07-31",
+          "days_to_expiry": 31,
+          "strike_pct_otm": 7.2,
+          "estimated_premium": 5.0,
+          "annualized_yield_pct": 68.7,
+          "max_profit_per_contract": 1114,
+          "breakeven_price": 80.86,
+          "historical_win_rate": "Very high-IV crypto-proxy calls show wide outcomes; the huge premium reflects huge risk in both directions.",
+          "action": "EDUCATIONAL \u2014 execute only with 100 shares AND high risk tolerance",
+          "timing": "Club holds 7 shares, so this is illustrative. The eye-popping ~69% annualized yield comes from extreme IV; a 7\u20138% OTM strike ($92) at least leaves room for a bounce while collecting a fat premium.",
           "shares_required": 100,
-          "skip_reason": "Three blockers: (1) the club owns only 7 MSTR shares; (2) Aug 4 earnings falls inside any 25\u201345 DTE window \u2014 never sell calls within ~3 weeks of earnings; and (3) at $85 vs. a $323 cost basis, any strike near a realistic OTM level sits far below breakeven, so assignment would lock in a large loss.",
-          "watch_for": "Not a covered-call candidate while underwater. Re-evaluate only if/when MSTR recovers above the ~$323 cost basis with 100+ shares held \u2014 then high IV could fund attractive premiums."
+          "skip_reason": null,
+          "watch_for": "MSTR can gap violently on Bitcoin moves \u2014 the rich premium is compensation for real downside; never treat this as 'safe' income."
         },
         {
           "ticker": "NFLX",
           "name": "Netflix, Inc.",
-          "current_price": 72.72,
+          "current_price": 72.62,
           "viable": false,
           "viability_reason": null,
-          "upcoming_catalyst": "Q2 2026 earnings on July 16, 2026 \u2014 inside the 3-week no-trade window",
+          "upcoming_catalyst": "Q2 2026 earnings on July 16, 2026 \u2014 only ~16 days away, INSIDE the 3-week no-call window.",
           "catalyst_date": "2026-07-16",
           "catalyst_risk": "high",
           "recommended_strike": null,
@@ -396,86 +396,98 @@
           "action": "SKIP",
           "timing": null,
           "shares_required": 100,
-          "skip_reason": "Hard rule: earnings on July 16 is well within 3 weeks of June 30, so no covered call. Separately, the club holds only 10 NFLX shares (need 100), and at $72.72 vs. a $110.63 cost basis any realistic strike is below breakeven \u2014 assignment would crystallize a loss.",
-          "watch_for": "Reassess after the July 16 report. If the club accumulates 100+ shares and the stock recovers toward the cost basis, post-earnings IV normalization could create a covered-call entry."
+          "skip_reason": "Earnings on July 16 are within 3 weeks of June 30 \u2014 our rule prohibits writing calls before earnings. A post-report gap could blow past any strike. (The club also holds only 10 shares, far under the 100 needed.)",
+          "watch_for": "Re-evaluate the trading day after July 16. Post-earnings IV crush often creates a cleaner covered-call entry once the event risk is gone."
         }
       ],
       "key_insights": [
-        "No covered calls are executable now \u2014 every holding is under 100 shares",
-        "Skip NFLX on the rule: July 16 earnings is inside the 3-week window",
-        "Build VOO to 100 shares to unlock the cleanest low-IV income play"
+        "Skip NFLX \u2014 earnings July 16 is inside the 3-week no-call window",
+        "All plays are educational: club owns under 100 shares per name",
+        "Build toward 100 shares to harvest elevated NVDA/MSTR premiums later"
       ]
     },
     "community_events": {
       "title": "Atlanta Community Events",
       "subtitle": "Network, Build & Create Partnerships This Month",
-      "networking_strategy": "Attend as a team of 2\u20133 with branded FI Community materials and a QR code to the waitlist. Prioritize the high-traffic finance/entrepreneurship events (Invest Fest, real estate meetups) for member recruitment and partner deals. Follow up on LinkedIn within 48 hours of every event.",
+      "networking_strategy": "Attend as a team of 2\u20133 with branded FI Community materials and a QR code to the waitlist. Prioritize real estate and entrepreneurship events for the highest-value partner and member connections, and lead with the '$2.1T Black spending power' framing to spark conversations. Follow up within 48 hours on LinkedIn after every event. Events within two weeks of June 30 are flagged time_sensitive.",
       "events": [
         {
-          "name": "Atlanta Real Estate Meetup (July)",
+          "name": "Atlanta Black Chambers \u2014 First Friday Networking (on Fanbase)",
+          "date": "2026-07-03",
+          "time": "6:00 PM \u2013 9:00 PM",
+          "location": "Atlanta, GA (Atlanta Black Chambers monthly First Friday)",
+          "category": "Community Building",
+          "description": "The Atlanta Black Chambers' recurring First Friday networking gathering connecting Black business owners, professionals, and partners across the metro.",
+          "cost": "Free \u2013 low cost",
+          "why_attend": "Low-cost, recurring, high-density Black entrepreneur networking \u2014 ideal for member recruitment and finding co-marketing partners. Building a relationship with the Chamber opens a steady referral pipeline.",
+          "rsvp_or_link": "atlantablackchambers.org",
+          "time_sensitive": true
+        },
+        {
+          "name": "Atlanta Real Estate Meetup (LaunchREI)",
           "date": "2026-07-14",
           "time": "6:30 PM \u2013 8:30 PM",
           "location": "Park Tavern, 500 10th St NE, Atlanta, GA",
           "category": "Real Estate",
-          "description": "One of Atlanta's largest real-estate networking meetups, featuring small-group and open networking plus a speaker session for active and aspiring investors.",
-          "cost": "Free \u2013 low cost (RSVP via Meetup)",
-          "why_attend": "High-volume, low-cost networking with active real-estate investors who overlap with FI Community's wealth-building audience \u2014 ideal for member recruitment and finding future partners.",
-          "rsvp_or_link": "Meetup.com \u2013 Atlanta Real Estate Meetup",
+          "description": "Monthly Atlanta real estate investor meetup at Park Tavern for networking, deal-sharing, and market talk with active local investors.",
+          "cost": "Free (food/drinks on your own)",
+          "why_attend": "Direct access to active real estate investors who overlap with FI Community's wealth-building mission \u2014 strong source of partner relationships and potential future syndication contacts.",
+          "rsvp_or_link": "Newsletter.LaunchREI.co / Meetup.com Atlanta Real Estate Meetup",
           "time_sensitive": true
         },
         {
-          "name": "Invest Fest 2026 (Earn Your Leisure)",
-          "date": "2026-08-07",
-          "time": "All day (Aug 7\u20139)",
-          "location": "Georgia World Congress Center, 285 Andrew Young Intl Blvd, Atlanta, GA",
-          "category": "Finance & Banking",
-          "description": "Flagship financial-education and entrepreneurship festival with a marketplace of 400+ vendors, major speakers, and a vibrant culture-meets-money atmosphere.",
-          "cost": "Ticketed (tiered; check site)",
-          "why_attend": "The single highest-visibility Black wealth/finance event in Atlanta \u2014 unmatched for member recruitment, brand exposure, and partner connections. A booth or organized group attendance could meaningfully grow the FI Community audience.",
-          "rsvp_or_link": "investfest.com (GWCC)",
+          "name": "Atlanta REIA Monthly Meeting",
+          "date": "2026-07-20",
+          "time": "6:30 PM \u2013 9:00 PM",
+          "location": "Hudson Grille, 6317 Roswell Rd, Sandy Springs, GA",
+          "category": "Real Estate",
+          "description": "Atlanta Real Estate Investors Alliance monthly meeting with a guest speaker, networking, and a deal-sharing roundtable for new and active investors.",
+          "cost": "Free for members / ~$20 non-members",
+          "why_attend": "Established, structured real estate education plus networking \u2014 good for members exploring real estate as a wealth-building leg and for meeting accredited-investor partners.",
+          "rsvp_or_link": "atlantareia.com",
           "time_sensitive": false
         },
         {
-          "name": "Conference of African American Financial Professionals (CAAFP)",
-          "date": "2026-08-03",
-          "time": "All day (Aug 3\u20135)",
-          "location": "Chicago, IL (national; travel event)",
-          "category": "Finance & Banking",
-          "description": "The premier professional-development conference dedicated to advancing Black representation in the financial-services industry, with panels and networking.",
-          "cost": "Registration required (paid)",
-          "why_attend": "Best venue to connect with credentialed Black financial advisors who could co-market with or mentor FI Community \u2014 worth sending one delegate even though it's out of Atlanta.",
-          "rsvp_or_link": "caafp.org",
-          "time_sensitive": false
-        },
-        {
-          "name": "Invest Atlanta \u2013 Upcoming Events / Excellence in Entrepreneurship",
+          "name": "Invest Atlanta \u2014 Small Business / Entrepreneur Program Session",
           "date": "2026-07-22",
-          "time": "5:30 PM \u2013 7:30 PM (typical evening session)",
+          "time": "5:30 PM \u2013 7:30 PM",
           "location": "Invest Atlanta HQ, 133 Peachtree St NE, Atlanta, GA",
-          "category": "Community Building",
-          "description": "Invest Atlanta runs ongoing economic-development programming, grants, loans and the Excellence in Entrepreneurship Awards supporting Atlanta-based founders.",
-          "cost": "Free (most info sessions)",
-          "why_attend": "Potential funding/support source for the club's operations and a referral channel for member-owned small businesses \u2014 positions FI Community as a connector and builds local goodwill.",
+          "category": "Finance & Banking",
+          "description": "Invest Atlanta (the city's economic-development authority) info session on grants, loans, and mentorship available to Atlanta-based entrepreneurs and small businesses.",
+          "cost": "Free",
+          "why_attend": "Potential funding source for FI Community's operations and a way to refer member-owned businesses to city programs \u2014 positioning the club as a valued community connector.",
           "rsvp_or_link": "investatlanta.com/events",
           "time_sensitive": false
         },
         {
-          "name": "Venture Atlanta 2026",
-          "date": "2026-10-14",
-          "time": "All day (Oct 14\u201315)",
-          "location": "Woodruff Arts Center & Atlanta Symphony Hall, Atlanta, GA",
+          "name": "ATL Black Expo 2026",
+          "date": "2026-08-21",
+          "time": "10:00 AM \u2013 6:00 PM (multi-day)",
+          "location": "Georgia World Congress Center, Atlanta, GA",
           "category": "Entrepreneurship",
-          "description": "The Southeast's largest venture/innovation conference \u2014 1,600+ attendees, 450 funds, and $22.3B in tracked exits, connecting founders with capital.",
-          "cost": "Ticketed (paid)",
-          "why_attend": "Exposure to the venture and startup capital ecosystem; valuable for members exploring entrepreneurship and for understanding how early-stage investing works \u2014 a longer-horizon planning target.",
-          "rsvp_or_link": "ventureatlanta.org",
+          "description": "Three-day flagship expo with 300+ exhibitors, 50+ speakers, and 5,000+ attendees where Black business and opportunity converge \u2014 panels on scaling, funding, and brand building.",
+          "cost": "Free \u2013 ticketed tiers",
+          "why_attend": "The single highest-concentration Black-entrepreneur audience in Atlanta \u2014 unmatched for member recruitment, brand visibility (consider a booth), and partner deals. Plan now to secure exhibitor space.",
+          "rsvp_or_link": "atlantablackexpo.com",
           "time_sensitive": false
+        },
+        {
+          "name": "SCORE Atlanta \u2014 Small Business Startup Workshop",
+          "date": "2026-07-16",
+          "time": "12:00 PM \u2013 1:30 PM",
+          "location": "Virtual / Atlanta (SCORE Atlanta)",
+          "category": "Entrepreneurship",
+          "description": "Free SCORE Atlanta mentoring workshop covering startup fundamentals, business planning, and access to free one-on-one mentors for local entrepreneurs.",
+          "cost": "Free",
+          "why_attend": "Free, low-time-commitment education the club can co-promote to members; SCORE mentors are a no-cost resource FI Community can recommend, building goodwill and authority.",
+          "rsvp_or_link": "atlanta.score.org",
+          "time_sensitive": true
         }
       ],
       "key_insights": [
-        "Invest Fest (Aug 7\u20139) is the top brand-building and recruitment opportunity \u2014 plan a booth",
-        "The July 14 Real Estate Meetup is within 2 weeks \u2014 RSVP and attend now",
-        "Invest Atlanta programming is a potential grant/funding channel for club operations"
+        "Hit First Friday (Jul 3) and the Jul 14 RE meetup \u2014 both within two weeks",
+        "Plan a booth at ATL Black Expo \u2014 highest-density recruitment event",
+        "Invest Atlanta could fund club operations \u2014 build that relationship"
       ]
     }
   }

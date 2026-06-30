@@ -160,6 +160,9 @@ Return ONLY the JSON object — no markdown code fences, no explanation, no prea
                     text_blocks = [b.text.strip() for b in response.content if hasattr(b, "text") and b.text and b.text.strip()]
                     full_text = "\n".join(text_blocks)
                     (OUTPUT_DIR / f"{DATE}_raw_response.txt").write_text(full_text, encoding="utf-8")
+                    # Strip <cite index="..."> tags injected by web search — their attribute
+                    # quotes break JSON parsing when embedded inside JSON string values
+                    full_text = re.sub(r'</?cite[^>]*>', '', full_text)
                     # Strategy 1: extract from ```json ... ``` fence anywhere in the response
                     fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", full_text, re.DOTALL)
                     if fence_match:
