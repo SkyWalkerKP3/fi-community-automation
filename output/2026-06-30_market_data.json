@@ -1,0 +1,108 @@
+{
+  "fetched_at": "2026-06-30T11:41:39.592132",
+  "week_ending": "2026-06-30",
+  "indices": {
+    "sp500": {
+      "ticker": "^GSPC",
+      "current": 7476.74,
+      "week_change_pct": 1.61,
+      "direction": "up"
+    },
+    "nasdaq": {
+      "ticker": "^IXIC",
+      "current": 26082.04,
+      "week_change_pct": 2.38,
+      "direction": "up"
+    },
+    "dow": {
+      "ticker": "^DJI",
+      "current": 52263.47,
+      "week_change_pct": 0.8,
+      "direction": "up"
+    }
+  },
+  "holdings": [
+    {
+      "ticker": "MSTR",
+      "name": "Strategy Inc",
+      "current_price": 85.34,
+      "week_change_pct": -9.34,
+      "direction": "down",
+      "sector": "Technology",
+      "fifty_two_week_high": 457.22,
+      "fifty_two_week_low": 81.81
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix, Inc.",
+      "current_price": 72.72,
+      "week_change_pct": 1.22,
+      "direction": "up",
+      "sector": "Communication Services",
+      "fifty_two_week_high": 133.877,
+      "fifty_two_week_low": 70.86
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "current_price": 197.93,
+      "week_change_pct": -0.54,
+      "direction": "down",
+      "sector": "Technology",
+      "fifty_two_week_high": 236.54,
+      "fifty_two_week_low": 151.49
+    },
+    {
+      "ticker": "VOO",
+      "name": "Vanguard S&P 500 ETF",
+      "current_price": 684.66,
+      "week_change_pct": 1.62,
+      "direction": "up",
+      "sector": "",
+      "fifty_two_week_high": 699.15,
+      "fifty_two_week_low": 565.8
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft Corporation",
+      "current_price": 370.7,
+      "week_change_pct": 1.43,
+      "direction": "up",
+      "sector": "Technology",
+      "fifty_two_week_high": 555.45,
+      "fifty_two_week_low": 349.2
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "current_price": 556.42,
+      "week_change_pct": -0.22,
+      "direction": "down",
+      "sector": "Communication Services",
+      "fifty_two_week_high": 796.25,
+      "fifty_two_week_low": 520.26
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "current_price": 732.7,
+      "week_change_pct": 3.11,
+      "direction": "up",
+      "sector": "",
+      "fifty_two_week_high": 748.65,
+      "fifty_two_week_low": 544.66
+    },
+    {
+      "ticker": "DIA",
+      "name": "State Street SPDR Dow Jones Industrial Average ETF Trust",
+      "current_price": 521.79,
+      "week_change_pct": 0.63,
+      "direction": "up",
+      "sector": "",
+      "fifty_two_week_high": 526.57,
+      "fifty_two_week_low": 433.4
+    }
+  ]
+}
