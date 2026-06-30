@@ -113,6 +113,21 @@ Each holding must have ALL of the following:
 - max_profit_per_contract = ((recommended_strike - current_price) + estimated_premium) * 100
 - breakeven_price = current_price - estimated_premium
 - NEVER recommend covered calls within 3 weeks of earnings
+- Define every options term the first time it appears: strike price, premium, DTE (Days to Expiration), OTM (Out of the Money), IV (Implied Volatility), annualized yield
+
+### PLAIN LANGUAGE & ACCESSIBILITY (apply throughout every section):
+- Write for a mixed audience: assume some readers are brand-new investors who have never read a financial report
+- Spell out every acronym on first use with a brief plain-language definition in parentheses. Examples:
+    • "P/E ratio (Price-to-Earnings — how much investors pay per $1 of company profit; lower = cheaper)"
+    • "RSI (Relative Strength Index — a momentum gauge from 0–100; above 70 suggests overbought, below 30 suggests oversold)"
+    • "CPI (Consumer Price Index — the government's main measure of inflation; how much everyday goods cost)"
+    • "FOMC (Federal Open Market Committee — the Fed's rate-setting body)"
+    • "DCA (Dollar-Cost Averaging — investing a fixed amount on a regular schedule regardless of price)"
+- For every Federal Reserve / interest rate reference, add one sentence explaining the real-world effect: what rising or falling rates mean for borrowing, stock valuations, and our specific holdings
+- For every political or policy development, spell out the cause-and-effect chain: [What happened] → [Why markets care] → [How it affects our portfolio]
+- For every socioeconomic trend (wealth gap, consumer spending, demographic shifts), explain why it matters to a retail investor and which of our holdings benefit or face risk
+- Avoid standalone jargon sentences — pair every technical term with a plain-language equivalent on the same line
+- The week_narrative must open with 1–2 sentences a non-investor could read and immediately understand what happened this week and why it matters to them personally
 
 ### GENERAL:
 - key_insights: exactly 3 bullets, each ≤15 words, action-oriented
